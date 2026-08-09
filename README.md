@@ -77,6 +77,7 @@ editorial peer review.
 - Repository: <https://github.com/ipitchford/smooth-point-certificates-polydegree-containments>
 - Immutable candidate tag: `v0.4.1-candidate`
 - Version DOI: <https://doi.org/10.5281/zenodo.21864574>
+- All-versions DOI: <https://doi.org/10.5281/zenodo.21864573>
 - Evidence Press page: <https://evidencepress.org/releases/smooth-point-certificates-polydegree-containments/>
 
 ## Licence and AI disclosure
