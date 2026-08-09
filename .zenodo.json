@@ -23,6 +23,11 @@
       "identifier": "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments",
       "relation": "isSupplementedBy",
       "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/smooth-point-certificates-polydegree-containments/",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
     }
   ]
 }

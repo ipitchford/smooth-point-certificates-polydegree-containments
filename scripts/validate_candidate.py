@@ -135,7 +135,7 @@ def validate(root: Path, publication_ready: bool) -> dict[str, object]:
         "MANUSCRIPT.md",
         "BILINGUAL_ABSTRACTS.md",
         "EVIDENCE_PRESS_BODY.md",
-        "EVIDENCE_PRESS_META_TEMPLATE.json",
+        "EVIDENCE_PRESS_META.json",
         "CLAIM_STATUS.json",
         "CITATION_AUDIT.md",
         "STATUS.md",
@@ -558,12 +558,13 @@ def validate(root: Path, publication_ready: bool) -> dict[str, object]:
         }
     )
 
-    meta_obj = load_json(root / "EVIDENCE_PRESS_META_TEMPLATE.json", errors)
+    meta_obj = load_json(root / "EVIDENCE_PRESS_META.json", errors)
     if not isinstance(meta_obj, dict):
         fail(errors, "metadata template is not a JSON object")
         meta_obj = {}
-    if meta_obj.get("publicationState") != "pre-deposit-template":
-        fail(errors, "metadata template is not labelled pre-deposit-template")
+    expected_publication_state = "publication-ready" if publication_ready else "pre-deposit-template"
+    if meta_obj.get("publicationState") != expected_publication_state:
+        fail(errors, f"metadata publicationState must be {expected_publication_state}")
     if meta_obj.get("status") != "unrefereed-candidate":
         fail(errors, "metadata status must remain unrefereed-candidate")
     versions = {

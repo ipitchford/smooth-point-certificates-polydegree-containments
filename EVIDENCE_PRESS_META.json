@@ -1,20 +1,21 @@
 {
-  "publicationState": "pre-deposit-template",
+  "publicationState": "publication-ready",
   "slug": "smooth-point-certificates-polydegree-containments",
   "title": "Smooth-Point Certificates for Polydegree Containments: A Jacobian Interpretation of the Lewis-Perry-Straub Determinant",
   "shortTitle": "Smooth-point certificates for Polydegree containments",
   "oneLine": "The Lewis-Perry-Straub auxiliary determinant is a Jacobian: an exact Euler syzygy turns its specialisation test into a smooth-point criterion and yields a smaller Hensel certificate, while the uniform e=3 affine theorem remains open.",
   "abstract": "Lewis, Perry and Straub introduced integral coefficient polynomials and an auxiliary determinant whose complex specialisations imply Polydegree containments for plane polynomial automorphisms. This unrefereed candidate identifies the determinant, up to sign, as the Jacobian of the coefficient map and derives an exact weighted-Euler syzygy. In the chart x1=1, the original non-vanishing condition becomes the existence of a smooth point of the partial coefficient complete intersection outside the next coefficient hypersurface. A simple finite-field common zero with non-zero next coefficient therefore lifts to the required characteristic-zero point; no restriction excluding primes dividing d+e-1 is needed. A separate curve theorem shows how a reduced affine zero divisor supplies the same point, with coefficient-one closed-point descent stated over a perfect ground field before base change. Exact e=3 computations prove that the entire affine intersection is reduced and avoids the next coefficient for 2 <= d <= 20. A terminating-hypergeometric and finite-free-convolution argument proves every individual boundary factor has only simple positive roots, while adjacent coprimality is checked through d=200. The all-d affine conjecture remains open. Internal exact replay, code-path diversity and controls are not represented as independent reproduction, formal verification, specialist review or peer review.",
-  "datePublished": null,
+  "datePublished": "2026-08-09",
+  "dateModified": "2026-08-09",
   "version": "0.4.1-candidate",
-  "doi": null,
+  "doi": "10.5281/zenodo.21864574",
   "conceptDoi": null,
-  "zenodoUrl": null,
-  "pdfUrl": null,
-  "altPdfUrl": null,
-  "repoUrl": null,
-  "releaseUrl": null,
-  "license": null,
+  "zenodoUrl": "https://zenodo.org/records/21864574",
+  "pdfUrl": "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments/releases/download/v0.4.1-candidate/smooth-point-certificates-polydegree-containments-v0.4.1-candidate.pdf",
+  "altPdfUrl": "https://raw.githubusercontent.com/ipitchford/smooth-point-certificates-polydegree-containments/v0.4.1-candidate/build/main.pdf",
+  "repoUrl": "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments",
+  "releaseUrl": "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments/releases/tag/v0.4.1-candidate",
+  "license": "CC0-1.0",
   "authors": ["Anonymous"],
   "status": "unrefereed-candidate",
   "math": true,
@@ -49,11 +50,11 @@
     "Every e=3 one-variable boundary factor has only simple positive roots and is uniformly squarefree; adjacent-factor coprimality is exactly checked through d=200 and remains open uniformly."
   ],
   "evidence": "A candidate theorem paper in PDF, LaTeX and accessible Markdown; bilingual abstracts; exact proof record; frozen 51-witness corpus; upstream v0.3.0 manifest and replay reconciliation; a no-import standard-library Jacobian verifier with 10/10 symbolic gates and 51/51 witness relations under ordinary and optimised Python; 16 negative or mutation controls plus one positive bad-characteristic regression; exact Q/Singular affine computations for 2 <= d <= 20; an exact boundary-factor verifier and repaired referee memo; exact adjacent boundary arithmetic through d=200; citation, claim-status, provenance and assurance records; SHA-256 manifest. These are producer-side checks, not independent reproduction or external theorem verification.",
-  "statusDetail": "Pre-deposit, anonymous, unrefereed candidate. The derivative, determinant, weighted-Euler, Hensel/localisation, curve-bridge and uniform boundary-squarefreeness results have written proofs and internal adversarial checks. Exact finite computations are bounded at d <= 20 for the full affine statement and d <= 200 for adjacent boundary coprimality. The uniform e=3 affine theorem, full Polydegree Conjecture and priority question remain open. No unaffiliated party has independently reconstructed the proofs or computations; there is no proof-assistant formalisation, external specialist audit, editorial peer review, venue acceptance, DOI, public repository or live release page. An upstream proof-critical Python assert is retained as a disclosed fail-open robustness defect, with no evidence that a current witness is false.",
+  "statusDetail": "Anonymous, unrefereed candidate. The derivative, determinant, weighted-Euler, Hensel/localisation, curve-bridge and uniform boundary-squarefreeness results have written proofs and internal adversarial checks. Exact finite computations are bounded at d <= 20 for the full affine statement and d <= 200 for adjacent boundary coprimality. The uniform e=3 affine theorem, full Polydegree Conjecture and priority question remain open. The public repository, immutable candidate release and Zenodo record expose the exact package and replay route. No unaffiliated party has independently reconstructed the proofs or computations; there is no proof-assistant formalisation, external specialist audit, editorial peer review or venue acceptance. An upstream proof-critical Python assert is retained as a disclosed fail-open robustness defect, with no evidence that a current witness is false.",
   "assurance": {
     "availability": {
-      "state": "not-assessed",
-      "note": "The Stage 2 candidate exists locally; no persistent public archive or DOI has been created."
+      "state": "passed",
+      "note": "The exact candidate package is publicly retrievable from the immutable GitHub release and Zenodo version DOI 10.5281/zenodo.21864574."
     },
     "internalReplay": {
       "state": "passed",
@@ -117,5 +118,5 @@
       "url": "https://arxiv.org/abs/2309.10970v3"
     }
   ],
-  "citeText": "Anonymous. (2026). Smooth-Point Certificates for Polydegree Containments: A Jacobian Interpretation of the Lewis-Perry-Straub Determinant (Version 0.4.1-candidate) [Unrefereed candidate manuscript and reproducibility package]. Persistent identifier pending."
+  "citeText": "Anonymous. (2026). Smooth-Point Certificates for Polydegree Containments: A Jacobian Interpretation of the Lewis-Perry-Straub Determinant (Version 0.4.1-candidate) [Unrefereed candidate manuscript and reproducibility package]. Zenodo. https://doi.org/10.5281/zenodo.21864574"
 }

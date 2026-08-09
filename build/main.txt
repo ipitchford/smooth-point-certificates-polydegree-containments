@@ -1,9 +1,9 @@
-       Smooth-point certificates for Polydegree containments
+        Smooth-point certificates for Polydegree containments
              A Jacobian interpretation of the Lewis–Perry–Straub determinant
 
-                                      Anonymous
+                                        Anonymous
 
-                                     9 August 2026
+                                      9 August 2026
 
 
 
@@ -35,11 +35,13 @@ Abstract                                                                        
 Declarations                                                                   16
 
 References                                                                     17
+Candidate release: version 0.4.1-candidate · unrefereed
+DOI: 10.5281/zenodo.21864574
 
 
 
 
-                                            1
+                                             1
 Abstract
 Lewis, Perry and Straub introduced integral coefficient polynomials gn,e and an auxiliary determinant ad,e
 whose simultaneous specialisation yields containments between strata of plane polynomial automorphisms.

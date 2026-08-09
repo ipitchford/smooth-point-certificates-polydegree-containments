@@ -8,4 +8,7 @@ __pycache__/
 *.out
 *.run.xml
 *.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
 build/*.tmp

@@ -32,6 +32,7 @@ open. The finite ranges are evidence for those questions, not proofs of them.
 
 - [Paper PDF](build/main.pdf)
 - [Accessible paper source](MANUSCRIPT.md)
+- [Evidence Press release metadata](EVIDENCE_PRESS_META.json)
 - [Claim and evidence ledger](CLAIM_STATUS.json)
 - [Status](STATUS.md)
 - [Assurance boundary](ASSURANCE.md)
@@ -70,6 +71,13 @@ and optimized Python modes.
 These are producer-side regression checks. They are not independent
 reproduction, proof-assistant formalisation, external specialist review or
 editorial peer review.
+
+## Release identity
+
+- Repository: <https://github.com/ipitchford/smooth-point-certificates-polydegree-containments>
+- Immutable candidate tag: `v0.4.1-candidate`
+- Version DOI: <https://doi.org/10.5281/zenodo.21864574>
+- Evidence Press page: <https://evidencepress.org/releases/smooth-point-certificates-polydegree-containments/>
 
 ## Licence and AI disclosure
 

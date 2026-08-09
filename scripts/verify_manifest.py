@@ -12,6 +12,7 @@ from pathlib import Path, PurePosixPath
 
 MANIFEST_NAME = "MANIFEST.sha256"
 LINE_PATTERN = re.compile(r"^([0-9a-f]{64})  (.+)$")
+GENERATED_SUFFIXES = (".fdb_latexmk", ".fls", ".synctex.gz")
 
 
 class ManifestError(RuntimeError):
@@ -31,6 +32,8 @@ def package_files(root: Path) -> dict[str, Path]:
     for path in root.rglob("*"):
         relative_path = path.relative_to(root)
         if ".git" in relative_path.parts:
+            continue
+        if path.name.endswith(GENERATED_SUFFIXES):
             continue
         if path.name == MANIFEST_NAME:
             continue

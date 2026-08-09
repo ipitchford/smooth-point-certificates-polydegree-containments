@@ -21,6 +21,10 @@ header-includes:
   - \definecolor{MidnightBlue}{RGB}{25,55,95}
 ---
 
+**Candidate release:** version `0.4.1-candidate` · unrefereed
+
+**DOI:** [10.5281/zenodo.21864574](https://doi.org/10.5281/zenodo.21864574)
+
 # Abstract {.unnumbered}
 
 Lewis, Perry and Straub introduced integral coefficient polynomials

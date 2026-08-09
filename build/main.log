@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.9)  9 AUG 2026 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.9)  9 AUG 2026 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/work/irreducible-norms-ref-upgrade/stage2_5/candidate/build/main.tex
-(/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/work/irreducible-norms-ref-upgrade/stage2_5/candidate/build/main.tex
+**/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/work/irreducible-norms-publication/repository/build/main.tex
+(/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/work/irreducible-norms-publication/repository/build/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 (/Users/admin/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -540,10 +540,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [1
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 126.
+ (/Users/admin/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 126.
+ (/Users/admin/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [1
 
-{/Users/admin/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [2{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [3] [4{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [5]
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 468.
+{/Users/admin/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [2{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [3] [4{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [5]
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 474.
  (/Users/admin/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -553,15 +560,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [6] [7] [8] [9]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 814.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 868.
- (/Users/admin/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [10] [11{/Users/admin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [12]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1108.
- (/Users/admin/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+(Font)              <14.4> on input line 820.
+ [10] [11] [12]
 ignored: Infinite glue shrinkage found in box being split [13] [14] [15] [16] [17] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -569,18 +569,18 @@ L3 programming layer <2026-03-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14934 strings out of 469339
- 235932 string characters out of 5465691
- 722718 words of memory out of 5000000
- 43150 multiletter control sequences out of 15000+600000
+ 14935 strings out of 469339
+ 235929 string characters out of 5465691
+ 722829 words of memory out of 5000000
+ 43151 multiletter control sequences out of 15000+600000
  722132 words of font info for 221 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 89i,8n,93p,1134b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,8n,93p,1126b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx7.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></Users/admin/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (17 pages, 381537 bytes).
+Output written on main.pdf (17 pages, 383158 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
+ 422 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
  136 named destinations out of 1000 (max. 500000)
  53361 words of extra memory for PDF output out of 61914 (max. 10000000)
 

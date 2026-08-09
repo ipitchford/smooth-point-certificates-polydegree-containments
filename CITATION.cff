@@ -11,7 +11,10 @@ abstract: >-
   the Lewis-Perry-Straub determinant as a Jacobian and sharpening the
   resulting smooth-point certificate.
 license: MIT
+doi: 10.5281/zenodo.21864574
 repository-code: "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments"
+repository-artifact: "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments/releases/tag/v0.4.1-candidate"
+url: "https://evidencepress.org/releases/smooth-point-certificates-polydegree-containments/"
 keywords:
   - plane polynomial automorphisms
   - Polydegree Conjecture
@@ -26,4 +29,6 @@ preferred-citation:
     - name: "Anonymous"
   year: 2026
   version: "0.4.1-candidate"
+  doi: 10.5281/zenodo.21864574
+  url: "https://evidencepress.org/releases/smooth-point-certificates-polydegree-containments/"
   notes: "Unrefereed candidate; original non-code content CC0 1.0; code MIT."

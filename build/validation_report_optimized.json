@@ -146,17 +146,10 @@
       "passed": true
     },
     {
-      "absent_publication_fields": [
-        "datePublished",
-        "doi",
-        "pdfUrl",
-        "repoUrl",
-        "releaseUrl",
-        "license"
-      ],
+      "absent_publication_fields": [],
       "check": "metadata_boundary",
       "passed": true,
-      "publication_ready_requested": false
+      "publication_ready_requested": true
     },
     {
       "check": "pdf_structure",
@@ -169,7 +162,7 @@
     }
   ],
   "failures": [],
-  "mode": "stage2.5-template",
+  "mode": "publication-ready",
   "overall_status": "PASS",
   "version": "0.4.1-candidate"
 }

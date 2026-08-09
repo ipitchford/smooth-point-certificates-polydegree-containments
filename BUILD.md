@@ -11,26 +11,18 @@ pandoc MANUSCRIPT.md --standalone --citeproc \
 python3 /Users/admin/.codex/plugins/cache/openai-bundled/latex/0.2.4/scripts/compile_latex.py \
   "$PWD/build/main.tex" --compiler texlive --output-directory "$PWD/build"
 
-python3 -B scripts/validate_candidate.py --root "$PWD" \
+python3 -B scripts/validate_candidate.py --root "$PWD" --publication-ready \
   --report build/validation_report.json
-python3 -B -O scripts/validate_candidate.py --root "$PWD" \
+python3 -B -O scripts/validate_candidate.py --root "$PWD" --publication-ready \
   --report build/validation_report_optimized.json
 cmp build/validation_report.json build/validation_report_optimized.json
 ```
 
-`--publication-ready` is a deliberately stricter negative control. Run it in
-both modes; it must fail while the metadata remains a pre-deposit template
-with no DOI, licence or public URLs:
-
-```sh
-python3 -B scripts/validate_candidate.py --root "$PWD" \
-  --publication-ready --report build/publication_ready_expected_failure.json
-python3 -B -O scripts/validate_candidate.py --root "$PWD" \
-  --publication-ready \
-  --report build/publication_ready_expected_failure_optimized.json
-cmp build/publication_ready_expected_failure.json \
-  build/publication_ready_expected_failure_optimized.json
-```
+The public candidate must use `--publication-ready`; that mode requires the
+real DOI, licence and immutable public URLs recorded in
+`EVIDENCE_PRESS_META.json`. The retained `publication_ready_expected_failure`
+receipts document the earlier pre-deposit negative control and are historical
+evidence, not the current result.
 
 The Stage 1/Stage 2 witness reconciliation is directly replayable:
 
