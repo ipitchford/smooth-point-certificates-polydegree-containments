@@ -1,0 +1,166 @@
+{
+  "arithmetic": "exact QQ polynomial arithmetic",
+  "assertions_used_for_acceptance": false,
+  "consecutive_face_gcds": {
+    "b_equals_0": {
+      "all_coprime": true,
+      "failures": []
+    },
+    "c_equals_0": {
+      "all_coprime": true,
+      "failures": []
+    },
+    "top_weight": {
+      "all_coprime": true,
+      "failures": []
+    }
+  },
+  "failures": {
+    "coefficient": [],
+    "facets": [],
+    "gcd": {
+      "b_equals_0": [],
+      "c_equals_0": [],
+      "top_weight": []
+    },
+    "jacobi_identities": [],
+    "jacobi_transforms": [],
+    "mixed_volume": [],
+    "shared_normals": [],
+    "special_value": [],
+    "squarefree": {
+      "b_equals_0": [],
+      "c_equals_0": [],
+      "top_weight": []
+    },
+    "vertices": []
+  },
+  "individual_face_squarefree": {
+    "b_equals_0": {
+      "all_squarefree": true,
+      "failures": []
+    },
+    "c_equals_0": {
+      "all_squarefree": true,
+      "failures": []
+    },
+    "top_weight": {
+      "all_squarefree": true,
+      "failures": []
+    }
+  },
+  "jacobi_contiguous_identities_checked_m": [
+    0,
+    125
+  ],
+  "limitations": [
+    "finite gcd and squarefreeness sweeps are not all-d proofs",
+    "this script does not test the interior Jacobian ideal",
+    "this script does not test G_(d+2) in the affine quotient"
+  ],
+  "mixed_volume_residue_formulas": {
+    "d=6q": "6q^2+q",
+    "d=6q+1": "6q^2+3q",
+    "d=6q+2": "6q^2+5q+1",
+    "d=6q+3": "6q^2+7q+2",
+    "d=6q+4": "6q^2+9q+3",
+    "d=6q+5": "6q^2+11q+5"
+  },
+  "negative_controls": {
+    "injected_common_factor_detected": true,
+    "perturbed_identity_detected": true
+  },
+  "newton_support": "all (b,c) in Z_{>=0}^2 with 2b+3c<=n",
+  "range": [
+    2,
+    250
+  ],
+  "schema": "irreducible-norms.affine-face-audit.v1",
+  "shared_facet_normals_for_d_ge_8": [
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "small_d_shared_facet_normals": {
+    "2": [
+      [
+        0,
+        -1
+      ]
+    ],
+    "3": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "4": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "5": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "6": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "7": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "8": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "status": "PASS"
+}

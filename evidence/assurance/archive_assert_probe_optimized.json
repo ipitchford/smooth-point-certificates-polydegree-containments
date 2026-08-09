@@ -1,0 +1,16 @@
+{
+  "assertion_triggered": false,
+  "debug_mode": false,
+  "injected_numerator": 1,
+  "interpretation": "optimized mode removes the guard and accepts floor-divided data",
+  "probe_status": "PASS",
+  "python_optimization_level": 1,
+  "required_divisor": 2,
+  "returned": [
+    0,
+    0,
+    0
+  ],
+  "schema": "irreducible-norms.archive-assert-fragility-probe.v1",
+  "silent_floor_division_observed": true
+}

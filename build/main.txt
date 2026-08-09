@@ -1,0 +1,936 @@
+       Smooth-point certificates for Polydegree containments
+             A Jacobian interpretation of the Lewis–Perry–Straub determinant
+
+                                      Anonymous
+
+                                     9 August 2026
+
+
+
+Contents
+Abstract                                                                        2
+
+1 Introduction                                                                  2
+
+2 Coefficient polynomials and formal inversion                                  4
+
+3 The auxiliary determinant is a Jacobian                                       5
+
+4 Weighted Euler syzygy and the smooth-point criterion                          6
+
+5 A smaller Hensel certificate                                                  8
+
+6 A curve-theoretic route to the same point                                     9
+
+7 Exact e = 3 geometry and the uniform conjecture                              10
+
+8 Computational assurance and reproducibility                                  13
+
+9 Discussion                                                                   14
+
+10 Limitations                                                                 15
+
+11 Conclusion                                                                  16
+
+Declarations                                                                   16
+
+References                                                                     17
+
+
+
+
+                                            1
+Abstract
+Lewis, Perry and Straub introduced integral coefficient polynomials gn,e and an auxiliary determinant ad,e
+whose simultaneous specialisation yields containments between strata of plane polynomial automorphisms.
+We make explicit a differential structure hidden in their definitions. The entries of the determinant are
+precisely negative partial derivatives,
+
+
+                                             αi,j,e = −∂xi+1 gj+1,e ,
+
+so ad,e is, up to the sign (−1)e , the Jacobian determinant of gd,e , . . . , gd+e−1,e . Weighted Euler identities
+then give an exact integral syzygy. In the chart x1 = 1, this converts the original non-vanishing condition
+into a smooth-point condition for gd,e = · · · = gd+e−2,e = 0 together with avoidance of the next coefficient
+hypersurface.
+This reformulation yields a smaller finite-field certificate. A simple common zero modulo a prime with
+non-zero next coefficient lifts to characteristic zero; no condition excluding primes dividing d + e − 1 is
+needed. We also prove a curve-theoretic bridge in which a reduced affine zero divisor supplies the required
+Jacobian point. Exact computations for e = 3 show that, for 2 ≤ d ≤ 20, the entire affine complete
+intersection is reduced and avoids the next coefficient. We also prove that every one-variable boundary
+factor has only simple positive roots, while adjacent boundary coprimality is checked through d = 200.
+These results motivate, but do not prove, a uniform all-d affine conjecture. The paper separates proved
+identities, inherited theorems, exact finite evidence and open claims throughout.
+Keywords: plane polynomial automorphisms; Polydegree Conjecture; Jacobian criterion; multivariate
+Hensel lifting; weighted homogeneous polynomials; complete intersections; computer-assisted mathematics
+
+
+1     Introduction
+The group of polynomial automorphisms of the complex affine plane carries two structures whose interaction
+is subtle. The Jung–van der Kulk decomposition assigns a polydegree sequence to each automorphism,
+while the group is also an ind-variety in which one can ask when one polydegree stratum lies in the Zariski
+closure of another. Lewis, Perry and Straub recast a family of these containment questions in terms of
+explicit coefficient polynomials and proved a specialisation theorem: suitable complex values of x1 , . . . , xe
+imply
+
+
+                                               G(d+e) ⊆ G(d,e+1) .                                           (1.1)
+
+Their formulation makes the problem algorithmically decidable for fixed (d, e) and produced computer-
+aided ranges for e = 3, 4, 5 (Lewis et al. 2019). Perry’s earlier thesis developed the same computational
+direction for the case later indexed by Lewis–Perry–Straub as e = 3 (Perry 2016). The coefficient
+polynomials also sit within the rigidity and Strong Factorial framework of Edo and van den Essen (Edo
+and Essen 2014).
+The determinant appearing in the Lewis–Perry–Straub criterion was described there as presently unmoti-
+vated (Lewis et al. 2019). The starting point of this paper is that it is not an additional object: it is the
+Jacobian determinant of the coefficient map already under study. Once this observation is combined with
+weighted homogeneity, the original specialisation criterion becomes a local geometric question:
+
+      Find one smooth point of the partial coefficient complete intersection that does not lie on the
+      next coefficient hypersurface.
+
+
+
+                                                        2
+That change of language has concrete consequences. It removes the full e × e determinant from a finite-field
+search, permits useful primes previously rejected by a residue-level determinant test, and joins two
+seemingly different proof routes: Hensel lifting from a finite field and divisor separation on a curve.
+
+
+1.1    Contributions
+
+The proved contributions are as follows.
+
+  1. We give a formal-inverse proof that every displayed rational multinomial formula for gn,e is an
+     element of Z[x1 , . . . , xe ].
+
+  2. We prove the derivative and determinant identities
+
+                                      ∂gj+1,e
+                         αi,j,e = −           ,       ad,e = (−1)e det D(gd,e , . . . , gd+e−1,e ).
+                                       ∂xi+1
+
+  3. We derive an exact weighted-Euler syzygy, not merely an equality after evaluation on a zero locus.
+     It identifies the Lewis–Perry–Straub non-vanishing condition with the non-vanishing of an affine
+     Jacobian minor and the next coefficient.
+  4. We prove a reduced finite-field certificate theorem. A modular common zero at which the affine
+     minor and the next coefficient are non-zero suffices. The prime may divide d + e − 1: the original
+     determinant then vanishes in the residue field but remains non-zero at the characteristic zero lift.
+
+  5. We prove a prime–gap–Jacobian bridge on a smooth complete-intersection curve, including the affine-
+     support and perfect-ground-field hypotheses needed for coefficient-one prime-divisor applications.
+  6. For e = 3 we prove uniform squarefreeness of the one-variable boundary factors by a terminating
+     hypergeometric factorisation and finite free convolution. We also report exact finite computations
+     that test a stronger scheme-theoretic conjecture. For 2 ≤ d ≤ 20, every affine common point is
+     smooth and avoids the next coefficient, and adjacent boundary coprimality is checked through
+     d = 200. Neither bounded sweep is promoted to an all-d theorem.
+
+
+1.2    Relation to prior results and novelty boundary
+
+Lewis–Perry–Straub Theorem 13 records the ranges
+
+
+                    e = 3, 2 ≤ d < 50;            e = 4, 2 ≤ d < 20;        e = 5, 2 ≤ d ≤ 12,
+
+while their Theorem 14, attributed to Edo, proves (1.1) whenever d − 1 is divisible by e (Lewis et al.
+2019). In particular, for e = 3 the class d ≡ 1 (mod 3) is already an infinite family. The present paper
+therefore does not claim the first infinite family, nor does it claim an all-d result.
+A bounded search of the primary paper, Perry’s thesis, the Strong Factorial paper and indexed citing
+literature did not locate the derivative–Jacobian packaging developed here. That is provisional negative
+evidence, not proof of priority. The safe claim is that we make explicit and exploit a Jacobian structure
+that was not found in the sources inspected through 9 August 2026. Authenticated specialist-database
+searches, original-author contact, expert review and journal peer review remain outstanding.
+
+
+
+
+                                                          3
+1.3     Evidence classes
+Four evidence classes are used below.
+
+Label                                                               Meaning
+Proved                                                              A general argument is included in this manuscript.
+Inherited                                                           A result is used from a cited external source,
+                                                                    chiefly Lewis–Perry–Straub Theorem 4.
+Exactly checked                                                     A finite statement was evaluated with exact
+                                                                    arithmetic and retained receipts.
+Open                                                                A conjecture or priority question is explicitly
+                                                                    unresolved.
+
+
+Internal replay, code-path diversity and mutation controls improve confidence in the exact computations.
+They are not independent reproduction, formal verification, expert acceptance or peer review.
+
+
+2      Coefficient polynomials and formal inversion
+Fix e ≥ 1. For a = (a1 , . . . , ae ) ∈ Ze≥0 , write
+
+                              |a| = a1 + · · · + ae ,       a·N = a1 + 2a2 + · · · + eae .
+
+For n ≥ 0, define
+
+                                              1        |a| n + |a|
+                                                 X                
+                                      gn,e =       (−1)             xa .                                         (2.1)
+                                             n+1            a, n
+                                                        a·N=n
+
+For 0 ≤ i ≤ e − 1 and j ≥ −1, define
+
+                                                                 |a| + j + 2 a
+                                                  X                        
+                                      αi,j,e =             (−1) |a|
+                                                                             x ,                                 (2.2)
+                                                                   a, j + 2
+                                                 a·N=j−i
+
+with an empty sum when j − i < 0, and put
+
+                                      ad,e = det(αi,j,e )0≤i≤e−1, d−1≤j≤d+e−2 .                                  (2.3)
+
+These are the definitions used by Lewis, Perry and Straub (Lewis et al. 2019). The factor 1/(n + 1) in
+(2.1) makes integrality worth stating before reduction modulo a prime.
+
+
+Lemma 2.1 (integrality and inverse coefficients) [Proved]
+Let I(w) be the unique compositional inverse of
+
+                                           H(t) = t + x1 t2 + · · · + xe te+1 .
+
+Then
+
+                                I(w) ∈ Z[x1 , . . . , xe ][[w]],        gn,e = [wn+1 ]I(w).                      (2.4)
+
+
+                                                                4
+Proof
+
+Write I(w) = w +                   m
+                                       . In the identity
+                    P
+                        m≥2 cm w
+
+
+                                               I + x1 I 2 + · · · + xe I e+1 = w,
+
+the coefficient of wm is cm plus an integer polynomial in x1 , . . . , xe , c2 , . . . , cm−1 . Induction therefore
+gives cm ∈ Z[x1 , . . . , xe ].
+Formal Lagrange inversion gives
+
+                                                    1
+                            [wn+1 ]I(w) =              [tn ](1 + x1 t + · · · + xe te )−(n+1) .
+                                                   n+1
+
+Expanding the negative power multinomially yields exactly (2.1). Hence the apparently rational expression
+is an integral polynomial. □
+The recursion in the first paragraph and the multinomial expression in the second are algebraically different
+constructions of the same coefficients. They are used as separate internal replay paths in the evidence
+package.
+
+
+3     The auxiliary determinant is a Jacobian
+
+Proposition 3.1 (derivative identity) [Proved]
+
+For 0 ≤ i ≤ e − 1 and j ≥ −1,
+
+                                                                       ∂gj+1,e
+                                                      αi,j,e = −               .                              (3.1)
+                                                                        ∂xi+1
+
+
+Proof
+
+Only terms of gj+1,e whose xi+1 exponent is positive survive differentiation. Put b = a + ei+1 . Then
+
+
+                                             a · N = j − i,             |b| = |a| + 1.
+
+After multiplication by bi+1 = ai+1 + 1, the coefficient of xa in the derivative is
+
+                                        1              (j + 1 + |b|)!
+                                           (−1)|a|+1                             (ai+1 + 1)
+                                       j+2           b1 ! · · · be !(j + 1)!
+                                                                       (j + 2 + |a|)!
+                                                  = (−1)|a|+1                                .
+                                                                     a1 ! · · · ae !(j + 2)!
+
+This is the negative of the coefficient in (2.2). Summing over the common index set proves (3.1). □
+For d ≥ 2 and e ≥ 2, let
+                                                                  
+                                                         ∂gd+r,e
+                                           Dd,e =                                        .
+                                                          ∂xs          0≤r≤e−1, 1≤s≤e
+
+
+
+                                                                   5
+Corollary 3.2 (full determinant identity) [Proved]
+
+                                                 ad,e = (−1)e det Dd,e .                                     (3.2)
+
+
+Proof
+
+The matrix in (2.3) is −Dd,e
+                         T
+                             by Proposition 3.1. Its determinant is therefore (−1)e det Dd,e . □
+Thus ad,e tests whether the full coefficient map
+
+
+                                        (x1 , . . . , xe ) 7−→ (gd,e , . . . , gd+e−1,e )
+
+is locally invertible. The specialisation theorem does not, however, require all e coefficients to vanish. The
+next section extracts the relevant minor on the partial zero locus.
+
+
+4      Weighted Euler syzygy and the smooth-point criterion
+Give xs weight s. Each gn,e is weighted homogeneous of weight n, so
+
+                                                 e
+                                                 X           ∂gn,e
+                                                       sxs         = ngn,e .                                 (4.1)
+                                                 s=1
+                                                              ∂xs
+
+Define the affine minor
+                                                                   
+                                                        ∂gd+r,e
+                                       Jd,e = det                                           .                (4.2)
+                                                         ∂xs        0≤r≤e−2, 2≤s≤e
+
+
+For 0 ≤ r ≤ e − 1, let Mr be the determinant of the (e − 1) × (e − 1) submatrix of Dd,e obtained by
+deleting row r and the x1 column. In particular, Me−1 = Jd,e .
+
+
+Proposition 4.1 (exact weighted-Euler syzygy) [Proved]
+
+In Z[x1 , . . . , xe ],
+
+                                                                        e−2
+                                                                        X
+                          x1 ad,e + (d + e − 1)gd+e−1,e Jd,e =                (−1)e+r (d + r)gd+r,e Mr .     (4.3)
+                                                                        r=0
+
+
+Consequently,
+
+
+                          x1 ad,e ≡ −(d + e − 1)gd+e−1,e Jd,e            (mod (gd,e , . . . , gd+e−2,e )).   (4.4)
+
+
+
+
+                                                                6
+Proof
+
+In Dd,e replace the first column by
+
+                                                       e
+                                                       X
+                                                C=           sxs (Dd,e )s .
+                                                       s=1
+
+By multilinearity, the resulting determinant is x1 det Dd,e : every summand with s ≥ 2 repeats an existing
+column. Equation (4.1) makes entry r of C equal to (d + r)gd+r,e . Expanding down the first column and
+using (3.2) gives
+
+                                                e−1
+                                                X
+                                    x1 ad,e =         (−1)e+r (d + r)gd+r,e Mr .
+                                                r=0
+
+
+The last summand is −(d + e − 1)gd+e−1,e Jd,e . Moving it to the left proves (4.3), and (4.4) follows. □
+
+
+Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved]
+
+Let K be a field and let P ∈ K e satisfy
+
+
+                                       gd,e (P ) = · · · = gd+e−2,e (P ) = 0.
+
+Assume x1 (P ) ̸= 0 and char K ∤ d + e − 1. Then the following are equivalent:
+
+  1. gd+e−1,e (P ) ̸= 0 and ad,e (P ) ̸= 0;
+  2. gd+e−1,e (P ) ̸= 0 and Jd,e (P ) ̸= 0;
+  3. P lies outside V (gd+e−1,e ), and the closed subscheme
+
+                                       Spec K[x1 , . . . , xe ]/(gd,e , . . . , gd+e−2,e )
+
+      is smooth of codimension e − 1 at P .
+
+
+Proof
+
+On the common zero locus, (4.4) makes (1) and (2) equivalent under the stated unit hypotheses. For
+each of the first e − 1 coefficient polynomials, (4.1) expresses its x1 derivative as a linear combination
+of its x2 , . . . , xe derivatives because x1 (P ) ̸= 0. Hence the partial Jacobian has rank e − 1 exactly when
+the square minor (4.2) is non-zero. The Jacobian criterion for a subscheme cut out by e − 1 equations in
+affine e-space gives the equivalence with (3). □
+The characteristic restriction belongs to this residue-field equivalence. It will disappear from the finite-
+field-to-characteristic-zero theorem.
+
+
+
+
+                                                             7
+5     A smaller Hensel certificate
+Work in the chart x1 = 1 and put
+
+                                    Fr (x2 , . . . , xe ) = gd+r,e (1, x2 , . . . , xe ).                  (5.1)
+
+The system F0 = · · · = Fe−2 = 0 has e − 1 equations in e − 1 variables, and its Jacobian determinant is
+Jd,e (1, x2 , . . . , xe ).
+
+
+Theorem 5.1 (smooth finite-field certificate) [Proved]
+Let d ≥ 2 and e ≥ 2. Suppose that a prime p and a point Q ∈ Fe−1
+                                                             p   satisfy
+
+                          F0 (Q) = · · · = Fe−2 (Q) = 0,             Fe−1 (Q)Jd,e (1, Q) ̸= 0.             (5.2)
+
+Then there is a complex specialisation satisfying the hypotheses of Lewis–Perry–Straub Theorem 4.
+Consequently,
+
+                                                  G(d+e) ⊆ G(d,e+1) .                                      (5.3)
+
+
+Proof
+
+The non-zero Jacobian determinant makes Q a simple zero of the square system F0 = · · · = Fe−2 = 0.
+Lemma 2.1 shows that all these polynomials have integral coefficients. Multivariate Hensel lifting therefore
+produces an exact lift Q e ∈ Ze−1
+                               p   in the same residue class. The values Fe−1 ( e Q) and Jd,e (1, e
+                                                                                                 Q) remain
+p-adic units. This is precisely the simple-root setting of multivariate Hensel lifting (Grochow 2025).
+Consider the localisation
+
+                                              Q[x2 , . . . , xe , 1/(Fe−1 Jd,e )]
+                                       R=                                         ,                        (5.4)
+                                                     (F0 , . . . , Fe−2 )
+
+where Jd,e is evaluated at x1 = 1. Evaluation at Qe defines a unital Q-algebra homomorphism R → Qp , so
+R ̸= 0. The extension Q ⊂ C is faithfully flat; hence R ⊗Q C ̸= 0 (Stacks project authors 2026a). This is
+a non-zero finite-type C-algebra. A maximal ideal and the weak Nullstellensatz give a complex point at
+which the first e − 1 equations vanish and Fe−1 Jd,e does not (Stacks project authors 2026b). Corollary 4.2,
+now in characteristic zero, shows that ad,e is non-zero there. The inherited Lewis–Perry–Straub Theorem
+4 yields (5.3) (Lewis et al. 2019). □
+The proof does not assert an embedding Qp ,→ C. The bridge is the non-zero localised Q-algebra and
+faithful scalar extension.
+
+
+Remark 5.2 (bad-characteristic rescue)
+No assumption p ∤ d + e − 1 is needed in Theorem 5.1. If p | d + e − 1, equation (4.4) forces the residue of
+ad,e to vanish at a finite-field common zero. At the exact p-adic lift, however,
+
+                          ad,e (1, e
+                                  Q) = −(d + e − 1)Fe−1 ( e
+                                                         Q)Jd,e (1, e
+                                                                   Q) ̸= 0                  in Qp .        (5.5)
+
+The integer d + e − 1 may be a nonunit in Zp , but it is not zero in the characteristic-zero field Qp . Thus the
+old modular ad,e -unit test is strictly stronger than the certificate actually needed for complex existence.
+
+
+                                                             8
+Example 5.3 (exact positive regression) [Exactly checked]
+
+For e = 3, d = 8, p = 5 and (x1 , x2 , x3 ) = (1, 3, 0), exact finite-field evaluation gives
+
+
+                    g8,3 = g9,3 = 0,      g10,3 = 2,         J8,3 = 3,     a8,3 = 0   (mod 5).
+
+The legacy determinant-unit certificate rejects this point. Theorem 5.1 accepts it, and (5.5) proves that
+the determinant at the exact 5-adic lift is non-zero. The fixture is retained as a positive regression test; it
+is not merely an illustrative calculation.
+
+
+6     A curve-theoretic route to the same point
+The smooth-point criterion also clarifies what a divisor argument must prove. The statement below
+deliberately distinguishes an algebraically closed geometric theorem from descent over a perfect ground
+field.
+
+
+Theorem 6.1 (prime–gap–Jacobian bridge) [Proved]
+
+Work over C in the chart x1 = 1. Suppose the first e − 2 polynomials
+
+
+                                                  F0 , . . . , Fe−3
+
+cut out a smooth, geometrically integral complete-intersection curve C ⊂ Ae−1 scheme-theoretically.
+Let C be its smooth projective completion, and regard the Fr as rational functions on C. Assume:
+
+    1. Fe−2 |C is non-zero, and its zero divisor is non-empty, reduced and supported inside the affine open
+       C;
+    2. Fe−1 (Q) ̸= 0 at every point Q ∈ Supp(Fe−2 |C )0 .
+
+Then every point Q of that zero divisor satisfies
+
+
+                          F0 (Q) = · · · = Fe−2 (Q) = 0,         Fe−1 (Q)Jd,e (1, Q) ̸= 0.                (6.1)
+
+Consequently, each such point supplies a Lewis–Perry–Straub specialisation.
+
+
+Proof
+
+The support condition makes Q an affine point at which all displayed functions are regular. Smooth
+complete-intersection status says that dF0 , . . . , dFe−3 are independent and cut the tangent space down to
+the one-dimensional space TQ C. Reducedness of the zero divisor means that Fe−2 |C has a simple zero,
+equivalently dFe−2 |TQ C ̸= 0. Hence dF0 , . . . , dFe−2 are independent. Their square Jacobian determinant
+is Jd,e (1, Q), so it is non-zero. The second hypothesis supplies the other factor in (6.1), and Corollary 4.2
+gives the original determinant condition. □
+The requirement that C be the scheme-theoretic complete intersection is load-bearing. Smoothness of
+a selected component would not exclude another component or embedded structure from changing the
+Jacobian statement. The affine-support condition is equally necessary: a zero at the projective boundary
+does not define a point in the chart used by Theorem 5.1.
+
+
+                                                         9
+Corollary 6.2 (perfect-ground-field descent) [Proved]
+
+Let k ⊂ C be a perfect field of characteristic zero, and choose its algebraic closure k inside C. Suppose the
+scheme-theoretic complete intersection C, its smooth projective completion and the Fr are defined over k.
+Assume the zero divisor of Fe−2 is one closed point with coefficient one, is supported in the affine open C,
+and is disjoint from the zero and pole support of Fe−1 . Then, after base change to k, every geometric
+point above that closed point satisfies Theorem 6.1.
+
+
+Proof
+
+Over a perfect field, the residue extension of a closed point is separable. A coefficient-one closed point
+therefore becomes a disjoint reduced collection of geometric points after base change. Affine support and
+disjointness from the zero and pole support of Fe−1 are preserved by base change, so Theorem 6.1 applies.
+□
+Over an algebraically closed field, an individual closed point has degree one. A degree-h coefficient-one
+prime certificate must therefore be formulated over its ground field and then base-changed; phrasing it
+only over C loses the arithmetic degree information.
+
+
+7     Exact e = 3 geometry and the uniform conjecture
+Set
+
+
+                           Gn (X, Y ) = gn,3 (1, X, Y ),        Id = (Gd , Gd+1 ) ⊂ Q[X, Y ],
+
+and
+
+                                                           ∂(Gd , Gd+1 )
+                                               Jd = det                  .
+                                                             ∂(X, Y )
+
+The following section reports exact finite calculations. It is not used to prove the general identities above.
+
+
+Proposition 7.1 (verified affine range) [Exactly checked]
+
+For every 2 ≤ d ≤ 20, exact Gr"obner-basis computation over Q establishes:
+
+    1. gd,3 and gd+1,3 have homogeneous greatest common divisor 1;
+    2. Id is zero-dimensional and
+
+                                                                         d(d + 1)
+                                                                                 
+                                            dimQ Q[X, Y ]/Id =                      ;                   (7.1)
+                                                                            6
+
+    3. Id + (Jd ) = (1);
+    4. Id + (Gd+2 ) = (1).
+
+
+
+
+                                                           10
+The quotient lengths for d = 2, . . . , 20 are
+
+                          1, 2, 3, 5, 7, 9, 12, 15, 18, 22, 26, 30, 35, 40, 45, 51, 57, 63, 70.
+
+Because Id is a height-two complete intersection in the smooth surface A2 , the third identity says that
+every geometric point has full Jacobian rank. The entire affine scheme is therefore reduced, indeed
+finite '{e}tale over Q. The fourth identity says scheme-theoretically that no affine common point lies on
+Gd+2 = 0. Thus every affine point in the verified range is a valid smooth specialisation.
+
+
+7.1     Newton polygons and the observed length
+The Newton polygon of Gn is
+
+                                    ∆n = conv{(b, c) ∈ Z2≥0 : 2b + 3c ≤ n}.
+
+An exact six-residue-class calculation gives
+
+                                                                    d(d + 1)
+                                                                            
+                                         MV(∆d , ∆d+1 ) =                      .                    (7.2)
+                                                                       6
+The observed quotient length therefore reaches the Newton mixed-area count. This suggests a toric non-
+degeneracy proof, but the specific coefficients of Gd , Gd+1 must be controlled; generic support geometry
+alone is not a proof for this pair.
+
+
+7.2     Boundary reduction
+Put
+
+                                            Bn (X, Y ) = gn,3 (0, X, Y ).
+
+Let ϵ = n mod 2, A = (n − 3ϵ)/2, and z = Y 2 /X 3 . On the boundary torus XY ̸= 0,
+
+                                                 Bn = X A Y ϵ Pn (z),
+
+where
+
+                                             ⌊A/3⌋
+                                     1  X             (n + A + ϵ − k)! k
+                           Pn (z) =       (−1)A+ϵ−k                      z .                        (7.3)
+                                    n+1             n!(A − 3k)!(ϵ + 2k)!
+                                              k=0
+
+The adjacent coefficient ratio is
+
+                           [z k+1 ]Pn       (A − 3k)(A − 3k − 1)(A − 3k − 2)
+                                      =−                                         .                  (7.4)
+                            [z k ]Pn     (n + A + ϵ − k)(ϵ + 2k + 1)(ϵ + 2k + 2)
+The minimum exponents give a uniform elementary statement: the common monomial factor of Bd and
+Bd+1 is
+
+                                  X     if d ≡ 1     (mod 3),          1   otherwise.               (7.5)
+
+No power X 2 and no Y divides both. Ruling out a further torus factor is separate.
+
+
+                                                           11
+Theorem 7.2 (uniform boundary squarefreeness) [Proved]
+
+For every n ≥ 2, every zero of Pn is real, positive and simple. In particular, Pn is squarefree over every
+characteristic-zero field.
+
+
+Proof
+
+Put M = ⌊A/3⌋, write A = 3M + δ with δ ∈ {0, 1, 2}, and let cn,M be the non-zero leading coefficient of
+Pn . Set
+                                                                  (
+                                                                      1/2,      ϵ = 0,
+            N = n + A + ϵ,       H = N − M + 1,              σ=                          a = −M + σ,
+                                                                      −1/2,     ϵ = 1,
+
+and
+                                                  
+                                                  (1/3, 2/3),
+                                                                      δ = 0,
+                                      (β1 , β2 ) = (2/3, 4/3),         δ = 1,
+                                                    (4/3, 5/3),        δ = 2.
+                                                  
+                                                  
+
+
+Exact division of consecutive coefficients in (7.3) gives the reciprocal identity
+
+                                  sM Pn (1/s)          −M, a, H 4s
+                                                                      
+                                              = 3 F2             ;−      .                             (7.6)
+                                     cn,M               β1 , β 2    27
+
+Let
+                                                                      
+                                                           −M, a, H
+                                       Fn (x) = 3 F2                 ;x .
+                                                            β1 , β 2
+
+The hypergeometric concatenation theorem for degree-M multiplicative finite free convolution gives, up
+to a non-zero scalar,
+
+
+                  Fn = pn ⊠M qn ,     pn = 2 F1 (−M, a; β1 ; x),        qn = 2 F1 (−M, H; β2 ; x)      (7.7)
+
+(Martínez-Finkelshtein et al. 2024b). The Pfaff transformation (DLMF 15.8.1), the Jacobi representation
+(DLMF 18.5.7), and the strict ordering of Jacobi zeros (DLMF 18.16.1) show that pn has M simple
+negative roots and qn has M simple roots in (0, 1). The relevant Jacobi parameter pairs are
+
+
+                                 (β1 − 1, −σ),         (β2 − 1, H − M − β2 ),
+
+and every entry exceeds −1 (Olver et al. 2026). Sign preservation for finite free convolution therefore
+makes Fn negative-rooted.
+It remains to exclude repeated roots. Reflect pbn (x) = pn (−x). For M ≥ 2 its positive roots are simple, so
+its logarithmic mesh is greater than one. Proposition 2.17 of Martínez-Finkelshtein, Morales and Perales
+gives
+
+
+                                    lmesh(b
+                                          pn ⊠M qn ) ≥ lmesh(b
+                                                             pn ) > 1
+
+
+
+                                                        12
+(Martínez-Finkelshtein et al. 2024a). Hence the reflected convolution has simple positive roots; the
+reflection identity makes Fn simple and negative-rooted. The cases M = 0, 1 are respectively constant
+and linear. Finally, the scale in (7.6) and reciprocation turn the roots into simple positive roots of Pn . □
+The logarithmic-mesh step is load-bearing. A broader strict-interlacing wording for a merely non-negative-
+rooted convolution factor admits a degenerate counterexample; that formulation is not used here.
+
+
+Proposition 7.3 (verified adjacent boundary range) [Exactly checked]
+
+For every 2 ≤ d ≤ 200,
+
+
+                                             gcd(Pd , Pd+1 ) = 1,
+
+so through this range the full boundary gcd is exactly the factor in (7.5).
+When d ≡ 1 (mod 3), the boundary support is the coarse point [0 : 0 : 1]. On the µ3 uniformising cover of
+the weighted stack P(1, 2, 3), the lowest terms of the two equations are independent linear coordinates.
+The intersection is transverse on that cover and contributes 1/3 to the stack intersection number. This
+explains the floor in (7.1); 1/3 is an orbifold intersection contribution, not a fractional coarse-scheme
+length.
+
+
+Conjecture 7.4 (uniform affine smoothness) [Open]
+
+For every d ≥ 2, the ideal (Gd , Gd+1 ) is radical of length
+
+                                                    d(d + 1)
+                                                            
+                                                               ,
+                                                       6
+
+and both Jd and Gd+2 are units in its coordinate algebra.
+This would prove more than existence: every affine common point would be a valid smooth specialisation.
+The exact ranges above strongly constrain a future proof, but extending those ranges alone would add little
+mathematics. The open structural tasks are uniform adjacent boundary coprimality, toric non-degeneracy
+or radicality, Jacobian non-vanishing, and exclusion of a triple common zero.
+
+
+8     Computational assurance and reproducibility
+
+8.1    Frozen finite-field corpus
+
+The upstream v0.3.0 archive contains one finite-field witness for each 50 ≤ d ≤ 100. Its witness JSON is
+byte-identical to the earlier v0.2.0 corpus audited in this project. A fresh reconciliation on 9 August 2026
+established:
+
+              Gate                                                                      Result
+              v0.3.0 manifest                                                 38/38 files match
+              upstream dual-path verifier                          51/51 under ordinary Python
+              upstream dual-path verifier                               51/51 under python -O
+              independent standard-library symbolic gates                  10/10 in both modes
+              independent witness relations                                51/51 in both modes
+
+
+
+                                                       13
+              Gate                                                                     Result
+              independent reports                                byte-identical across modes
+
+
+The independent verifier does not import the archive code. It uses sparse integer dictionaries, a generic
+permutation determinant and separate weighted-composition enumeration. This is internal code-path
+diversity, not reproduction by an unaffiliated group.
+
+
+8.2    Negative controls
+
+Sixteen mutation or negative controls and the positive bad-characteristic fixture of Example 5.3 were
+exercised under ordinary and optimised Python. They cover wrong derivative and determinant signs,
+shifted indices, ordinary in place of weighted Euler coefficients, corrupt residues and points, composite
+moduli, missing rows, singular points, malformed types and an injected non-integral coefficient. All
+expected outcomes were observed in both modes.
+
+
+8.3    A retained fail-open defect
+
+The upstream verifier still contains a proof-critical Python assert guarding coefficient divisibility before
+floor division. Optimised Python removes that guard. An injected non-integral numerator is rejected in
+ordinary mode but silently floor-divided under python -O. The unmodified witness corpus passes in both
+modes, and the independent verifier uses explicit exceptions; there is no evidence that a current row is
+false. The defect is nevertheless retained in the record because it is a real failure-detection weakness in
+the upstream release.
+
+
+8.4    Geometry receipts
+
+The affine sweep uses exact arithmetic over Q with two independent constructions of each Gn and Singular
+for ideal computations. The boundary sweep uses exact univariate arithmetic. Ordinary and optimised
+Python runs produced byte-identical JSON receipts. The evidence archive records software versions,
+commands and SHA-256 hashes.
+
+
+8.5    Assurance boundary
+
+The package establishes that the stated scripts replay the stated finite relations and that the written
+identities survived adversarial sign and index checks. It does not establish novelty, priority, independent
+reproduction, proof-assistant verification, specialist acceptance, journal acceptance or the open all-d
+conjecture.
+
+
+9     Discussion
+
+9.1    What the Jacobian reformulation changes
+
+The determinant identity is elementary once the two definitions are aligned, but its value is organisational.
+It compresses three layers:
+
+         auxiliary determinant −→ Jacobian rank −→ smooth point avoiding one hypersurface.
+
+
+                                                     14
+For computation, the full determinant and its alpha-matrix implementation can be removed from the
+search criterion. For geometry, one may use any method that produces a reduced point away from the next
+coefficient. For arithmetic, a simple residue-class point can be lifted even when the original determinant
+vanishes modulo the chosen prime.
+The three residues gd+e−1,e , Jd,e and ad,e may still be evaluated redundantly to catch software errors.
+They are not algebraically independent on the common-zero locus: equation (4.4) couples them exactly.
+
+
+9.2    What remains difficult
+
+Internal reproducibility is no longer the main bottleneck. The decisive open problem is structural: prove
+that at least one good affine point exists for all d in an unresolved column, or prove the stronger Conjecture
+7.4. Three routes are now sharply separated:
+
+   1. prove uniform boundary coprimality and toric non-degeneracy;
+   2. exclude triple common zeros and singular intersections by recurrence or resultant identities;
+   3. construct a simple point asymptotically and certify a finite complement.
+
+Failure of this particular smooth-point route at one d would not disprove the Polydegree Conjecture.
+Lewis–Perry–Straub Theorem 4 gives a sufficient condition (Lewis et al. 2019).
+
+
+9.3    Significance and priority
+
+The paper’s current contribution is a reusable theorem package: a transparent Jacobian interpretation, an
+exact syzygy, a sharper Hensel criterion and a curve-theoretic bridge. The finite e = 3 geometry identifies
+a precise frontier rather than another arbitrary cutoff. A uniform theorem would materially increase
+significance; a larger finite table would not.
+Priority remains provisional. No inspected source states the present derivative–determinant–Euler chain,
+but the first identity is close to the multinomial reindexing already used in Lewis–Perry–Straub, and
+elementary observations are particularly vulnerable to unpublished or implicit prior use. Original-author
+contact and specialist review are therefore substantive next steps, not administrative decoration.
+
+
+10     Limitations
+   1. The Jacobian identities and bridge theorems have written proofs and internal adversarial review,
+      but no proof-assistant formalisation or external specialist validation.
+   2. The prior-art search is bounded. Authenticated MathSciNet, zbMATH and Scopus searches and
+      author contact were not completed.
+   3. The full affine statement is checked only for 2 ≤ d ≤ 20, and adjacent boundary coprimality only
+      through d = 200. Uniform squarefreeness of each individual boundary factor does not imply adjacent
+      coprimality. The finite bounds are evidence boundaries, not mathematical thresholds.
+   4. The 51 modular witnesses and their reimplementations originate within one research workflow.
+      Different code paths do not constitute unaffiliated reproduction.
+   5. The manuscript inherits the correctness and interpretation of Lewis–Perry–Straub Theorem 4. It
+      reproduces the hypotheses used but does not reprove their polynomial-automorphism construction.
+   6. No claim is made that the work currently meets a particular REF grade. Originality, significance
+      and rigour require separate assessment, and publication infrastructure does not determine any of
+      them.
+
+
+
+                                                     15
+11     Conclusion
+The Lewis–Perry–Straub determinant is the Jacobian of their coefficient map. Weighted homogeneity
+turns that identity into an exact syzygy and a smooth-point reformulation of the specialisation criterion.
+The resulting finite-field certificate is smaller and strictly more permissive: it needs a simple common zero
+and a non-zero next coefficient, even when the prime divides d + e − 1. The same formulation permits a
+divisor on a smooth curve to produce the required point.
+For e = 3, exact calculations show a notably strong finite pattern—the entire affine intersection is good
+through d = 20—while the boundary factors are uniformly squarefree. These results isolate a clean
+uniform conjecture. The responsible next advance is a structural proof or counterexample, not a longer
+table. Until then, the general Jacobian and Hensel theorems stand as the paper’s proved contribution,
+while the all-d statement remains open.
+
+
+Declarations
+
+Data and code availability
+
+All scripts, frozen witness data, exact JSON receipts, claim-status metadata and SHA-256 manifests used
+for this candidate are included in the accompanying reproducibility package. No DOI or public repository
+is claimed at this stage. Public URLs and immutable identifiers must be added only after a separately
+verified release.
+
+
+Ethics statement
+
+This is theoretical and computer-assisted mathematics. It involved no human participants, personal data,
+animals or clinical materials; institutional ethics approval was not applicable.
+
+
+Funding
+
+An accountable-author funding attestation has not yet been supplied. No funding status is asserted in
+this pre-deposit candidate; the declaration must be completed and approved by the accountable author
+before deposit.
+
+
+Competing interests
+
+An accountable-author competing-interest attestation has not yet been supplied. No absence-of-conflict
+claim is asserted in this pre-deposit candidate; the declaration must be completed and approved before
+deposit.
+
+
+Author contributions (CRediT)
+
+An accountable-author CRediT attestation has not yet been supplied. No contributor-role allocation is
+asserted in this pre-deposit candidate; the statement must be completed and approved before deposit.
+
+
+
+
+                                                     16
+AI and automated-tool disclosure
+
+Automated research, symbolic-computation and language-model tools assisted literature triage, proof
+exploration, exact verification, adversarial review, drafting and package preparation under human direction.
+They are not listed as authors. The human author is responsible for the submitted claims, source selection,
+final text and release decision. Agreement among AI-assisted checks is not represented as independent
+human review.
+
+
+Acknowledgements
+
+The candidate builds on the definitions and specialisation theorem of Drew Lewis, Kaitlyn Perry and
+Armin Straub. No endorsement by those authors is implied.
+
+
+References
+Edo, Eric, and Arno van den Essen. 2014. “The Strong Factorial Conjecture.” Journal of Algebra 397:
+  443–56. https://doi.org/10.1016/j.jalgebra.2013.09.011.
+
+Grochow, Joshua A. 2025. “Multivariate Hensel Lifting Without Assuming as Many Variables as Equations.”
+  The American Mathematical Monthly 132 (4): 350–55. https://doi.org/10.1080/00029890.2024.2440297.
+
+Lewis, Drew, Kaitlyn Perry, and Armin Straub. 2019. “An Algorithmic Approach to the Polydegree
+   Conjecture for Plane Polynomial Automorphisms.” Journal of Pure and Applied Algebra 223 (12):
+   5346–59. https://doi.org/10.1016/j.jpaa.2019.04.002.
+
+Martínez-Finkelshtein, Andrei, Rafael Morales, and Daniel Perales. 2024a. Real Roots of Hypergeometric
+  Polynomials via Finite Free Convolution. Version 3. https://arxiv.org/abs/2309.10970v3.
+
+Martínez-Finkelshtein, Andrei, Rafael Morales, and Daniel Perales. 2024b. Zeros of Generalized Hypergeo-
+  metric Polynomials via Finite Free Convolution. Applications to Multiple Orthogonality. Version 2.
+  https://arxiv.org/abs/2404.11479v2.
+
+Olver, F. W. J., A. B. Olde Daalhuis, D. W. Lozier, et al., eds. 2026. NIST Digital Library of Mathematical
+   Functions. Https://dlmf.nist.gov/, Release 1.2.7 of 2026-06-15. https://dlmf.nist.gov/.
+
+Perry, Kaitlyn Anne. 2016. “Polydegree Properties of Polynomial Automorphisms.” Doctoral dissertation,
+   The University of Alabama. https://ir.ua.edu/items/f71aa1b3-0dbc-42a2-9f59-3f01eb1a5529.
+
+Stacks project authors, The. 2026a. The Stacks Project. Https://stacks.math.columbia.edu. https:
+   //stacks.math.columbia.edu/tag/00HP.
+
+Stacks project authors, The. 2026b. The Stacks Project. Https://stacks.math.columbia.edu. https:
+   //stacks.math.columbia.edu/tag/00FV.
+
+
+
+
+                                                    17
+

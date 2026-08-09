@@ -1,0 +1,77 @@
+{
+  "schema": "academic-pipeline.stage2.5.integrity.v1",
+  "candidate": "smooth-point-certificates-polydegree-containments",
+  "version": "0.4.1-candidate",
+  "date": "2026-08-09",
+  "mode": "initial-verification-pre-review",
+  "correction_rounds_used": 1,
+  "verdict": "PASS_WITH_NOTES",
+  "phase_a": {
+    "references_total": 9,
+    "existence_passed": 9,
+    "metadata_and_target_passed": 9,
+    "orphan_records": 0,
+    "dangling_citations": 0
+  },
+  "phase_b": {
+    "citation_occurrences_total": 14,
+    "citation_occurrences_checked": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "phase_c": {
+    "scope": "all reported computational counts, hashes, and claimed finite ranges",
+    "status": "PASS",
+    "fresh_replay": {
+      "symbolic_gates": "10/10",
+      "witnesses": "51/51",
+      "controls": "17/17 in both modes",
+      "affine_range": [2, 20],
+      "boundary_range": [2, 200],
+      "hypergeom_identity_and_squarefree_n": [2, 301],
+      "supplementary_adjacent_gcd_d": [2, 300],
+      "supplementary_strict_interlacing_d": [2, 120]
+    }
+  },
+  "phase_d": {
+    "eligible_paragraphs": 132,
+    "sampled_paragraphs": 40,
+    "sample_rate_percent": 30.303,
+    "major_sections_covered": 12,
+    "major_sections_total": 12,
+    "grades": {
+      "ORIGINAL": 20,
+      "COMMON_KNOWLEDGE": 10,
+      "PARAPHRASE": 10,
+      "CLOSE_MATCH": 0,
+      "VERBATIM": 0
+    },
+    "self_plagiarism": "NOT_EXECUTABLE_ANONYMOUS_AUTHOR_NO_CORPUS"
+  },
+  "phase_e": {
+    "claims_total": 16,
+    "claims_checked": 16,
+    "VERIFIED_OR_CORRECTLY_STATUS_BOUNDED": 16,
+    "MINOR_DISTORTION": 0,
+    "MAJOR_DISTORTION": 0,
+    "UNVERIFIABLE": 0,
+    "UNVERIFIABLE_ACCESS": 0
+  },
+  "ai_failure_modes": {
+    "1_implementation_bug_passing_self_review": "CLEAR_WITH_DISCLOSED_LATENT_UPSTREAM_DEFECT",
+    "2_hallucinated_citation": "CLEAR",
+    "3_hallucinated_experimental_result": "CLEAR",
+    "4_shortcut_reliance": "CLEAR",
+    "5_bug_reframed_as_novel_insight": "CLEAR",
+    "6_methodology_fabrication": "CLEAR_AFTER_CORRECTION",
+    "7_early_frame_lock": "CLEAR"
+  },
+  "unresolved_serious": 0,
+  "unresolved_medium": 0,
+  "notes": [
+    "Originality screening is heuristic Web search, not professional plagiarism detection.",
+    "Self-plagiarism screening was not executable because the author is anonymous and no identity corpus was supplied.",
+    "Accountable-author declarations and publication identifiers remain pre-deposit blockers, but no unsupported declaration is asserted.",
+    "Producer-side replay and review are not independent reproduction, formal verification, specialist review, peer review, novelty, priority, acceptance, or a REF grade."
+  ]
+}

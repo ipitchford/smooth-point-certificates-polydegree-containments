@@ -1,0 +1,12 @@
+{
+  "assertion_triggered": true,
+  "debug_mode": true,
+  "injected_numerator": 1,
+  "interpretation": "normal mode rejects the injected non-integral coefficient",
+  "probe_status": "PASS",
+  "python_optimization_level": 0,
+  "required_divisor": 2,
+  "returned": null,
+  "schema": "irreducible-norms.archive-assert-fragility-probe.v1",
+  "silent_floor_division_observed": false
+}

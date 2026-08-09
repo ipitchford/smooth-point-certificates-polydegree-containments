@@ -1,0 +1,158 @@
+{
+  "schema": "irreducible-norms.stage2-5-correction-round.v1",
+  "round": 1,
+  "snapshot": "2026-08-09T20:11:57+0100",
+  "candidate": "work/irreducible-norms-ref-upgrade/stage2_5/candidate",
+  "principal_version": "0.4.1-candidate",
+  "candidate_modified": false,
+  "overall_verdict": "FAIL",
+  "pipeline_action": "BLOCK_STAGE_2_5_FREEZE",
+  "targeted_corrections": [
+    {
+      "id": "F1",
+      "status": "RESOLVED",
+      "finding": "Funding, competing-interest and CRediT sections explicitly mark attestations pending and assert no unsupported status or role allocation."
+    },
+    {
+      "id": "F2",
+      "status": "RESOLVED",
+      "finding": "Metadata records aiGenerated true and aiAssisted true with explicit language-model drafting disclosure."
+    },
+    {
+      "id": "F3",
+      "status": "RESOLVED",
+      "finding": "The one-line summary now says the uniform e=3 affine theorem remains open."
+    },
+    {
+      "id": "F4",
+      "status": "RESOLVED",
+      "finding": "N1 and X1 now use bounded and negative claim text consistent with their statuses."
+    },
+    {
+      "id": "F5",
+      "status": "RESOLVED",
+      "finding": "The v0.2 witness bytes are present; v0.2 and v0.3 files are byte-identical and share the expected SHA-256.",
+      "sha256": "b659a8bccea30df4f800df526319bcbe01f429c3bee2ee8146983933da9cb38b"
+    },
+    {
+      "id": "MODE_6",
+      "status": "CLEAR",
+      "finding": "AI generation/drafting provenance now matches the disclosure and the computational methods match retained receipts."
+    },
+    {
+      "id": "ABSTRACT_COUNT",
+      "status": "RESOLVED",
+      "raw_markdown_whitespace_tokens": 210,
+      "pandoc_plain_words": 207
+    }
+  ],
+  "fresh_validator": {
+    "normal_exit": 1,
+    "optimized_exit": 1,
+    "reports_byte_identical": true,
+    "report_sha256": "0b5454683edb04021eb97a77154908ec4415455de487e627ff383e523a1e4019",
+    "overall_status": "FAIL",
+    "failures": [
+      "missing required files: ACADEMIC_INTEGRITY_REPORT.md, AI_RESEARCH_FAILURE_MODE_AUDIT.md, CORRECTION_LOG.md, INTEGRITY_AUDIT.json, STAGE2_5_CHECKPOINT.md",
+      "Stage 2.5 exact-metadata citation repairs are absent or regressed"
+    ],
+    "focused_checks_passed": [
+      "author_attestation_boundary",
+      "claim_ledger",
+      "frozen_source_hashes",
+      "version_consistency for manuscript ledger and metadata",
+      "ai_provenance_consistency",
+      "pre-deposit metadata_boundary"
+    ]
+  },
+  "manifest": {
+    "normal": "FAIL",
+    "optimized": "FAIL",
+    "manifest_entries": 85,
+    "directory_files_including_manifest": 103,
+    "payload_files": 102,
+    "unmanifested_files": 17,
+    "digest_mismatches": 15,
+    "manifest_sha256": "1f355eb5178aec20311c5ea5b245d54796f7f46c9674c9b103f4ba5661be5815"
+  },
+  "blocking_integrity_findings": [
+    {
+      "id": "C1",
+      "finding": "The outer manifest is stale and fails in both modes."
+    },
+    {
+      "id": "C2",
+      "finding": "Five files required by the strengthened validator are absent."
+    },
+    {
+      "id": "C3",
+      "finding": "The citation gate falsely expects exactly two global 2026 bibliography records although the corrected bibliography has two Stacks records plus the 2026 DLMF release."
+    },
+    {
+      "id": "C4",
+      "finding": "Active reconciliation and retained optimized/publication-control reports still contain 0.4.0-candidate; the version gate does not detect them."
+    }
+  ],
+  "validator_strengths": [
+    "Explicit pending-attestation and old-declaration sentinels",
+    "Exact safe N1 and X1 polarity",
+    "Expected hash and byte comparison for v0.2 and v0.3 witnesses",
+    "Principal manuscript ledger metadata version consistency",
+    "AI generated assisted and language-model disclosure flags"
+  ],
+  "validator_gaps": [
+    "Incorrect global count for 2026 citation records",
+    "No gate for corrected metadata oneLine",
+    "No gate for 210 raw-Markdown and 207 Pandoc count conventions",
+    "AI disclosure gate does not require drafting",
+    "Version gate omits active support documents and retained reports",
+    "Old-declaration sentinels can miss paraphrases",
+    "Candidate validator does not invoke outer manifest validation"
+  ],
+  "mathematical_replay_receipts": {
+    "jacobian": {
+      "normal": "10/10 and 51/51 PASS",
+      "optimized": "10/10 and 51/51 PASS",
+      "sha256": "a6ace1972c6457be476ae808d7103d1fce40140617f9462de84ada80c7f03529"
+    },
+    "mutations": {
+      "normal": "17/17 PASS",
+      "optimized": "17/17 PASS"
+    },
+    "affine_d2_20": {
+      "normal": "PASS",
+      "optimized": "PASS",
+      "sha256": "f000424d80988ceeed66b3f33ce0ae5f58bbbba2d031508420b66a9a8065edee"
+    },
+    "boundary_d2_200": {
+      "normal": "PASS",
+      "optimized": "PASS",
+      "sha256": "f9d8cc61ccd81105a5af41aea3631831dcf1f68f31029c625c84d3267f8cf2d4"
+    },
+    "hypergeometric": {
+      "normal": "PASS",
+      "optimized": "PASS",
+      "sha256": "8fbc4d290027577180e418160e94ebf288ec30367ff33f8f538383dfa3045e5b"
+    }
+  },
+  "publication_blockers_not_stage2_5_claim_defects": [
+    "Accountable-author funding attestation",
+    "Accountable-author competing-interest attestation",
+    "Accountable-author CRediT attestation",
+    "Human-approved licences",
+    "Publication date",
+    "DOI and concept DOI if used",
+    "Repository release PDF and alternate-source URLs",
+    "Immutable public release and byte comparison",
+    "Final review and live publication gates"
+  ],
+  "required_next_actions": [
+    "Add the five mandatory Stage 2.5 records.",
+    "Fix the citation-metadata validator predicate.",
+    "Add oneLine drafting abstract-count and broader version gates.",
+    "Update active 0.4.0 references and regenerate all validator/control receipts.",
+    "Remove or explicitly include transient files and regenerate the manifest.",
+    "Verify normal and optimized template and publication-negative-control reports from a fresh extraction.",
+    "Re-run focused integrity audit before PASS."
+  ]
+}

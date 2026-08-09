@@ -1,0 +1,2004 @@
+{
+  "all_torus_pairs_coprime": true,
+  "all_torus_polynomials_squarefree": true,
+  "arithmetic": "exact QQ univariate polynomial arithmetic",
+  "coordinate_common_factor": "X exactly when d mod 3 = 1; otherwise 1",
+  "failures": [],
+  "range": [
+    2,
+    200
+  ],
+  "rows": [
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 2,
+      "p_d1_degree": 0,
+      "p_d1_squarefree": true,
+      "p_d_degree": 0,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 3,
+      "p_d1_degree": 0,
+      "p_d1_squarefree": true,
+      "p_d_degree": 0,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 4,
+      "p_d1_degree": 0,
+      "p_d1_squarefree": true,
+      "p_d_degree": 0,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 5,
+      "p_d1_degree": 1,
+      "p_d1_squarefree": true,
+      "p_d_degree": 0,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 6,
+      "p_d1_degree": 0,
+      "p_d1_squarefree": true,
+      "p_d_degree": 1,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 7,
+      "p_d1_degree": 1,
+      "p_d1_squarefree": true,
+      "p_d_degree": 0,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 8,
+      "p_d1_degree": 1,
+      "p_d1_squarefree": true,
+      "p_d_degree": 1,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 9,
+      "p_d1_degree": 1,
+      "p_d1_squarefree": true,
+      "p_d_degree": 1,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 10,
+      "p_d1_degree": 1,
+      "p_d1_squarefree": true,
+      "p_d_degree": 1,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 11,
+      "p_d1_degree": 2,
+      "p_d1_squarefree": true,
+      "p_d_degree": 1,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 12,
+      "p_d1_degree": 1,
+      "p_d1_squarefree": true,
+      "p_d_degree": 2,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 13,
+      "p_d1_degree": 2,
+      "p_d1_squarefree": true,
+      "p_d_degree": 1,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 14,
+      "p_d1_degree": 2,
+      "p_d1_squarefree": true,
+      "p_d_degree": 2,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 15,
+      "p_d1_degree": 2,
+      "p_d1_squarefree": true,
+      "p_d_degree": 2,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 16,
+      "p_d1_degree": 2,
+      "p_d1_squarefree": true,
+      "p_d_degree": 2,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 17,
+      "p_d1_degree": 3,
+      "p_d1_squarefree": true,
+      "p_d_degree": 2,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 18,
+      "p_d1_degree": 2,
+      "p_d1_squarefree": true,
+      "p_d_degree": 3,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 19,
+      "p_d1_degree": 3,
+      "p_d1_squarefree": true,
+      "p_d_degree": 2,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 20,
+      "p_d1_degree": 3,
+      "p_d1_squarefree": true,
+      "p_d_degree": 3,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 21,
+      "p_d1_degree": 3,
+      "p_d1_squarefree": true,
+      "p_d_degree": 3,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 22,
+      "p_d1_degree": 3,
+      "p_d1_squarefree": true,
+      "p_d_degree": 3,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 23,
+      "p_d1_degree": 4,
+      "p_d1_squarefree": true,
+      "p_d_degree": 3,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 24,
+      "p_d1_degree": 3,
+      "p_d1_squarefree": true,
+      "p_d_degree": 4,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 25,
+      "p_d1_degree": 4,
+      "p_d1_squarefree": true,
+      "p_d_degree": 3,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 26,
+      "p_d1_degree": 4,
+      "p_d1_squarefree": true,
+      "p_d_degree": 4,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 27,
+      "p_d1_degree": 4,
+      "p_d1_squarefree": true,
+      "p_d_degree": 4,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 28,
+      "p_d1_degree": 4,
+      "p_d1_squarefree": true,
+      "p_d_degree": 4,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 29,
+      "p_d1_degree": 5,
+      "p_d1_squarefree": true,
+      "p_d_degree": 4,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 30,
+      "p_d1_degree": 4,
+      "p_d1_squarefree": true,
+      "p_d_degree": 5,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 31,
+      "p_d1_degree": 5,
+      "p_d1_squarefree": true,
+      "p_d_degree": 4,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 32,
+      "p_d1_degree": 5,
+      "p_d1_squarefree": true,
+      "p_d_degree": 5,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 33,
+      "p_d1_degree": 5,
+      "p_d1_squarefree": true,
+      "p_d_degree": 5,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 34,
+      "p_d1_degree": 5,
+      "p_d1_squarefree": true,
+      "p_d_degree": 5,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 35,
+      "p_d1_degree": 6,
+      "p_d1_squarefree": true,
+      "p_d_degree": 5,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 36,
+      "p_d1_degree": 5,
+      "p_d1_squarefree": true,
+      "p_d_degree": 6,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 37,
+      "p_d1_degree": 6,
+      "p_d1_squarefree": true,
+      "p_d_degree": 5,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 38,
+      "p_d1_degree": 6,
+      "p_d1_squarefree": true,
+      "p_d_degree": 6,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 39,
+      "p_d1_degree": 6,
+      "p_d1_squarefree": true,
+      "p_d_degree": 6,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 40,
+      "p_d1_degree": 6,
+      "p_d1_squarefree": true,
+      "p_d_degree": 6,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 41,
+      "p_d1_degree": 7,
+      "p_d1_squarefree": true,
+      "p_d_degree": 6,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 42,
+      "p_d1_degree": 6,
+      "p_d1_squarefree": true,
+      "p_d_degree": 7,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 43,
+      "p_d1_degree": 7,
+      "p_d1_squarefree": true,
+      "p_d_degree": 6,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 44,
+      "p_d1_degree": 7,
+      "p_d1_squarefree": true,
+      "p_d_degree": 7,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 45,
+      "p_d1_degree": 7,
+      "p_d1_squarefree": true,
+      "p_d_degree": 7,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 46,
+      "p_d1_degree": 7,
+      "p_d1_squarefree": true,
+      "p_d_degree": 7,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 47,
+      "p_d1_degree": 8,
+      "p_d1_squarefree": true,
+      "p_d_degree": 7,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 48,
+      "p_d1_degree": 7,
+      "p_d1_squarefree": true,
+      "p_d_degree": 8,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 49,
+      "p_d1_degree": 8,
+      "p_d1_squarefree": true,
+      "p_d_degree": 7,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 50,
+      "p_d1_degree": 8,
+      "p_d1_squarefree": true,
+      "p_d_degree": 8,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 51,
+      "p_d1_degree": 8,
+      "p_d1_squarefree": true,
+      "p_d_degree": 8,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 52,
+      "p_d1_degree": 8,
+      "p_d1_squarefree": true,
+      "p_d_degree": 8,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 53,
+      "p_d1_degree": 9,
+      "p_d1_squarefree": true,
+      "p_d_degree": 8,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 54,
+      "p_d1_degree": 8,
+      "p_d1_squarefree": true,
+      "p_d_degree": 9,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 55,
+      "p_d1_degree": 9,
+      "p_d1_squarefree": true,
+      "p_d_degree": 8,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 56,
+      "p_d1_degree": 9,
+      "p_d1_squarefree": true,
+      "p_d_degree": 9,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 57,
+      "p_d1_degree": 9,
+      "p_d1_squarefree": true,
+      "p_d_degree": 9,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 58,
+      "p_d1_degree": 9,
+      "p_d1_squarefree": true,
+      "p_d_degree": 9,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 59,
+      "p_d1_degree": 10,
+      "p_d1_squarefree": true,
+      "p_d_degree": 9,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 60,
+      "p_d1_degree": 9,
+      "p_d1_squarefree": true,
+      "p_d_degree": 10,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 61,
+      "p_d1_degree": 10,
+      "p_d1_squarefree": true,
+      "p_d_degree": 9,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 62,
+      "p_d1_degree": 10,
+      "p_d1_squarefree": true,
+      "p_d_degree": 10,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 63,
+      "p_d1_degree": 10,
+      "p_d1_squarefree": true,
+      "p_d_degree": 10,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 64,
+      "p_d1_degree": 10,
+      "p_d1_squarefree": true,
+      "p_d_degree": 10,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 65,
+      "p_d1_degree": 11,
+      "p_d1_squarefree": true,
+      "p_d_degree": 10,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 66,
+      "p_d1_degree": 10,
+      "p_d1_squarefree": true,
+      "p_d_degree": 11,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 67,
+      "p_d1_degree": 11,
+      "p_d1_squarefree": true,
+      "p_d_degree": 10,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 68,
+      "p_d1_degree": 11,
+      "p_d1_squarefree": true,
+      "p_d_degree": 11,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 69,
+      "p_d1_degree": 11,
+      "p_d1_squarefree": true,
+      "p_d_degree": 11,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 70,
+      "p_d1_degree": 11,
+      "p_d1_squarefree": true,
+      "p_d_degree": 11,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 71,
+      "p_d1_degree": 12,
+      "p_d1_squarefree": true,
+      "p_d_degree": 11,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 72,
+      "p_d1_degree": 11,
+      "p_d1_squarefree": true,
+      "p_d_degree": 12,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 73,
+      "p_d1_degree": 12,
+      "p_d1_squarefree": true,
+      "p_d_degree": 11,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 74,
+      "p_d1_degree": 12,
+      "p_d1_squarefree": true,
+      "p_d_degree": 12,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 75,
+      "p_d1_degree": 12,
+      "p_d1_squarefree": true,
+      "p_d_degree": 12,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 76,
+      "p_d1_degree": 12,
+      "p_d1_squarefree": true,
+      "p_d_degree": 12,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 77,
+      "p_d1_degree": 13,
+      "p_d1_squarefree": true,
+      "p_d_degree": 12,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 78,
+      "p_d1_degree": 12,
+      "p_d1_squarefree": true,
+      "p_d_degree": 13,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 79,
+      "p_d1_degree": 13,
+      "p_d1_squarefree": true,
+      "p_d_degree": 12,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 80,
+      "p_d1_degree": 13,
+      "p_d1_squarefree": true,
+      "p_d_degree": 13,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 81,
+      "p_d1_degree": 13,
+      "p_d1_squarefree": true,
+      "p_d_degree": 13,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 82,
+      "p_d1_degree": 13,
+      "p_d1_squarefree": true,
+      "p_d_degree": 13,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 83,
+      "p_d1_degree": 14,
+      "p_d1_squarefree": true,
+      "p_d_degree": 13,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 84,
+      "p_d1_degree": 13,
+      "p_d1_squarefree": true,
+      "p_d_degree": 14,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 85,
+      "p_d1_degree": 14,
+      "p_d1_squarefree": true,
+      "p_d_degree": 13,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 86,
+      "p_d1_degree": 14,
+      "p_d1_squarefree": true,
+      "p_d_degree": 14,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 87,
+      "p_d1_degree": 14,
+      "p_d1_squarefree": true,
+      "p_d_degree": 14,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 88,
+      "p_d1_degree": 14,
+      "p_d1_squarefree": true,
+      "p_d_degree": 14,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 89,
+      "p_d1_degree": 15,
+      "p_d1_squarefree": true,
+      "p_d_degree": 14,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 90,
+      "p_d1_degree": 14,
+      "p_d1_squarefree": true,
+      "p_d_degree": 15,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 91,
+      "p_d1_degree": 15,
+      "p_d1_squarefree": true,
+      "p_d_degree": 14,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 92,
+      "p_d1_degree": 15,
+      "p_d1_squarefree": true,
+      "p_d_degree": 15,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 93,
+      "p_d1_degree": 15,
+      "p_d1_squarefree": true,
+      "p_d_degree": 15,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 94,
+      "p_d1_degree": 15,
+      "p_d1_squarefree": true,
+      "p_d_degree": 15,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 95,
+      "p_d1_degree": 16,
+      "p_d1_squarefree": true,
+      "p_d_degree": 15,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 96,
+      "p_d1_degree": 15,
+      "p_d1_squarefree": true,
+      "p_d_degree": 16,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 97,
+      "p_d1_degree": 16,
+      "p_d1_squarefree": true,
+      "p_d_degree": 15,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 98,
+      "p_d1_degree": 16,
+      "p_d1_squarefree": true,
+      "p_d_degree": 16,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 99,
+      "p_d1_degree": 16,
+      "p_d1_squarefree": true,
+      "p_d_degree": 16,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 100,
+      "p_d1_degree": 16,
+      "p_d1_squarefree": true,
+      "p_d_degree": 16,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 101,
+      "p_d1_degree": 17,
+      "p_d1_squarefree": true,
+      "p_d_degree": 16,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 102,
+      "p_d1_degree": 16,
+      "p_d1_squarefree": true,
+      "p_d_degree": 17,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 103,
+      "p_d1_degree": 17,
+      "p_d1_squarefree": true,
+      "p_d_degree": 16,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 104,
+      "p_d1_degree": 17,
+      "p_d1_squarefree": true,
+      "p_d_degree": 17,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 105,
+      "p_d1_degree": 17,
+      "p_d1_squarefree": true,
+      "p_d_degree": 17,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 106,
+      "p_d1_degree": 17,
+      "p_d1_squarefree": true,
+      "p_d_degree": 17,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 107,
+      "p_d1_degree": 18,
+      "p_d1_squarefree": true,
+      "p_d_degree": 17,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 108,
+      "p_d1_degree": 17,
+      "p_d1_squarefree": true,
+      "p_d_degree": 18,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 109,
+      "p_d1_degree": 18,
+      "p_d1_squarefree": true,
+      "p_d_degree": 17,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 110,
+      "p_d1_degree": 18,
+      "p_d1_squarefree": true,
+      "p_d_degree": 18,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 111,
+      "p_d1_degree": 18,
+      "p_d1_squarefree": true,
+      "p_d_degree": 18,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 112,
+      "p_d1_degree": 18,
+      "p_d1_squarefree": true,
+      "p_d_degree": 18,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 113,
+      "p_d1_degree": 19,
+      "p_d1_squarefree": true,
+      "p_d_degree": 18,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 114,
+      "p_d1_degree": 18,
+      "p_d1_squarefree": true,
+      "p_d_degree": 19,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 115,
+      "p_d1_degree": 19,
+      "p_d1_squarefree": true,
+      "p_d_degree": 18,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 116,
+      "p_d1_degree": 19,
+      "p_d1_squarefree": true,
+      "p_d_degree": 19,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 117,
+      "p_d1_degree": 19,
+      "p_d1_squarefree": true,
+      "p_d_degree": 19,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 118,
+      "p_d1_degree": 19,
+      "p_d1_squarefree": true,
+      "p_d_degree": 19,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 119,
+      "p_d1_degree": 20,
+      "p_d1_squarefree": true,
+      "p_d_degree": 19,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 120,
+      "p_d1_degree": 19,
+      "p_d1_squarefree": true,
+      "p_d_degree": 20,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 121,
+      "p_d1_degree": 20,
+      "p_d1_squarefree": true,
+      "p_d_degree": 19,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 122,
+      "p_d1_degree": 20,
+      "p_d1_squarefree": true,
+      "p_d_degree": 20,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 123,
+      "p_d1_degree": 20,
+      "p_d1_squarefree": true,
+      "p_d_degree": 20,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 124,
+      "p_d1_degree": 20,
+      "p_d1_squarefree": true,
+      "p_d_degree": 20,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 125,
+      "p_d1_degree": 21,
+      "p_d1_squarefree": true,
+      "p_d_degree": 20,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 126,
+      "p_d1_degree": 20,
+      "p_d1_squarefree": true,
+      "p_d_degree": 21,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 127,
+      "p_d1_degree": 21,
+      "p_d1_squarefree": true,
+      "p_d_degree": 20,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 128,
+      "p_d1_degree": 21,
+      "p_d1_squarefree": true,
+      "p_d_degree": 21,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 129,
+      "p_d1_degree": 21,
+      "p_d1_squarefree": true,
+      "p_d_degree": 21,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 130,
+      "p_d1_degree": 21,
+      "p_d1_squarefree": true,
+      "p_d_degree": 21,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 131,
+      "p_d1_degree": 22,
+      "p_d1_squarefree": true,
+      "p_d_degree": 21,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 132,
+      "p_d1_degree": 21,
+      "p_d1_squarefree": true,
+      "p_d_degree": 22,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 133,
+      "p_d1_degree": 22,
+      "p_d1_squarefree": true,
+      "p_d_degree": 21,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 134,
+      "p_d1_degree": 22,
+      "p_d1_squarefree": true,
+      "p_d_degree": 22,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 135,
+      "p_d1_degree": 22,
+      "p_d1_squarefree": true,
+      "p_d_degree": 22,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 136,
+      "p_d1_degree": 22,
+      "p_d1_squarefree": true,
+      "p_d_degree": 22,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 137,
+      "p_d1_degree": 23,
+      "p_d1_squarefree": true,
+      "p_d_degree": 22,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 138,
+      "p_d1_degree": 22,
+      "p_d1_squarefree": true,
+      "p_d_degree": 23,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 139,
+      "p_d1_degree": 23,
+      "p_d1_squarefree": true,
+      "p_d_degree": 22,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 140,
+      "p_d1_degree": 23,
+      "p_d1_squarefree": true,
+      "p_d_degree": 23,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 141,
+      "p_d1_degree": 23,
+      "p_d1_squarefree": true,
+      "p_d_degree": 23,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 142,
+      "p_d1_degree": 23,
+      "p_d1_squarefree": true,
+      "p_d_degree": 23,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 143,
+      "p_d1_degree": 24,
+      "p_d1_squarefree": true,
+      "p_d_degree": 23,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 144,
+      "p_d1_degree": 23,
+      "p_d1_squarefree": true,
+      "p_d_degree": 24,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 145,
+      "p_d1_degree": 24,
+      "p_d1_squarefree": true,
+      "p_d_degree": 23,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 146,
+      "p_d1_degree": 24,
+      "p_d1_squarefree": true,
+      "p_d_degree": 24,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 147,
+      "p_d1_degree": 24,
+      "p_d1_squarefree": true,
+      "p_d_degree": 24,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 148,
+      "p_d1_degree": 24,
+      "p_d1_squarefree": true,
+      "p_d_degree": 24,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 149,
+      "p_d1_degree": 25,
+      "p_d1_squarefree": true,
+      "p_d_degree": 24,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 150,
+      "p_d1_degree": 24,
+      "p_d1_squarefree": true,
+      "p_d_degree": 25,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 151,
+      "p_d1_degree": 25,
+      "p_d1_squarefree": true,
+      "p_d_degree": 24,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 152,
+      "p_d1_degree": 25,
+      "p_d1_squarefree": true,
+      "p_d_degree": 25,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 153,
+      "p_d1_degree": 25,
+      "p_d1_squarefree": true,
+      "p_d_degree": 25,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 154,
+      "p_d1_degree": 25,
+      "p_d1_squarefree": true,
+      "p_d_degree": 25,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 155,
+      "p_d1_degree": 26,
+      "p_d1_squarefree": true,
+      "p_d_degree": 25,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 156,
+      "p_d1_degree": 25,
+      "p_d1_squarefree": true,
+      "p_d_degree": 26,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 157,
+      "p_d1_degree": 26,
+      "p_d1_squarefree": true,
+      "p_d_degree": 25,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 158,
+      "p_d1_degree": 26,
+      "p_d1_squarefree": true,
+      "p_d_degree": 26,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 159,
+      "p_d1_degree": 26,
+      "p_d1_squarefree": true,
+      "p_d_degree": 26,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 160,
+      "p_d1_degree": 26,
+      "p_d1_squarefree": true,
+      "p_d_degree": 26,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 161,
+      "p_d1_degree": 27,
+      "p_d1_squarefree": true,
+      "p_d_degree": 26,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 162,
+      "p_d1_degree": 26,
+      "p_d1_squarefree": true,
+      "p_d_degree": 27,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 163,
+      "p_d1_degree": 27,
+      "p_d1_squarefree": true,
+      "p_d_degree": 26,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 164,
+      "p_d1_degree": 27,
+      "p_d1_squarefree": true,
+      "p_d_degree": 27,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 165,
+      "p_d1_degree": 27,
+      "p_d1_squarefree": true,
+      "p_d_degree": 27,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 166,
+      "p_d1_degree": 27,
+      "p_d1_squarefree": true,
+      "p_d_degree": 27,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 167,
+      "p_d1_degree": 28,
+      "p_d1_squarefree": true,
+      "p_d_degree": 27,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 168,
+      "p_d1_degree": 27,
+      "p_d1_squarefree": true,
+      "p_d_degree": 28,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 169,
+      "p_d1_degree": 28,
+      "p_d1_squarefree": true,
+      "p_d_degree": 27,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 170,
+      "p_d1_degree": 28,
+      "p_d1_squarefree": true,
+      "p_d_degree": 28,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 171,
+      "p_d1_degree": 28,
+      "p_d1_squarefree": true,
+      "p_d_degree": 28,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 172,
+      "p_d1_degree": 28,
+      "p_d1_squarefree": true,
+      "p_d_degree": 28,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 173,
+      "p_d1_degree": 29,
+      "p_d1_squarefree": true,
+      "p_d_degree": 28,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 174,
+      "p_d1_degree": 28,
+      "p_d1_squarefree": true,
+      "p_d_degree": 29,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 175,
+      "p_d1_degree": 29,
+      "p_d1_squarefree": true,
+      "p_d_degree": 28,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 176,
+      "p_d1_degree": 29,
+      "p_d1_squarefree": true,
+      "p_d_degree": 29,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 177,
+      "p_d1_degree": 29,
+      "p_d1_squarefree": true,
+      "p_d_degree": 29,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 178,
+      "p_d1_degree": 29,
+      "p_d1_squarefree": true,
+      "p_d_degree": 29,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 179,
+      "p_d1_degree": 30,
+      "p_d1_squarefree": true,
+      "p_d_degree": 29,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 180,
+      "p_d1_degree": 29,
+      "p_d1_squarefree": true,
+      "p_d_degree": 30,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 181,
+      "p_d1_degree": 30,
+      "p_d1_squarefree": true,
+      "p_d_degree": 29,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 182,
+      "p_d1_degree": 30,
+      "p_d1_squarefree": true,
+      "p_d_degree": 30,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 183,
+      "p_d1_degree": 30,
+      "p_d1_squarefree": true,
+      "p_d_degree": 30,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 184,
+      "p_d1_degree": 30,
+      "p_d1_squarefree": true,
+      "p_d_degree": 30,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 185,
+      "p_d1_degree": 31,
+      "p_d1_squarefree": true,
+      "p_d_degree": 30,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 186,
+      "p_d1_degree": 30,
+      "p_d1_squarefree": true,
+      "p_d_degree": 31,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 187,
+      "p_d1_degree": 31,
+      "p_d1_squarefree": true,
+      "p_d_degree": 30,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 188,
+      "p_d1_degree": 31,
+      "p_d1_squarefree": true,
+      "p_d_degree": 31,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 189,
+      "p_d1_degree": 31,
+      "p_d1_squarefree": true,
+      "p_d_degree": 31,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 190,
+      "p_d1_degree": 31,
+      "p_d1_squarefree": true,
+      "p_d_degree": 31,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 191,
+      "p_d1_degree": 32,
+      "p_d1_squarefree": true,
+      "p_d_degree": 31,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 192,
+      "p_d1_degree": 31,
+      "p_d1_squarefree": true,
+      "p_d_degree": 32,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 193,
+      "p_d1_degree": 32,
+      "p_d1_squarefree": true,
+      "p_d_degree": 31,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 194,
+      "p_d1_degree": 32,
+      "p_d1_squarefree": true,
+      "p_d_degree": 32,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 195,
+      "p_d1_degree": 32,
+      "p_d1_squarefree": true,
+      "p_d_degree": 32,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 196,
+      "p_d1_degree": 32,
+      "p_d1_squarefree": true,
+      "p_d_degree": 32,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 197,
+      "p_d1_degree": 33,
+      "p_d1_squarefree": true,
+      "p_d_degree": 32,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 198,
+      "p_d1_degree": 32,
+      "p_d1_squarefree": true,
+      "p_d_degree": 33,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 1,
+      "boundary_common_y_valuation": 0,
+      "d": 199,
+      "p_d1_degree": 33,
+      "p_d1_squarefree": true,
+      "p_d_degree": 32,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    },
+    {
+      "boundary_common_x_valuation": 0,
+      "boundary_common_y_valuation": 0,
+      "d": 200,
+      "p_d1_degree": 33,
+      "p_d1_squarefree": true,
+      "p_d_degree": 33,
+      "p_d_squarefree": true,
+      "torus_gcd_degree": 0
+    }
+  ],
+  "schema": "polydegree.e3.boundary-sweep.v1"
+}

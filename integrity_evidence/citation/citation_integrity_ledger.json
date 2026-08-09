@@ -1,0 +1,687 @@
+{
+  "audit_id": "stage2_5_phase_ab_citation_integrity_2026-08-09",
+  "audited_at": "2026-08-09T19:52:50+01:00",
+  "timezone": "Europe/London",
+  "auditor_role": "independent citation-integrity audit",
+  "overall_verdict": "FAIL",
+  "policy": {
+    "primary_or_official_sources_only": true,
+    "gray_zone": "FAIL",
+    "existence_and_metadata_separated": true,
+    "citation_context_sample_policy": "all occurrences audited",
+    "output_package_mutated": false
+  },
+  "corpus": {
+    "package": "/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/outputs/smooth-point-certificates-polydegree-stage2-2026-08-09",
+    "references_bib": {
+      "path": "references.bib",
+      "sha256": "19c866aa5f089171eea7bc1e9ab99409dd2039e3948cf8192ab9db5c99819a05"
+    },
+    "manuscript": {
+      "path": "MANUSCRIPT.md",
+      "sha256": "a9f06d035fe2ce1c4b4e1d9d7044f2dfd8006c9f2cab605e1cc34e4de8bf9bd8"
+    },
+    "generated_tex": {
+      "path": "build/main.tex",
+      "sha256": "de55d7e5c22dc5e2e02914735b11b72136e666269f6f5e60ca995d15734f9ecf"
+    }
+  },
+  "summary": {
+    "bibliography_records": 9,
+    "existence_pass": 9,
+    "existence_fail": 0,
+    "strict_record_pass": 5,
+    "strict_record_fail": 4,
+    "doi_bearing_records": 3,
+    "doi_target_pass": 3,
+    "doi_target_fail": 0,
+    "citation_occurrences": 14,
+    "citation_context_pass": 13,
+    "citation_context_fail": 1,
+    "citation_context_coverage_percent": 100,
+    "unique_cited_keys": 9,
+    "orphan_bibliography_keys": [],
+    "dangling_citation_keys": [],
+    "hallucinated_sources": 0,
+    "publication_gate": "FAIL"
+  },
+  "records": [
+    {
+      "key": "lps2019",
+      "exact_query": "\"10.1016/j.jpaa.2019.04.002\"",
+      "top_authoritative_url": "https://www.sciencedirect.com/science/article/pii/S0022404919300933",
+      "secondary_official_urls": [
+        "https://doi.org/10.1016/j.jpaa.2019.04.002",
+        "https://arxiv.org/abs/1809.09681"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "PASS",
+      "supplied_metadata": {
+        "authors": ["Drew Lewis", "Kaitlyn Perry", "Armin Straub"],
+        "year": 2019,
+        "title": "An algorithmic approach to the Polydegree Conjecture for plane polynomial automorphisms",
+        "venue": "Journal of Pure and Applied Algebra",
+        "volume": "223",
+        "issue": "12",
+        "pages": "5346-5359",
+        "doi": "10.1016/j.jpaa.2019.04.002",
+        "url": "https://arxiv.org/abs/1809.09681"
+      },
+      "official_metadata": {
+        "authors": ["Drew Lewis", "Kaitlyn Perry", "Armin Straub"],
+        "year": 2019,
+        "title": "An algorithmic approach to the Polydegree Conjecture for plane polynomial automorphisms",
+        "venue": "Journal of Pure and Applied Algebra",
+        "volume": "223",
+        "issue": "12",
+        "pages": "5346-5359",
+        "doi": "10.1016/j.jpaa.2019.04.002",
+        "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0022404919300933",
+        "arxiv_current_version": "1809.09681v1"
+      },
+      "field_comparison": {
+        "authors": "PASS",
+        "year": "PASS",
+        "title": "PASS",
+        "venue": "PASS",
+        "volume": "PASS",
+        "issue": "PASS",
+        "pages": "PASS",
+        "doi": "PASS",
+        "url": "PASS: official arXiv alternate for the same work"
+      },
+      "doi_target_check": {
+        "verdict": "PASS",
+        "http_status": 200,
+        "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0022404919300933",
+        "identity_match": true
+      },
+      "hallucination_pattern_check": "PASS: no phantom title, author, venue, DOI, or URL collision"
+    },
+    {
+      "key": "perry2016",
+      "exact_query": "\"Polydegree properties of polynomial automorphisms\" Perry",
+      "top_authoritative_url": "https://ir.ua.edu/items/f71aa1b3-0dbc-42a2-9f59-3f01eb1a5529",
+      "secondary_official_urls": [
+        "https://ir.ua.edu/items/f71aa1b3-0dbc-42a2-9f59-3f01eb1a5529/full",
+        "https://ir.ua.edu/handle/123456789/2587"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "PASS",
+      "supplied_metadata": {
+        "author": "Kaitlyn Anne Perry",
+        "year": 2016,
+        "title": "Polydegree properties of polynomial automorphisms",
+        "type": "Doctoral dissertation",
+        "school": "The University of Alabama",
+        "volume": null,
+        "pages": null,
+        "doi": null,
+        "url": "https://ir.ua.edu/items/f71aa1b3-0dbc-42a2-9f59-3f01eb1a5529"
+      },
+      "official_metadata": {
+        "author": "Kaitlyn Anne Perry",
+        "year": 2016,
+        "title": "Polydegree properties of polynomial automorphisms",
+        "type": "Dissertation submitted for the degree of Doctor of Philosophy",
+        "school": "The University of Alabama",
+        "extent": "57 pages",
+        "doi": null,
+        "url": "https://ir.ua.edu/items/f71aa1b3-0dbc-42a2-9f59-3f01eb1a5529"
+      },
+      "field_comparison": {
+        "author": "PASS",
+        "year": "PASS",
+        "title": "PASS",
+        "type": "PASS",
+        "school": "PASS",
+        "volume": "N/A",
+        "pages": "OPTIONAL OMITTED: repository reports 57 pages",
+        "doi": "N/A: no DOI reported",
+        "url": "PASS"
+      },
+      "doi_target_check": {
+        "verdict": "N/A",
+        "reason": "No DOI is supplied or reported"
+      },
+      "hallucination_pattern_check": "PASS: official repository item, author, title, year, degree type, and institution align"
+    },
+    {
+      "key": "edo2014",
+      "exact_query": "\"10.1016/j.jalgebra.2013.09.011\"",
+      "top_authoritative_url": "https://www.sciencedirect.com/science/article/pii/S0021869313005000",
+      "secondary_official_urls": [
+        "https://doi.org/10.1016/j.jalgebra.2013.09.011",
+        "https://arxiv.org/abs/1304.3956"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "PASS",
+      "supplied_metadata": {
+        "authors": ["Eric Edo", "Arno van den Essen"],
+        "year": 2014,
+        "title": "The Strong Factorial Conjecture",
+        "venue": "Journal of Algebra",
+        "volume": "397",
+        "issue": null,
+        "pages": "443-456",
+        "doi": "10.1016/j.jalgebra.2013.09.011",
+        "url": "https://arxiv.org/abs/1304.3956"
+      },
+      "official_metadata": {
+        "authors": ["Eric Edo", "Arno van den Essen"],
+        "year": 2014,
+        "title": "The Strong Factorial Conjecture",
+        "venue": "Journal of Algebra",
+        "volume": "397",
+        "issue": null,
+        "pages": "443-456",
+        "doi": "10.1016/j.jalgebra.2013.09.011",
+        "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0021869313005000",
+        "arxiv_current_version": "1304.3956v2"
+      },
+      "field_comparison": {
+        "authors": "PASS",
+        "year": "PASS",
+        "title": "PASS",
+        "venue": "PASS",
+        "volume": "PASS",
+        "issue": "PASS: none reported",
+        "pages": "PASS",
+        "doi": "PASS",
+        "url": "PASS: official arXiv alternate for the same work"
+      },
+      "doi_target_check": {
+        "verdict": "PASS",
+        "http_status": 200,
+        "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0021869313005000",
+        "identity_match": true
+      },
+      "hallucination_pattern_check": "PASS: no phantom title, author, venue, DOI, or URL collision"
+    },
+    {
+      "key": "grochow2025",
+      "exact_query": "\"10.1080/00029890.2024.2440297\"",
+      "top_authoritative_url": "https://www.tandfonline.com/doi/abs/10.1080/00029890.2024.2440297",
+      "secondary_official_urls": [
+        "https://doi.org/10.1080/00029890.2024.2440297",
+        "https://home.cs.colorado.edu/~jgrochow/hensel-notes.pdf"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "PASS",
+      "supplied_metadata": {
+        "author": "Joshua A. Grochow",
+        "year": 2025,
+        "title": "Multivariate Hensel lifting without assuming as many variables as equations",
+        "venue": "The American Mathematical Monthly",
+        "volume": "132",
+        "issue": "4",
+        "pages": "350-355",
+        "doi": "10.1080/00029890.2024.2440297",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/00029890.2024.2440297"
+      },
+      "official_metadata": {
+        "author": "Joshua A. Grochow",
+        "year": 2025,
+        "title": "Multivariate Hensel Lifting Without Assuming as Many Variables as Equations",
+        "venue": "The American Mathematical Monthly",
+        "volume": "132",
+        "issue": "4",
+        "pages": "350-355",
+        "doi": "10.1080/00029890.2024.2440297",
+        "publisher_url": "https://www.tandfonline.com/doi/abs/10.1080/00029890.2024.2440297"
+      },
+      "field_comparison": {
+        "author": "PASS",
+        "year": "PASS",
+        "title": "PASS: capitalization normalized",
+        "venue": "PASS",
+        "volume": "PASS",
+        "issue": "PASS",
+        "pages": "PASS",
+        "doi": "PASS",
+        "url": "PASS"
+      },
+      "doi_target_check": {
+        "verdict": "PASS",
+        "resolver_final_url": "https://www.tandfonline.com/doi/full/10.1080/00029890.2024.2440297",
+        "automated_head_final_http_status": 403,
+        "identity_match_confirmed_by": ["publisher article page", "Crossref registry"],
+        "note": "The publisher blocks automated HEAD at the final page; the DOI resolves to the correct publisher path and the article page independently confirms identity"
+      },
+      "hallucination_pattern_check": "PASS: no phantom DOI or metadata collision; the DOI suffix year 2024 is not the article publication year"
+    },
+    {
+      "key": "stacks00hp",
+      "exact_query": "site:stacks.math.columbia.edu/tag/00HP \"Lemma 10.39.15\"",
+      "top_authoritative_url": "https://stacks.math.columbia.edu/tag/00HP",
+      "secondary_official_urls": [
+        "https://stacks.math.columbia.edu/tag/00HP/cite"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "FAIL",
+      "supplied_metadata": {
+        "author": "The Stacks Project Authors",
+        "year": null,
+        "title": "Lemma 10.39.15 (Tag 00HP): Faithfully flat modules",
+        "venue": "The Stacks Project",
+        "volume": null,
+        "pages": null,
+        "doi": null,
+        "url": "https://stacks.math.columbia.edu/tag/00HP",
+        "accessed": "2026-08-09"
+      },
+      "official_metadata": {
+        "author": "The Stacks project authors",
+        "year": 2026,
+        "generic_title": "The Stacks project",
+        "tag_header": "Lemma 10.39.15 (00HP)",
+        "tag_slogan": "A flat module is faithfully flat if and only if it has nonzero fibers",
+        "url": "https://stacks.math.columbia.edu/tag/00HP"
+      },
+      "field_comparison": {
+        "author": "PASS: capitalization normalized",
+        "year": "FAIL: omitted; official cite page gives 2026 and rendered bibliography says n.d.",
+        "title": "FAIL: constructed title is neither the official generic title nor the exact tag header/slogan",
+        "venue": "PASS",
+        "volume": "N/A",
+        "pages": "N/A",
+        "doi": "N/A",
+        "url": "PASS"
+      },
+      "doi_target_check": {
+        "verdict": "N/A",
+        "reason": "No DOI"
+      },
+      "hallucination_pattern_check": "FAIL-METADATA-PATTERN: genuine tag wrapped in a synthetic title; not a hallucinated source"
+    },
+    {
+      "key": "stacks00fv",
+      "exact_query": "site:stacks.math.columbia.edu/tag/00FV \"Theorem 10.34.1\"",
+      "top_authoritative_url": "https://stacks.math.columbia.edu/tag/00FV",
+      "secondary_official_urls": [
+        "https://stacks.math.columbia.edu/tag/00FV/cite"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "FAIL",
+      "supplied_metadata": {
+        "author": "The Stacks Project Authors",
+        "year": null,
+        "title": "Theorem 10.34.1 (Tag 00FV): Hilbert Nullstellensatz",
+        "venue": "The Stacks Project",
+        "volume": null,
+        "pages": null,
+        "doi": null,
+        "url": "https://stacks.math.columbia.edu/tag/00FV",
+        "accessed": "2026-08-09"
+      },
+      "official_metadata": {
+        "author": "The Stacks project authors",
+        "year": 2026,
+        "generic_title": "The Stacks project",
+        "tag_header": "Theorem 10.34.1 (00FV): Hilbert Nullstellensatz",
+        "url": "https://stacks.math.columbia.edu/tag/00FV"
+      },
+      "field_comparison": {
+        "author": "PASS: capitalization normalized",
+        "year": "FAIL: omitted; official cite page gives 2026 and rendered bibliography says n.d.",
+        "title": "PASS AS TAG LOCATOR: only the inserted word 'Tag' differs from the official header; FAIL against official generic BibTeX title under strict policy",
+        "venue": "PASS",
+        "volume": "N/A",
+        "pages": "N/A",
+        "doi": "N/A",
+        "url": "PASS"
+      },
+      "doi_target_check": {
+        "verdict": "N/A",
+        "reason": "No DOI"
+      },
+      "hallucination_pattern_check": "FAIL-METADATA-PATTERN: genuine tag represented as a stand-alone synthetic bibliographic work; not a hallucinated source"
+    },
+    {
+      "key": "martinez2024zeros",
+      "exact_query": "site:arxiv.org/abs/2404.11479 \"Zeros of generalized hypergeometric polynomials\"",
+      "top_authoritative_url": "https://arxiv.org/abs/2404.11479v2",
+      "secondary_official_urls": [
+        "https://arxiv.org/pdf/2404.11479v2",
+        "https://export.arxiv.org/api/query?id_list=2404.11479"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "FAIL",
+      "supplied_metadata": {
+        "authors": ["Andrei Martínez-Finkelshtein", "Rafael Morales", "Daniel Perales"],
+        "year": 2024,
+        "title": "Zeros of generalized hypergeometric polynomials via finite free convolution: Applications to multiple orthogonality",
+        "venue": "arXiv",
+        "volume": null,
+        "pages": null,
+        "doi": null,
+        "eprint": "2404.11479",
+        "primary_class": "math.CA",
+        "version": 2,
+        "url": "https://arxiv.org/abs/2404.11479"
+      },
+      "official_metadata": {
+        "authors": ["Andrei Martínez-Finkelshtein", "Rafael Morales", "Daniel Perales"],
+        "published": "2024-04-17",
+        "updated_to_v2": "2024-06-03",
+        "pdf_date": "2024-06-04",
+        "title": "Zeros of generalized hypergeometric polynomials via finite free convolution. Applications to multiple orthogonality",
+        "venue": "arXiv",
+        "eprint": "2404.11479",
+        "primary_class": "math.CA",
+        "current_version": 2,
+        "versioned_url": "https://arxiv.org/abs/2404.11479v2"
+      },
+      "field_comparison": {
+        "authors": "PASS",
+        "year": "PASS",
+        "title": "FAIL: supplied colon replaces the official period before 'Applications'",
+        "venue": "PASS",
+        "volume": "N/A",
+        "pages": "OPTIONAL OMITTED: v2 PDF has 53 pages",
+        "doi": "N/A: none reported",
+        "eprint": "PASS",
+        "primary_class": "PASS",
+        "version": "PASS",
+        "url": "PASS-CURRENT with durability warning: unversioned URL currently resolves to v2; use /v2 to bind the cited version"
+      },
+      "doi_target_check": {
+        "verdict": "N/A",
+        "reason": "No DOI"
+      },
+      "hallucination_pattern_check": "FAIL-EXACT-METADATA: punctuation-normalized title is not exact; source identity itself is genuine"
+    },
+    {
+      "key": "martinez2024real",
+      "exact_query": "site:arxiv.org/abs/2309.10970 \"Real roots of hypergeometric polynomials\"",
+      "top_authoritative_url": "https://arxiv.org/abs/2309.10970v3",
+      "secondary_official_urls": [
+        "https://arxiv.org/pdf/2309.10970v3",
+        "https://export.arxiv.org/api/query?id_list=2309.10970"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "PASS",
+      "supplied_metadata": {
+        "authors": ["Andrei Martínez-Finkelshtein", "Rafael Morales", "Daniel Perales"],
+        "year": 2024,
+        "title": "Real roots of hypergeometric polynomials via finite free convolution",
+        "venue": "arXiv",
+        "volume": null,
+        "pages": null,
+        "doi": null,
+        "eprint": "2309.10970",
+        "primary_class": "math.CA",
+        "version": 3,
+        "url": "https://arxiv.org/abs/2309.10970"
+      },
+      "official_metadata": {
+        "authors": ["Andrei Martínez-Finkelshtein", "Rafael Morales", "Daniel Perales"],
+        "first_submitted": "2023-09-19",
+        "updated_to_v3": "2024-05-02",
+        "pdf_masthead": "arXiv:2309.10970v3 [math.CA] 2 May 2024",
+        "pdf_date": "2024-05-03",
+        "title": "Real roots of hypergeometric polynomials via finite free convolution",
+        "venue": "arXiv",
+        "eprint": "2309.10970",
+        "primary_class": "math.CA",
+        "current_version": 3,
+        "versioned_url": "https://arxiv.org/abs/2309.10970v3"
+      },
+      "field_comparison": {
+        "authors": "PASS",
+        "year": "PASS FOR THE EXPLICITLY CITED v3 ARTIFACT: v1 is 2023, but v3 and the v3 PDF are dated 2024",
+        "title": "PASS",
+        "venue": "PASS",
+        "volume": "N/A",
+        "pages": "OPTIONAL OMITTED: v3 PDF has 47 pages",
+        "doi": "N/A: none reported",
+        "eprint": "PASS",
+        "primary_class": "PASS",
+        "version": "PASS",
+        "url": "PASS-CURRENT with durability warning: unversioned URL currently resolves to v3; use /v3 to bind the cited version"
+      },
+      "doi_target_check": {
+        "verdict": "N/A",
+        "reason": "No DOI"
+      },
+      "hallucination_pattern_check": "PASS: 2024 is a version-date citation, not a false claim that v1 was submitted in 2024"
+    },
+    {
+      "key": "dlmf",
+      "exact_query": [
+        "site:dlmf.nist.gov/15.8 Pfaff transformation DLMF 15.8.1",
+        "site:dlmf.nist.gov/18.5 \"Jacobi\" \"18.5.7\" zeros 18.16"
+      ],
+      "top_authoritative_url": "https://dlmf.nist.gov/help/cite",
+      "secondary_official_urls": [
+        "https://dlmf.nist.gov/15.8.E1",
+        "https://dlmf.nist.gov/18.5.E7",
+        "https://dlmf.nist.gov/18.16.E1"
+      ],
+      "existence_verdict": "PASS",
+      "strict_record_verdict": "FAIL",
+      "supplied_metadata": {
+        "author": "NIST Digital Library of Mathematical Functions",
+        "year": null,
+        "title": "Hypergeometric transformations, Jacobi representations and zeros",
+        "venue": "Sections 15.8, 18.5 and 18.16",
+        "volume": null,
+        "pages": null,
+        "doi": null,
+        "url": "https://dlmf.nist.gov/",
+        "accessed": "2026-08-09"
+      },
+      "official_metadata": {
+        "title": "NIST Digital Library of Mathematical Functions",
+        "release": "1.2.7",
+        "release_date": "2026-06-15",
+        "editors": [
+          "F. W. J. Olver",
+          "A. B. Olde Daalhuis",
+          "D. W. Lozier",
+          "B. I. Schneider",
+          "R. F. Boisvert",
+          "C. W. Clark",
+          "B. R. Miller",
+          "B. V. Saunders",
+          "H. S. Cohl",
+          "M. A. McClain"
+        ],
+        "url": "https://dlmf.nist.gov/",
+        "claim_permalinks": [
+          "https://dlmf.nist.gov/15.8.E1",
+          "https://dlmf.nist.gov/18.5.E7",
+          "https://dlmf.nist.gov/18.16.E1"
+        ]
+      },
+      "field_comparison": {
+        "author": "FAIL: official recommended entry has a title plus named editors, not this corporate author field",
+        "year": "FAIL: omitted; Release 1.2.7 is dated 2026-06-15 and the rendered bibliography says n.d.",
+        "title": "FAIL: supplied title is a synthetic composite, not the official work title",
+        "venue": "FAIL: section list is a locator, not publication metadata or release metadata",
+        "volume": "N/A",
+        "pages": "N/A",
+        "doi": "N/A",
+        "url": "PASS: the root URL matches DLMF's recommended bibliographic entry; FAIL separately on locator precision because the cited equations/section are not linked by permalink"
+      },
+      "doi_target_check": {
+        "verdict": "N/A",
+        "reason": "No DOI"
+      },
+      "hallucination_pattern_check": "FAIL-SYNTHETIC-COMPOSITE: the underlying official source is genuine, but the bibliographic work title and authorship structure were synthesized"
+    }
+  ],
+  "citation_contexts": [
+    {
+      "id": "C01",
+      "manuscript_line": 78,
+      "key": "lps2019",
+      "claim": "Computer-aided ranges for e=3,4,5",
+      "primary_location": "Lewis-Perry-Straub, Theorem 13, arXiv PDF page 9; journal page 5354",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C02",
+      "manuscript_line": 80,
+      "key": "perry2016",
+      "claim": "Perry's thesis developed the earlier computational direction for LPS parameter e=3",
+      "primary_location": "Perry dissertation, Theorem 1.3.2 and Chapter 3 conclusion, PDF pages 7 and 38",
+      "verdict": "PASS",
+      "note": "The statement uses LPS's parameter e, for which e=3 means the polydegree pair (d,4); Perry's own second-degree notation calls this the e=4 case"
+    },
+    {
+      "id": "C03",
+      "manuscript_line": 81,
+      "key": "edo2014",
+      "claim": "The coefficient-polynomial problem lies in the Rigidity and Strong Factorial framework",
+      "primary_location": "Edo-van den Essen, Sections 2.2-2.3 and 5.1-5.2, arXiv PDF pages 4-7 and 14-15",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C04",
+      "manuscript_line": 84,
+      "key": "lps2019",
+      "claim": "The determinant was described as presently unmotivated",
+      "primary_location": "Lewis-Perry-Straub, immediately after the definition of a_d,e, arXiv PDF page 3",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C05",
+      "manuscript_line": 149,
+      "key": "lps2019",
+      "claim": "Theorem 13 ranges and Theorem 14 divisibility family",
+      "primary_location": "Lewis-Perry-Straub, Theorems 13-14, arXiv PDF pages 9-10; journal pages 5354-5355",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C06",
+      "manuscript_line": 215,
+      "key": "lps2019",
+      "claim": "Definitions of g_d,e, alpha_i,j,e and a_d,e",
+      "primary_location": "Lewis-Perry-Straub, Section 1.1, arXiv PDF pages 2-3",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C07",
+      "manuscript_line": 475,
+      "key": "grochow2025",
+      "claim": "Square-system invertible-Jacobian Hensel lifting",
+      "primary_location": "Grochow author preprint, Theorem 1, PDF page 1; published article pages 350-355",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C08",
+      "manuscript_line": 491,
+      "key": "stacks00hp",
+      "claim": "Faithfully flat scalar extension preserves nonzero modules/algebras",
+      "primary_location": "Stacks Project Tag 00HP, Lemma 10.39.15, equivalence (2)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C09",
+      "manuscript_line": 494,
+      "key": "stacks00fv",
+      "claim": "Weak Nullstellensatz yields a complex point of a nonzero finite-type C-algebra",
+      "primary_location": "Stacks Project Tag 00FV, Theorem 10.34.1, especially part (1) and the finite-type extension sentence",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C10",
+      "manuscript_line": 496,
+      "key": "lps2019",
+      "claim": "Theorem 4 yields the stated polydegree containment from the specialization",
+      "primary_location": "Lewis-Perry-Straub, Theorem 4, arXiv PDF page 3",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C11",
+      "manuscript_line": 793,
+      "key": "martinez2024zeros",
+      "claim": "Hypergeometric parameter concatenation under degree-M multiplicative finite free convolution",
+      "primary_location": "Martínez-Finkelshtein-Morales-Perales, Theorem A, v2 PDF page 7",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C12",
+      "manuscript_line": 803,
+      "key": "dlmf",
+      "claim": "Pfaff transformation, Jacobi representation, and distinct Jacobi zeros in the open interval for parameters greater than -1",
+      "primary_location": "DLMF 15.8.1, 18.5.7, and 18.16.1",
+      "verdict": "PASS",
+      "note": "Substantively supported; the bibliography record and broad root URL nevertheless fail exact metadata/locator policy"
+    },
+    {
+      "id": "C13",
+      "manuscript_line": 816,
+      "key": "martinez2024real",
+      "claim": "Reflection identity and preservation of logarithmic mesh under multiplicative finite free convolution",
+      "primary_location": "Martínez-Finkelshtein-Morales-Perales, Remark 2.12 and Proposition 2.17, v3 PDF pages 14-15",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C14",
+      "manuscript_line": 960,
+      "key": "lps2019",
+      "claim": "Theorem 4 gives a sufficient, not known necessary, condition",
+      "primary_location": "Lewis-Perry-Straub, Theorem 4, arXiv PDF page 3",
+      "verdict": "FAIL",
+      "reason": "The cited theorem proves sufficiency but does not establish the literature-status assertion that necessity is unknown; no primary source is supplied for that negative claim"
+    }
+  ],
+  "closure": {
+    "bibliography_keys": [
+      "lps2019",
+      "perry2016",
+      "edo2014",
+      "grochow2025",
+      "stacks00hp",
+      "stacks00fv",
+      "martinez2024zeros",
+      "martinez2024real",
+      "dlmf"
+    ],
+    "citation_key_frequencies": {
+      "lps2019": 6,
+      "perry2016": 1,
+      "edo2014": 1,
+      "grochow2025": 1,
+      "stacks00hp": 1,
+      "stacks00fv": 1,
+      "martinez2024zeros": 1,
+      "martinez2024real": 1,
+      "dlmf": 1
+    },
+    "orphan_bibliography_keys": [],
+    "dangling_citation_keys": [],
+    "generated_bibitems": 9,
+    "verdict": "PASS"
+  },
+  "defects": [
+    {
+      "severity": "blocking",
+      "key": "martinez2024zeros",
+      "defect": "Exact title punctuation mismatch: official period replaced by colon"
+    },
+    {
+      "severity": "blocking",
+      "keys": ["stacks00hp", "stacks00fv"],
+      "defect": "Tag-specific synthetic records omit the official 2026 year; rendered bibliography outputs n.d.; 00HP also has a non-official subtitle"
+    },
+    {
+      "severity": "blocking",
+      "key": "dlmf",
+      "defect": "Composite title/authorship is not DLMF's recommended citation; release 1.2.7, release date, editors, and claim-specific permalinks are omitted; rendered bibliography outputs n.d."
+    },
+    {
+      "severity": "blocking",
+      "manuscript_line": 960,
+      "key": "lps2019",
+      "defect": "Cited theorem supports sufficiency but not the negative state-of-knowledge assertion 'not known necessary'"
+    },
+    {
+      "severity": "advisory",
+      "keys": ["martinez2024zeros", "martinez2024real"],
+      "defect": "Version fields are explicit but URLs are unversioned; pin /v2 and /v3 for durable artifact identity"
+    }
+  ]
+}

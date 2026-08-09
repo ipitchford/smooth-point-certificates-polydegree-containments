@@ -1,0 +1,505 @@
+{
+  "schema": "evidence-press.stage2_5.originality-technical-audit.v1",
+  "executed_at": "2026-08-09T19:54:52+0100",
+  "audited_output": {
+    "path": "outputs/smooth-point-certificates-polydegree-stage2-2026-08-09",
+    "manuscript": "outputs/smooth-point-certificates-polydegree-stage2-2026-08-09/MANUSCRIPT.md",
+    "manuscript_sha256": "a9f06d035fe2ce1c4b4e1d9d7044f2dfd8006c9f2cab605e1cc34e4de8bf9bd8",
+    "read_only": true
+  },
+  "phase_d": {
+    "mode": "Mode 1 (pre-review)",
+    "body_scope": "Abstract through Conclusion; Declarations and References excluded; headings, display mathematics, tables and code excluded",
+    "total_body_paragraphs": 132,
+    "sampled_paragraphs": 40,
+    "sampling_rate": 0.30303030303030304,
+    "minimum_sampling_rate": 0.3,
+    "major_sections_total": 12,
+    "major_sections_covered": 12,
+    "selection": "Deterministic risk-weighted sample prioritising literature, background, discussion and proof prose, with at least one paragraph from every major section",
+    "search_strategy": "For every sampled paragraph, one quoted 8-12-word characteristic fragment and one unquoted keyword variant were searched. Top five results were reviewed where available; all returned results were reviewed when fewer than five were available.",
+    "inventory_artifacts": {
+      "paragraph_inventory": "work/irreducible-norms-ref-upgrade/stage2_5/originality_agent/paragraph_inventory.json",
+      "paragraph_inventory_sha256": "0c2e2c02d331d86fbc5338f501b648c66a60343f24771dbf2a636ce2d15f5126",
+      "sample_plan": "work/irreducible-norms-ref-upgrade/stage2_5/originality_agent/sample_plan.json",
+      "sample_plan_sha256": "0725c51102dab3bd31a83c382a6e586214843af28cf4b76bbf52227009931438",
+      "python_and_python_O_byte_identical": true
+    },
+    "grade_counts": {
+      "ORIGINAL": 20,
+      "COMMON_KNOWLEDGE": 10,
+      "PARAPHRASE": 10,
+      "CLOSE_MATCH": 0,
+      "VERBATIM": 0
+    },
+    "records": [
+      {
+        "id": "P003", "lines": "44-54", "major_section": "Abstract",
+        "quoted_fragment": "A simple common zero modulo a prime with non-zero next coefficient",
+        "quoted_query": "\"A simple common zero modulo a prime with non-zero next coefficient\"",
+        "quoted_result": "No exact or near-exact hit; returned generic Hensel references.",
+        "unquoted_query": "simple common zero prime non-zero next coefficient Hensel Polydegree",
+        "unquoted_result": "Generic Hensel and Polydegree material; no matching expression or distinctive argument sequence.",
+        "grade": "ORIGINAL", "rationale": "Distinctive synthesis and wording were not found."
+      },
+      {
+        "id": "P005", "lines": "62-69", "major_section": "Introduction",
+        "quoted_fragment": "The group of polynomial automorphisms of the complex affine plane",
+        "quoted_query": "\"The group of polynomial automorphisms of the complex affine plane\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "group polynomial automorphisms complex affine plane polydegree ind-variety",
+        "unquoted_result": "The Lewis-Perry-Straub paper states the same background at https://arxiv.org/abs/1809.09681, with materially different wording.",
+        "grade": "PARAPHRASE", "rationale": "Cited background is clearly reworded."
+      },
+      {
+        "id": "P006", "lines": "77-81", "major_section": "Introduction",
+        "quoted_fragment": "Their formulation makes the problem algorithmically decidable for fixed",
+        "quoted_query": "\"Their formulation makes the problem algorithmically decidable for fixed\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "Polydegree algorithmically decidable fixed d e computer-aided ranges",
+        "unquoted_result": "The cited paper's abstract says the conjecture is algorithmically decidable: https://arxiv.org/abs/1809.09681.",
+        "grade": "PARAPHRASE", "rationale": "Accurate cited restatement with different syntax and vocabulary."
+      },
+      {
+        "id": "P007", "lines": "83-88", "major_section": "Introduction",
+        "quoted_fragment": "The determinant appearing in the Lewis Perry Straub criterion was described",
+        "quoted_query": "\"The determinant appearing in the Lewis Perry Straub criterion was described\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "Lewis Perry Straub determinant unmotivated auxiliary polynomial Jacobian",
+        "unquoted_result": "The cited Lewis-Perry-Straub source contains the underlying 'unmotivated' description: https://arxiv.org/abs/1809.09681.",
+        "grade": "PARAPHRASE", "rationale": "A cited source characterization is restated, then contrasted with the manuscript's own claim."
+      },
+      {
+        "id": "P009", "lines": "93-97", "major_section": "Introduction",
+        "quoted_fragment": "That change of language has concrete consequences It removes the full determinant",
+        "quoted_query": "\"That change of language has concrete consequences It removes the full determinant\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "Jacobian language removes determinant finite field search useful primes Hensel divisor curve",
+        "unquoted_result": "Returned generic Jacobian, Hensel and curve material; no matching consequence chain.",
+        "grade": "ORIGINAL", "rationale": "The three-part consequence statement is manuscript-specific."
+      },
+      {
+        "id": "P014", "lines": "120-124", "major_section": "Introduction",
+        "quoted_fragment": "A modular common zero at which the affine minor",
+        "quoted_query": "\"A modular common zero at which the affine minor\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "modular common zero affine Jacobian minor next coefficient Hensel",
+        "unquoted_result": "Only generic Hensel material; no matching certificate formulation.",
+        "grade": "ORIGINAL", "rationale": "No public wording or distinctive formulation match was found."
+      },
+      {
+        "id": "P015", "lines": "126-128", "major_section": "Introduction",
+        "quoted_fragment": "including the affine-support and perfect-ground-field hypotheses needed for coefficient-one prime-divisor applications",
+        "quoted_query": "\"including the affine-support and perfect-ground-field hypotheses needed for coefficient-one prime-divisor applications\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "prime gap Jacobian bridge smooth complete intersection curve affine support perfect field coefficient one",
+        "unquoted_result": "Returned unrelated curve/Jacobian literature; no matching theorem-package description.",
+        "grade": "ORIGINAL", "rationale": "Distinctive contribution wording and hypothesis bundle were not located."
+      },
+      {
+        "id": "P016", "lines": "130-136", "major_section": "Introduction",
+        "quoted_fragment": "we prove uniform squarefreeness of the one-variable boundary factors",
+        "quoted_query": "\"we prove uniform squarefreeness of the one-variable boundary factors\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "uniform squarefreeness one-variable boundary factors hypergeometric finite free convolution",
+        "unquoted_result": "Finite-free-convolution papers appeared, but not this result or wording.",
+        "grade": "ORIGINAL", "rationale": "The claimed combination and phrasing were not located."
+      },
+      {
+        "id": "P018", "lines": "148-151", "major_section": "Introduction",
+        "quoted_fragment": "The present paper therefore does not claim the first infinite family",
+        "quoted_query": "\"The present paper therefore does not claim the first infinite family\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "Polydegree d congruent 1 mod 3 infinite family Edo Theorem 14",
+        "unquoted_result": "The cited theorem context appears in https://arxiv.org/abs/1809.09681; no wording match.",
+        "grade": "PARAPHRASE", "rationale": "Cited theorem plus a transparent inference, in new wording."
+      },
+      {
+        "id": "P019", "lines": "153-159", "major_section": "Introduction",
+        "quoted_fragment": "That is provisional negative evidence not proof of priority",
+        "quoted_query": "\"That is provisional negative evidence not proof of priority\"",
+        "quoted_result": "No relevant exact hit; patent-search noise dominated.",
+        "unquoted_query": "provisional negative evidence not proof of priority prior art search",
+        "unquoted_result": "No source with the same phrasing or argument sequence.",
+        "grade": "ORIGINAL", "rationale": "Distinctive assurance language was not found."
+      },
+      {
+        "id": "P029", "lines": "244-246", "major_section": "Coefficient polynomials and formal inversion",
+        "quoted_fragment": "the coefficient of w m is c m plus an integer polynomial",
+        "quoted_query": "\"the coefficient of w^m is c_m plus an integer polynomial\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "coefficient c_m integer polynomial previous coefficients induction formal inverse",
+        "unquoted_result": "Routine formal-power-series induction descriptions, without distinctive overlap.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Standard coefficient-recursion proof pattern."
+      },
+      {
+        "id": "P032", "lines": "258-260", "major_section": "Coefficient polynomials and formal inversion",
+        "quoted_fragment": "They are used as separate internal replay paths in the evidence package",
+        "quoted_query": "\"They are used as separate internal replay paths in the evidence package\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "formal inverse recursion multinomial expression separate replay paths coefficients",
+        "unquoted_result": "No relevant matching result.",
+        "grade": "ORIGINAL", "rationale": "Workflow-specific explanation is independently phrased."
+      },
+      {
+        "id": "P034", "lines": "275-277", "major_section": "The auxiliary determinant is a Jacobian",
+        "quoted_fragment": "whose x i plus one exponent is positive survive differentiation Put b",
+        "quoted_query": "\"whose x_{i+1} exponent is positive survive differentiation Put b\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "multivariate polynomial differentiation positive exponent coefficient reindexing",
+        "unquoted_result": "Generic polynomial-differentiation sources only.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Routine monomial differentiation and reindexing."
+      },
+      {
+        "id": "P035", "lines": "285-286", "major_section": "The auxiliary determinant is a Jacobian",
+        "quoted_fragment": "the coefficient of x to a in the derivative is",
+        "quoted_query": "\"the coefficient of x^a in the derivative is\"",
+        "quoted_result": "No exact hit; generic calculus pages were returned.",
+        "unquoted_query": "multivariate monomial derivative coefficient exponent multiplication reindex",
+        "unquoted_result": "Standard differentiation rules, no distinctive wording.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Routine coefficient extraction after differentiation."
+      },
+      {
+        "id": "P036", "lines": "299-300", "major_section": "The auxiliary determinant is a Jacobian",
+        "quoted_fragment": "Summing over the common index set proves equation three point one",
+        "quoted_query": "\"Summing over the common index set proves (3.1)\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "coefficient comparison common index set polynomial derivative proof",
+        "unquoted_result": "Generic proof language only.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Standard conclusion of a termwise coefficient comparison."
+      },
+      {
+        "id": "P038", "lines": "319-320", "major_section": "The auxiliary determinant is a Jacobian",
+        "quoted_fragment": "by Proposition three point one Its determinant is therefore minus one",
+        "quoted_query": "\"by Proposition 3.1 Its determinant is therefore (-1)^e\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "determinant transpose scalar minus matrix determinant sign",
+        "unquoted_result": "Standard determinant-transpose and scalar-sign properties.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Elementary determinant identity."
+      },
+      {
+        "id": "P040", "lines": "329-331", "major_section": "The auxiliary determinant is a Jacobian",
+        "quoted_fragment": "The specialisation theorem does not however require all e coefficients to vanish",
+        "quoted_query": "\"The specialisation theorem does not however require all e coefficients to vanish\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "specialisation theorem partial zero locus Jacobian minor coefficient polynomials",
+        "unquoted_result": "No matching transition or claim wording.",
+        "grade": "ORIGINAL", "rationale": "Manuscript-specific transition and proof framing."
+      },
+      {
+        "id": "P046", "lines": "384-387", "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+        "quoted_fragment": "every summand with s>=2 repeats an existing column",
+        "quoted_query": "\"every summand with s>=2 repeats an existing column\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "multilinearity determinant repeated column summand zero Euler syzygy",
+        "unquoted_result": "Standard determinant multilinearity and repeated-column facts.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Elementary determinant expansion principle."
+      },
+      {
+        "id": "P047", "lines": "394-396", "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+        "quoted_fragment": "Moving it to the left proves (4.3) and (4.4) follows",
+        "quoted_query": "\"Moving it to the left proves (4.3) and (4.4) follows\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "weighted Euler determinant syzygy last summand Jacobian",
+        "unquoted_result": "No matching proof sentence or distinctive derivation.",
+        "grade": "ORIGINAL", "rationale": "Specific conclusion of the manuscript's own computation."
+      },
+      {
+        "id": "P054", "lines": "422-428", "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+        "quoted_fragment": "The Jacobian criterion for a subscheme cut out by",
+        "quoted_query": "\"The Jacobian criterion for a subscheme cut out by\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "Jacobian criterion complete intersection rank smooth point affine scheme equations",
+        "unquoted_result": "Multiple sources state the same standard criterion in different words.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Standard Jacobian criterion, applied explicitly."
+      },
+      {
+        "id": "P060", "lines": "468-475", "major_section": "A smaller Hensel certificate",
+        "quoted_fragment": "The non-zero Jacobian determinant makes Q a simple zero",
+        "quoted_query": "\"The non-zero Jacobian determinant makes Q a simple zero\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "multivariate Hensel lifting simple zero nonzero Jacobian determinant exact lift",
+        "unquoted_result": "The cited Hensel source states the underlying theorem: https://www.tandfonline.com/doi/full/10.1080/00029890.2024.2440297.",
+        "grade": "PARAPHRASE", "rationale": "Cited theorem is accurately summarized in different wording."
+      },
+      {
+        "id": "P061", "lines": "487-496", "major_section": "A smaller Hensel certificate",
+        "quoted_fragment": "The extension Q subset C is faithfully flat hence R tensor",
+        "quoted_query": "\"The extension Q subset C is faithfully flat hence R tensor\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "faithfully flat field extension nonzero algebra remains nonzero weak Nullstellensatz complex point",
+        "unquoted_result": "The cited Stacks lemmas support the chain: https://stacks.math.columbia.edu/tag/00HP and https://stacks.math.columbia.edu/tag/00FV.",
+        "grade": "PARAPHRASE", "rationale": "Cited standard results are integrated into a new proof chain."
+      },
+      {
+        "id": "P062", "lines": "498-500", "major_section": "A smaller Hensel certificate",
+        "quoted_fragment": "The proof does not assert an embedding Q p into C",
+        "quoted_query": "\"The proof does not assert an embedding Q_p into C\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "no embedding p-adic numbers into complex numbers faithful scalar extension algebra",
+        "unquoted_result": "No matching disclaimer or argument wording.",
+        "grade": "ORIGINAL", "rationale": "Manuscript-specific clarification."
+      },
+      {
+        "id": "P074", "lines": "576-585", "major_section": "A curve-theoretic route to the same point",
+        "quoted_fragment": "Reducedness of the zero divisor means that F has a simple zero",
+        "quoted_query": "\"Reducedness of the zero divisor means that F has a simple zero\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "smooth curve reduced zero divisor simple zero differential nonzero tangent space",
+        "unquoted_result": "Standard smooth-curve and divisor facts in varied wording.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Standard equivalence for a zero of a function on a smooth curve."
+      },
+      {
+        "id": "P075", "lines": "587-591", "major_section": "A curve-theoretic route to the same point",
+        "quoted_fragment": "The requirement that C be the scheme-theoretic complete intersection is load-bearing",
+        "quoted_query": "\"The requirement that C be the scheme-theoretic complete intersection is load-bearing\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "smooth selected component embedded structure Jacobian scheme-theoretic complete intersection",
+        "unquoted_result": "No matching assurance formulation.",
+        "grade": "ORIGINAL", "rationale": "Distinctive warning and wording were not found."
+      },
+      {
+        "id": "P077", "lines": "606-610", "major_section": "A curve-theoretic route to the same point",
+        "quoted_fragment": "the residue extension of a closed point is separable",
+        "quoted_query": "\"the residue extension of a closed point is separable\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "perfect field closed point residue field extension separable base change geometric points",
+        "unquoted_result": "Multiple algebraic-geometry sources express the same standard facts.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Standard perfect-field and base-change fact."
+      },
+      {
+        "id": "P078", "lines": "612-615", "major_section": "A curve-theoretic route to the same point",
+        "quoted_fragment": "Over an algebraically closed field an individual closed point has degree one",
+        "quoted_query": "\"Over an algebraically closed field an individual closed point has degree one\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "algebraically closed field closed point degree one coefficient prime divisor base change",
+        "unquoted_result": "Standard Nullstellensatz/closed-point statements in varied wording.",
+        "grade": "COMMON_KNOWLEDGE", "rationale": "Standard algebraic-geometry fact."
+      },
+      {
+        "id": "P095", "lines": "741-743", "major_section": "Exact e=3 geometry and the uniform conjecture",
+        "quoted_fragment": "let c n M be the non-zero leading coefficient of P n",
+        "quoted_query": "\"let c_{n,M} be the non-zero leading coefficient of P_n\"",
+        "quoted_result": "No exact hit; unrelated leading-coefficient pages were returned.",
+        "unquoted_query": "boundary polynomial P_n M floor A over 3 leading coefficient hypergeometric",
+        "unquoted_result": "No matching construction.",
+        "grade": "ORIGINAL", "rationale": "Local notation and setup are manuscript-specific."
+      },
+      {
+        "id": "P098", "lines": "793-795", "major_section": "Exact e=3 geometry and the uniform conjecture",
+        "quoted_fragment": "Pfaff transformation and the Jacobi representation show that",
+        "quoted_query": "\"Pfaff transformation and the Jacobi representation show that\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "Pfaff transformation Jacobi representation simple negative roots hypergeometric p_n q_n",
+        "unquoted_result": "DLMF sections 15.8, 18.5 and 18.16 provide the cited transformations and zero facts: https://dlmf.nist.gov/15.8, https://dlmf.nist.gov/18.5, https://dlmf.nist.gov/18.16.",
+        "grade": "PARAPHRASE", "rationale": "Cited classical identities are concisely applied in new wording."
+      },
+      {
+        "id": "P100", "lines": "806-809", "major_section": "Exact e=3 geometry and the uniform conjecture",
+        "quoted_fragment": "its positive roots are simple so its logarithmic mesh is greater",
+        "quoted_query": "\"its positive roots are simple so its logarithmic mesh\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "finite free convolution Proposition 2.17 logarithmic mesh positive roots simple",
+        "unquoted_result": "The cited Proposition 2.17 gives lmesh preservation: https://arxiv.org/abs/2309.10970v3.",
+        "grade": "PARAPHRASE", "rationale": "Cited definition and proposition are accurately specialized."
+      },
+      {
+        "id": "P101", "lines": "816-820", "major_section": "Exact e=3 geometry and the uniform conjecture",
+        "quoted_fragment": "Hence the reflected convolution has simple positive roots",
+        "quoted_query": "\"Hence the reflected convolution has simple positive roots\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "reflection identity finite free convolution simple positive roots negative-rooted reciprocation",
+        "unquoted_result": "The reflection identity appears in Remark 2.12 of https://arxiv.org/abs/2309.10970v3; no matching proof prose.",
+        "grade": "PARAPHRASE", "rationale": "A cited identity is combined with the manuscript's derived mesh inequality."
+      },
+      {
+        "id": "P102", "lines": "822-824", "major_section": "Exact e=3 geometry and the uniform conjecture",
+        "quoted_fragment": "The logarithmic-mesh step is load-bearing A broader strict-interlacing wording",
+        "quoted_query": "\"The logarithmic-mesh step is load-bearing A broader strict-interlacing wording\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "strict interlacing nonnegative rooted convolution degenerate q x^M counterexample logarithmic mesh",
+        "unquoted_result": "Search returned log-mesh/interlacing literature, not this warning or counterexample framing.",
+        "grade": "ORIGINAL", "rationale": "Distinctive referee-warning language was not located."
+      },
+      {
+        "id": "P114", "lines": "915-919", "major_section": "Computational assurance and reproducibility",
+        "quoted_fragment": "The package establishes that the stated scripts replay the stated finite relations",
+        "quoted_query": "\"The package establishes that the stated scripts replay the stated finite relations\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "scripts replay finite relations adversarial sign index checks not independent reproduction",
+        "unquoted_result": "Search returned general reproducibility/evidence discussions, not matching prose.",
+        "grade": "ORIGINAL", "rationale": "Package-specific assurance boundary is independently worded."
+      },
+      {
+        "id": "P116", "lines": "936-940", "major_section": "Discussion",
+        "quoted_fragment": "For computation the full determinant and its alpha-matrix implementation can be removed",
+        "quoted_query": "\"For computation the full determinant and its alpha-matrix implementation can be removed\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "full determinant alpha matrix removed search criterion reduced point next coefficient residue class lifted",
+        "unquoted_result": "Returned generic determinant and lifting material; no matching three-way computational/geometric/arithmetic synthesis.",
+        "grade": "ORIGINAL", "rationale": "Specific implications of the manuscript's reformulation."
+      },
+      {
+        "id": "P122", "lines": "958-960", "major_section": "Discussion",
+        "quoted_fragment": "Failure of this particular smooth-point route at one d would not disprove",
+        "quoted_query": "\"Failure of this particular smooth-point route at one d would not disprove\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "Polydegree Theorem 4 sufficient not necessary smooth point route",
+        "unquoted_result": "The cited sufficient condition is in https://arxiv.org/abs/1809.09681; no wording match.",
+        "grade": "PARAPHRASE", "rationale": "Properly cited scope inference from a sufficient theorem."
+      },
+      {
+        "id": "P123", "lines": "964-968", "major_section": "Discussion",
+        "quoted_fragment": "The paper's current contribution is a reusable theorem package",
+        "quoted_query": "\"The paper's current contribution is a reusable theorem package\"",
+        "quoted_result": "No exact hit.",
+        "unquoted_query": "Jacobian interpretation exact syzygy sharper Hensel criterion curve theoretic bridge",
+        "unquoted_result": "No matching contribution statement.",
+        "grade": "ORIGINAL", "rationale": "Manuscript-specific synthesis."
+      },
+      {
+        "id": "P124", "lines": "970-975", "major_section": "Discussion",
+        "quoted_fragment": "No inspected source states the present derivative-determinant-Euler chain but the first identity",
+        "quoted_query": "\"No inspected source states the present derivative-determinant-Euler chain but the first identity\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "derivative determinant Euler chain priority prior art Lewis Perry Straub",
+        "unquoted_result": "No result states the same priority caveat or chain.",
+        "grade": "ORIGINAL", "rationale": "Distinctive calibrated-priority prose."
+      },
+      {
+        "id": "P125", "lines": "979-981", "major_section": "Limitations",
+        "quoted_fragment": "bridge theorems have written proofs and internal adversarial review",
+        "quoted_query": "\"bridge theorems have written proofs and internal adversarial review\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "Jacobian identities bridge theorems written proofs internal adversarial review no proof assistant external validation",
+        "unquoted_result": "Returned general proof-assistant and Jacobian pages; no matching assurance statement.",
+        "grade": "ORIGINAL", "rationale": "Manuscript-specific validation boundary."
+      },
+      {
+        "id": "P129", "lines": "991-993", "major_section": "Limitations",
+        "quoted_fragment": "It reproduces the hypotheses used but does not reprove their polynomial-automorphism construction",
+        "quoted_query": "\"It reproduces the hypotheses used but does not reprove their polynomial-automorphism construction\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "manuscript inherits Lewis Perry Straub Theorem 4 hypotheses not reprove polynomial automorphism construction",
+        "unquoted_result": "The Lewis-Perry-Straub source appeared at https://arxiv.org/abs/1809.09681, but not this limitation wording.",
+        "grade": "ORIGINAL", "rationale": "Package-specific statement of inherited-theorem scope."
+      },
+      {
+        "id": "P132", "lines": "1008-1014", "major_section": "Conclusion",
+        "quoted_fragment": "The responsible next advance is a structural proof or counterexample",
+        "quoted_query": "\"The responsible next advance is a structural proof or counterexample\"",
+        "quoted_result": "No exact or close hit.",
+        "unquoted_query": "structural proof counterexample not longer table uniform conjecture Jacobian Hensel",
+        "unquoted_result": "Unrelated conjecture/counterexample pages; no matching conclusion.",
+        "grade": "ORIGINAL", "rationale": "Manuscript-specific recommendation and evidence boundary."
+      }
+    ],
+    "d2_self_plagiarism": {
+      "status": "NOT_EXECUTABLE",
+      "display": "Not executed (author information not provided)",
+      "reason": "The manuscript author is Anonymous; no author identity or publication corpus was provided."
+    },
+    "d3_ai_writing_characteristics": {
+      "disclaimer": "Heuristic checklist only; not an authorship determination.",
+      "indicators_triggered": 0,
+      "threshold": 2,
+      "alert": false,
+      "indicators": {
+        "excessive_smoothness": false,
+        "lack_of_specificity": false,
+        "formulaic_transitions": false,
+        "excessive_parallelism": false,
+        "hedging_overload": false,
+        "citation_argument_gap": false
+      },
+      "notes": "The prose is highly specific; theorem-proof rhythm is normal for mathematics; scope hedges are localized to assurance and limitations; no stock transition phrases were found."
+    },
+    "issues": [],
+    "severity": "NONE",
+    "verdict": "PASS"
+  },
+  "technical_source_audit": {
+    "scope": "MANUSCRIPT.md lines 686-824, especially Theorem 7.2 and the repaired logarithmic-mesh step",
+    "verdict": "PROVED",
+    "sources": [
+      {
+        "id": "arXiv:2404.11479v2",
+        "local_pdf": "outputs/smooth-point-certificates-polydegree-stage2-2026-08-09/source_records/proof_referee/arxiv-2404.11479v2.pdf",
+        "sha256": "a620f901466393d662dd013b1ef2d6726dfe146f9f898c5c68b22a8cf4a9f5fc",
+        "version_timestamp": "2024-06-03T06:37:13Z",
+        "pdf_arxiv_stamp": "3 Jun 2024",
+        "pdf_internal_date": "June 4, 2024",
+        "url": "https://arxiv.org/abs/2404.11479v2"
+      },
+      {
+        "id": "arXiv:2309.10970v3",
+        "local_pdf": "outputs/smooth-point-certificates-polydegree-stage2-2026-08-09/source_records/proof_referee/arxiv-2309.10970v3.pdf",
+        "sha256": "23f228e0682430c1ae6285be4abed4d730e9a08accad6c3f540fbdf4eb5bb4a3",
+        "version_timestamp": "2024-05-02T07:45:44Z",
+        "pdf_arxiv_stamp": "2 May 2024",
+        "pdf_internal_date": "May 3, 2024",
+        "url": "https://arxiv.org/abs/2309.10970v3"
+      },
+      {
+        "id": "DLMF",
+        "sections": ["15.8.1", "18.5.7", "18.16.1"],
+        "urls": ["https://dlmf.nist.gov/15.8.E1", "https://dlmf.nist.gov/18.5.E7", "https://dlmf.nist.gov/18.16.E1"]
+      }
+    ],
+    "checks": [
+      {
+        "check": "Reciprocal normalization (7.6)",
+        "status": "PASS",
+        "detail": "Reversing the coefficient ratio (7.4), setting j=M-k, and using the three residue classes delta gives denominator 27(j+1)(j+beta_1)(j+beta_2). The parity identity (epsilon+2t-1)(epsilon+2t)=4t(t-sigma) matches the hypergeometric coefficient ratio. Both sides have constant term 1."
+      },
+      {
+        "check": "Finite-free convolution normalization (7.7)",
+        "status": "PASS",
+        "detail": "Theorem A of arXiv:2404.11479v2 gives exact parameter concatenation for degree M. The manuscript's weaker 'up to a non-zero scalar' statement is safe. beta_1,beta_2 are positive, a=-M+sigma is a half-integer, and H is positive, so denominators and leading coefficients do not vanish."
+      },
+      {
+        "check": "Jacobi parameters and inequalities",
+        "status": "PASS",
+        "detail": "For p_n, Pfaff followed by DLMF 18.5.7 gives Jacobi parameters (beta_1-1,-sigma), hence roots map from (0,1) to (-infinity,0). For q_n, DLMF 18.5.7 gives (beta_2-1,H-M-beta_2), hence roots lie in (0,1). The first three lower bounds are -2/3,-1/2,-1/3. Also H-M-beta_2=N-2M+1-beta_2 >= n+A/3+epsilon+1-5/3 > -1 for n>=2."
+      },
+      {
+        "check": "Sign preservation",
+        "status": "PASS",
+        "detail": "Proposition 2.4(v) of arXiv:2404.11479v2 applies to the degree-M negative-rooted p_n and positive-rooted q_n; the strict-half-line extension stated immediately after the proposition puts every root of F_n in (-infinity,0), without claiming simplicity."
+      },
+      {
+        "check": "Repaired logarithmic-mesh step",
+        "status": "PASS",
+        "detail": "For M>=2, p_hat_n(x)=p_n(-x) and q_n are degree-M members of P(R_{>0}). Simplicity of p_hat_n gives lmesh(p_hat_n)>1. Proposition 2.17 of arXiv:2309.10970v3 yields lmesh(p_hat_n box-times q_n)>=lmesh(p_hat_n)>1, which excludes repeated roots."
+      },
+      {
+        "check": "Reflection identity",
+        "status": "PASS",
+        "detail": "Remark 2.12 of arXiv:2309.10970v3 states p(x) box-times q(-x)=[p box-times q](-x). With commutativity, p_hat_n box-times q_n=[p_n box-times q_n](-x), so the reflected convolution's simple positive roots correspond to simple negative roots of F_n."
+      },
+      {
+        "check": "Low-degree cases and coverage",
+        "status": "PASS",
+        "detail": "M=0 is a non-zero constant and M=1 is a degree-one polynomial; Proposition 2.17 is not invoked there. Thus every integer n>=2 is covered despite Definition 2.16 requiring degree at least two."
+      },
+      {
+        "check": "Scale and reciprocation",
+        "status": "PASS",
+        "detail": "F_n(-4s/27) has simple positive roots. Equation (7.6) transfers these to the reciprocal polynomial; the non-zero constant and leading coefficients of P_n then make reciprocation bijective on non-zero roots, preserving simplicity and positivity."
+      }
+    ],
+    "blocking_defects": [],
+    "nonblocking_recommendations": [
+      "For immutable citation display, use versioned arXiv URLs ending in v2 and v3, not only generic abstract URLs plus a BibTeX version field.",
+      "For maximum reader auditability, cite DLMF equations 15.8.1, 18.5.7 and 18.16.1 explicitly in the proof text rather than only the three broad sections."
+    ]
+  },
+  "overall_verdict": "PASS",
+  "gray_zone_policy": "Any CLOSE_MATCH, VERBATIM, unverified theorem hypothesis, or unresolved proof ambiguity would have caused FAIL. None was found.",
+  "limitations": [
+    "This is heuristic WebSearch screening, not Turnitin, iThenticate or another professional full-corpus similarity service.",
+    "Coverage is limited to publicly searchable material; paywalled full text, private manuscripts and cross-language reuse may be missed.",
+    "The D1 check samples exactly 30% of eligible body paragraphs and is not exhaustive.",
+    "Search results are time-sensitive; the execution timestamp is recorded above."
+  ]
+}

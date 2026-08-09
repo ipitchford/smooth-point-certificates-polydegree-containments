@@ -1,0 +1,177 @@
+{
+  "candidate": "smooth-point-certificates-polydegree-containments",
+  "checks": [
+    {
+      "check": "required_files",
+      "count": 46,
+      "passed": true
+    },
+    {
+      "check": "manuscript_sections",
+      "passed": true
+    },
+    {
+      "check": "author_attestation_boundary",
+      "passed": true,
+      "pending_attestations": [
+        "funding",
+        "competing interests",
+        "CRediT"
+      ]
+    },
+    {
+      "check": "evidence_press_sections",
+      "passed": true
+    },
+    {
+      "check": "claim_language",
+      "passed": true
+    },
+    {
+      "check": "citation_closure",
+      "defined": [
+        "dlmf",
+        "edo2014",
+        "grochow2025",
+        "lps2019",
+        "martinez2024real",
+        "martinez2024zeros",
+        "perry2016",
+        "stacks00fv",
+        "stacks00hp"
+      ],
+      "passed": true,
+      "used": [
+        "dlmf",
+        "edo2014",
+        "grochow2025",
+        "lps2019",
+        "martinez2024real",
+        "martinez2024zeros",
+        "perry2016",
+        "stacks00fv",
+        "stacks00hp"
+      ]
+    },
+    {
+      "check": "citation_metadata_repairs",
+      "passed": true
+    },
+    {
+      "check": "claim_ledger",
+      "claims": 16,
+      "passed": true,
+      "safe_priority_and_assurance_polarity": true
+    },
+    {
+      "check": "stage2.5_integrity_disposition",
+      "passed": true,
+      "verdict": "PASS_WITH_NOTES"
+    },
+    {
+      "check": "corrected_citation_audit",
+      "passed": true
+    },
+    {
+      "check": "current_originality_audit",
+      "passed": true
+    },
+    {
+      "check": "independent_verifier_receipts",
+      "ordinary_optimized_byte_identical": true,
+      "passed": true,
+      "symbolic": "10/10",
+      "witnesses": "51/51"
+    },
+    {
+      "check": "mutation_receipts",
+      "optimized": "17/17",
+      "ordinary": "17/17",
+      "passed": true
+    },
+    {
+      "affine_range": [
+        2,
+        20
+      ],
+      "boundary_range": [
+        2,
+        200
+      ],
+      "check": "geometry_receipts",
+      "ordinary_optimized_byte_identical": true,
+      "passed": true
+    },
+    {
+      "adjacent_evidence_range": [
+        2,
+        300
+      ],
+      "check": "uniform_squarefreeness_receipts",
+      "identity_and_squarefree_range": [
+        2,
+        301
+      ],
+      "ordinary_optimized_byte_identical": true,
+      "passed": true,
+      "referee_repair_recorded": true
+    },
+    {
+      "check": "frozen_source_hashes",
+      "passed": true,
+      "stage1_v0.2_witness_sha256": "b659a8bccea30df4f800df526319bcbe01f429c3bee2ee8146983933da9cb38b",
+      "upstream_archive_sha256": "e51af558a067c28847219a788f8dd4d28de4a6e9bc3b8d00c5ecab2c3b123334",
+      "v0.2_v0.3_byte_identical": true,
+      "witness_sha256": "b659a8bccea30df4f800df526319bcbe01f429c3bee2ee8146983933da9cb38b"
+    },
+    {
+      "check": "version_consistency",
+      "components": {
+        "claim_ledger": true,
+        "manuscript": true,
+        "metadata": true,
+        "readme": true,
+        "reconciliation": true,
+        "status": true
+      },
+      "expected": "0.4.1-candidate",
+      "passed": true
+    },
+    {
+      "check": "ai_provenance_consistency",
+      "passed": true
+    },
+    {
+      "check": "open_theorem_metadata_boundary",
+      "passed": true
+    },
+    {
+      "absent_publication_fields": [
+        "datePublished",
+        "doi",
+        "pdfUrl",
+        "repoUrl",
+        "releaseUrl",
+        "license"
+      ],
+      "check": "metadata_boundary",
+      "passed": false,
+      "publication_ready_requested": true
+    },
+    {
+      "check": "pdf_structure",
+      "pages": 17,
+      "passed": true
+    },
+    {
+      "check": "source_characters",
+      "passed": true
+    }
+  ],
+  "failures": [
+    "publication-ready mode requires: datePublished, doi, pdfUrl, repoUrl, releaseUrl, license"
+  ],
+  "mode": "publication-ready",
+  "overall_status": "FAIL",
+  "version": "0.4.1-candidate"
+}

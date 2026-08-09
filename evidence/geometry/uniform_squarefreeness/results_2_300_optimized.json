@@ -1,0 +1,126 @@
+{
+  "arithmetic": "exact QQ coefficients and rational Sturm isolation",
+  "checked_identities": {
+    "all_convolution_coefficients": true,
+    "all_jacobi_parameter_inequalities": true,
+    "all_reciprocal_3f2": true,
+    "jacobi_parameter_minima": {
+      "negative_alpha": "-2/3",
+      "negative_gamma": "-1/2",
+      "positive_alpha": "-1/3",
+      "positive_gamma": "8/3"
+    }
+  },
+  "failures": {
+    "adjacent_gcd_QQ": [],
+    "adjacent_strict_interlacing": [],
+    "convolution_coefficient_identity": [],
+    "irreducible_QQ": [],
+    "jacobi_parameter_conditions": [],
+    "reciprocal_3f2_identity": [],
+    "squarefree_QQ": []
+  },
+  "finite_evidence": {
+    "all_P_n_squarefree_over_QQ": true,
+    "all_adjacent_pairs_coprime_over_QQ": true,
+    "all_adjacent_pairs_strictly_interlace": true,
+    "all_nonconstant_P_n_irreducible_over_QQ": true
+  },
+  "ranges": {
+    "d_adjacent": [
+      2,
+      300
+    ],
+    "d_strict_interlacing": [
+      2,
+      120
+    ],
+    "n_identity_and_squarefree": [
+      2,
+      301
+    ],
+    "n_irreducible": [
+      2,
+      300
+    ]
+  },
+  "residue_parameter_samples": [
+    {
+      "H": 9,
+      "M": 1,
+      "a": "-1/2",
+      "beta": [
+        "1/3",
+        "2/3"
+      ],
+      "delta": 0,
+      "n_mod_6": 0,
+      "sample_n": 6
+    },
+    {
+      "H": 11,
+      "M": 0,
+      "a": "-1/2",
+      "beta": [
+        "4/3",
+        "5/3"
+      ],
+      "delta": 2,
+      "n_mod_6": 1,
+      "sample_n": 7
+    },
+    {
+      "H": 4,
+      "M": 0,
+      "a": "1/2",
+      "beta": [
+        "2/3",
+        "4/3"
+      ],
+      "delta": 1,
+      "n_mod_6": 2,
+      "sample_n": 2
+    },
+    {
+      "H": 5,
+      "M": 0,
+      "a": "-1/2",
+      "beta": [
+        "1/3",
+        "2/3"
+      ],
+      "delta": 0,
+      "n_mod_6": 3,
+      "sample_n": 3
+    },
+    {
+      "H": 7,
+      "M": 0,
+      "a": "1/2",
+      "beta": [
+        "4/3",
+        "5/3"
+      ],
+      "delta": 2,
+      "n_mod_6": 4,
+      "sample_n": 4
+    },
+    {
+      "H": 8,
+      "M": 0,
+      "a": "-1/2",
+      "beta": [
+        "2/3",
+        "4/3"
+      ],
+      "delta": 1,
+      "n_mod_6": 5,
+      "sample_n": 5
+    }
+  ],
+  "runtime": {
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "schema": "polydegree.e3.boundary-hypergeom.v1"
+}

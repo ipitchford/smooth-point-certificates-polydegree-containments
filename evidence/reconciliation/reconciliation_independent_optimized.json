@@ -1,0 +1,1316 @@
+{
+  "implementation": {
+    "archive_code_imported": false,
+    "arithmetic": "exact sparse integer polynomials and finite-field residues",
+    "determinant": "generic Leibniz permutation formula",
+    "language": "Python standard library only",
+    "optimization_safe": "no proof-critical assert statements"
+  },
+  "overall_status": "PASS",
+  "schema": "irreducible-norms.jacobian-refactor-independent-verification.v1",
+  "scope": {
+    "claim": "regression evidence for a separately written mathematical proof, not a proof for all d,e",
+    "criterion_distinction": "p not dividing d+2 is required for a mod-p a-unit certificate, but not for the J-based Hensel-to-Q_p existence argument",
+    "symbolic_sweeps_are_bounded": true,
+    "witness_relation_range": [
+      50,
+      100
+    ]
+  },
+  "symbolic_checks": [
+    {
+      "evidence": "238 exact coefficient-dictionary comparisons; e=2..5, j=0..16",
+      "failures": [],
+      "name": "coefficientwise derivative identity",
+      "status": "PASS"
+    },
+    {
+      "evidence": "64 exact coefficient-dictionary comparisons; e=2..5, n=1..16",
+      "failures": [],
+      "name": "weighted Euler identity",
+      "status": "PASS"
+    },
+    {
+      "evidence": "terms: a=2, J=1, congruence_residual=0",
+      "failures": [],
+      "name": "exact sparse determinant case e=2, d=2",
+      "status": "PASS"
+    },
+    {
+      "evidence": "terms: a=5, J=2, congruence_residual=0",
+      "failures": [],
+      "name": "exact sparse determinant case e=2, d=5",
+      "status": "PASS"
+    },
+    {
+      "evidence": "terms: a=3, J=1, congruence_residual=0",
+      "failures": [],
+      "name": "exact sparse determinant case e=3, d=2",
+      "status": "PASS"
+    },
+    {
+      "evidence": "terms: a=12, J=4, congruence_residual=0",
+      "failures": [],
+      "name": "exact sparse determinant case e=3, d=4",
+      "status": "PASS"
+    },
+    {
+      "evidence": "terms: a=26, J=10, congruence_residual=0",
+      "failures": [],
+      "name": "exact sparse determinant case e=3, d=6",
+      "status": "PASS"
+    },
+    {
+      "evidence": "terms: a=4, J=1, congruence_residual=0",
+      "failures": [],
+      "name": "exact sparse determinant case e=4, d=2",
+      "status": "PASS"
+    },
+    {
+      "evidence": "terms: a=14, J=3, congruence_residual=0",
+      "failures": [],
+      "name": "exact sparse determinant case e=4, d=3",
+      "status": "PASS"
+    },
+    {
+      "evidence": "72 determinant and Euler--Jacobian comparisons; e=2..5, d=2..10",
+      "failures": [],
+      "name": "general-e exact-integer evaluation sweep",
+      "status": "PASS"
+    }
+  ],
+  "symbolic_checks_passed": 10,
+  "symbolic_checks_total": 10,
+  "witness_verification": {
+    "failures": [],
+    "results": [
+      {
+        "computed": {
+          "a": 2,
+          "euler_jacobian_rhs": 2,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 50,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          3,
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 17,
+          "euler_jacobian_rhs": 17,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 14,
+          "jac23": 10
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 51,
+        "failures": [],
+        "p": 37,
+        "point": [
+          1,
+          3,
+          24
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 3,
+          "euler_jacobian_rhs": 3,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 1,
+          "jac23": 5
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 52,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          8,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 18,
+          "euler_jacobian_rhs": 18,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 18,
+          "jac23": 5
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 53,
+        "failures": [],
+        "p": 23,
+        "point": [
+          1,
+          6,
+          3
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 2,
+          "euler_jacobian_rhs": 2,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 10,
+          "jac23": 2
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 54,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          1,
+          8
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 3,
+          "euler_jacobian_rhs": 3,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 55,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          4,
+          3
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 3,
+          "euler_jacobian_rhs": 3,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 56,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          2,
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 3,
+          "euler_jacobian_rhs": 3,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 6,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 57,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          0,
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 6,
+          "euler_jacobian_rhs": 6,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 6
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 58,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          2,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 3,
+          "euler_jacobian_rhs": 3,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 3
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 59,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          2,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 15,
+          "euler_jacobian_rhs": 15,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 8
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 60,
+        "failures": [],
+        "p": 19,
+        "point": [
+          1,
+          3,
+          10
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 8,
+          "euler_jacobian_rhs": 8,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 12,
+          "jac23": 16
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 61,
+        "failures": [],
+        "p": 17,
+        "point": [
+          1,
+          6,
+          5
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 5,
+          "euler_jacobian_rhs": 5,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 5,
+          "jac23": 6
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 62,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          6,
+          6
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 6,
+          "euler_jacobian_rhs": 6,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 2
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 63,
+        "failures": [],
+        "p": 19,
+        "point": [
+          1,
+          16,
+          11
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 1,
+          "euler_jacobian_rhs": 1,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 1,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 64,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          0,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 10,
+          "euler_jacobian_rhs": 10,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 3
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 65,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          3,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 5,
+          "euler_jacobian_rhs": 5,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 9
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 66,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          7,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 9,
+          "euler_jacobian_rhs": 9,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 7,
+          "jac23": 9
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 67,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          4,
+          6
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 7,
+          "euler_jacobian_rhs": 7,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 6,
+          "jac23": 2
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 68,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          0,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 1,
+          "euler_jacobian_rhs": 1,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 6,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 69,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          1,
+          5
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 4,
+          "euler_jacobian_rhs": 4,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 3,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 70,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          2,
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 6,
+          "euler_jacobian_rhs": 6,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 3,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 71,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          2,
+          3
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 10,
+          "euler_jacobian_rhs": 10,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 5,
+          "jac23": 7
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 72,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          8,
+          6
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 16,
+          "euler_jacobian_rhs": 16,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 5,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 73,
+        "failures": [],
+        "p": 17,
+        "point": [
+          1,
+          0,
+          12
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 12,
+          "euler_jacobian_rhs": 12,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 8,
+          "jac23": 8
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 74,
+        "failures": [],
+        "p": 23,
+        "point": [
+          1,
+          17,
+          9
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 10,
+          "euler_jacobian_rhs": 10,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 5,
+          "jac23": 13
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 75,
+        "failures": [],
+        "p": 17,
+        "point": [
+          1,
+          6,
+          6
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 1,
+          "euler_jacobian_rhs": 1,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 76,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          2,
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 3,
+          "euler_jacobian_rhs": 3,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 77,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          5,
+          5
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 8,
+          "euler_jacobian_rhs": 8,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 7,
+          "jac23": 5
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 78,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          0,
+          10
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 4,
+          "euler_jacobian_rhs": 4,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 1,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 79,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          0,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 19,
+          "euler_jacobian_rhs": 19,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 30,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 80,
+        "failures": [],
+        "p": 37,
+        "point": [
+          1,
+          35,
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 8,
+          "euler_jacobian_rhs": 8,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 3,
+          "jac23": 9
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 81,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          9,
+          11
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 9,
+          "euler_jacobian_rhs": 9,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 9
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 82,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          5,
+          7
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 1,
+          "euler_jacobian_rhs": 1,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 6,
+          "jac23": 1
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 83,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 12,
+          "euler_jacobian_rhs": 12,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 7,
+          "jac23": 2
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 84,
+        "failures": [],
+        "p": 19,
+        "point": [
+          1,
+          5,
+          3
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 11,
+          "euler_jacobian_rhs": 11,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 9,
+          "jac23": 5
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 85,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          8,
+          6
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 2,
+          "euler_jacobian_rhs": 2,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 8,
+          "jac23": 7
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 86,
+        "failures": [],
+        "p": 17,
+        "point": [
+          1,
+          4,
+          16
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 7,
+          "euler_jacobian_rhs": 7,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 3,
+          "jac23": 5
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 87,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          10,
+          3
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 7,
+          "euler_jacobian_rhs": 7,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 6
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 88,
+        "failures": [],
+        "p": 11,
+        "point": [
+          1,
+          2,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 4,
+          "euler_jacobian_rhs": 4,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 4,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 89,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          0,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 5,
+          "euler_jacobian_rhs": 5,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 90,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          1,
+          7
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 3,
+          "euler_jacobian_rhs": 3,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 1,
+          "jac23": 4
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 91,
+        "failures": [],
+        "p": 5,
+        "point": [
+          1,
+          2,
+          4
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 22,
+          "euler_jacobian_rhs": 22,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 13,
+          "jac23": 8
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 92,
+        "failures": [],
+        "p": 23,
+        "point": [
+          1,
+          2,
+          15
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 15,
+          "euler_jacobian_rhs": 15,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 21,
+          "jac23": 14
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 93,
+        "failures": [],
+        "p": 23,
+        "point": [
+          1,
+          3,
+          18
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 8,
+          "euler_jacobian_rhs": 8,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 3,
+          "jac23": 9
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 94,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          9,
+          6
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 10,
+          "euler_jacobian_rhs": 10,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 3,
+          "jac23": 11
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 95,
+        "failures": [],
+        "p": 13,
+        "point": [
+          1,
+          10,
+          0
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 5,
+          "euler_jacobian_rhs": 5,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 13,
+          "jac23": 14
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 96,
+        "failures": [],
+        "p": 19,
+        "point": [
+          1,
+          3,
+          14
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 1,
+          "euler_jacobian_rhs": 1,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 3
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 97,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          2,
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 6,
+          "euler_jacobian_rhs": 6,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 2,
+          "jac23": 2
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 98,
+        "failures": [],
+        "p": 7,
+        "point": [
+          1,
+          2,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 9,
+          "euler_jacobian_rhs": 9,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 17,
+          "jac23": 15
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 99,
+        "failures": [],
+        "p": 19,
+        "point": [
+          1,
+          6,
+          5
+        ],
+        "status": "PASS"
+      },
+      {
+        "computed": {
+          "a": 5,
+          "euler_jacobian_rhs": 5,
+          "g_d": 0,
+          "g_d1": 0,
+          "g_d2": 14,
+          "jac23": 11
+        },
+        "criteria": {
+          "legacy_mod_p_a_unit_certificate": true,
+          "p_divides_d_plus_2": false,
+          "refactored_j_based_finite_field_hypotheses": true
+        },
+        "d": 100,
+        "failures": [],
+        "p": 19,
+        "point": [
+          1,
+          0,
+          6
+        ],
+        "status": "PASS"
+      }
+    ],
+    "rows_passed": 51,
+    "rows_total": 51,
+    "status": "PASS"
+  }
+}

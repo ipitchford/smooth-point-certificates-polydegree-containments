@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please preserve the unrefereed-candidate status and exact version when citing."
+title: "Smooth-Point Certificates for Polydegree Containments: A Jacobian Interpretation of the Lewis-Perry-Straub Determinant"
+type: software
+version: 0.4.1-candidate
+date-released: 2026-08-09
+authors:
+  - name: "Anonymous"
+abstract: >-
+  An unrefereed candidate manuscript and exact evidence package identifying
+  the Lewis-Perry-Straub determinant as a Jacobian and sharpening the
+  resulting smooth-point certificate.
+license: MIT
+repository-code: "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments"
+keywords:
+  - plane polynomial automorphisms
+  - Polydegree Conjecture
+  - Jacobian criterion
+  - multivariate Hensel lifting
+  - complete intersections
+  - computer-assisted mathematics
+preferred-citation:
+  type: article
+  title: "Smooth-Point Certificates for Polydegree Containments: A Jacobian Interpretation of the Lewis-Perry-Straub Determinant"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  version: "0.4.1-candidate"
+  notes: "Unrefereed candidate; original non-code content CC0 1.0; code MIT."

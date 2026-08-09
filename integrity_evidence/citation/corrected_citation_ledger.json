@@ -1,0 +1,520 @@
+{
+  "audit_id": "stage2_5_correction_round_1_2026-08-09",
+  "audited_at": "2026-08-09T20:16:20+01:00",
+  "source_audited_at": "2026-08-09T20:07:16+01:00",
+  "timezone": "Europe/London",
+  "candidate": "/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/work/irreducible-norms-ref-upgrade/stage2_5/candidate",
+  "verdict": {
+    "source_layer": "PASS",
+    "build_layer": "PASS",
+    "combined_citation_integrity_gate": "PASS",
+    "combined_release_gate": "PENDING_PACKAGE_MANIFEST_REFRESH",
+    "reason": "All nine bibliography records and all fourteen citation contexts pass in the corrected sources and rebuilt TeX, text, and PDF. The package manifest is separately stale, so this is a full citation-integrity PASS but not an overall frozen-package release PASS."
+  },
+  "policy": {
+    "primary_or_official_sources_only": true,
+    "gray_zone": "FAIL",
+    "all_records_reaudited": true,
+    "all_contexts_reaudited": true,
+    "candidate_mutated": false
+  },
+  "source_hashes": {
+    "references_bib": "47a9074f428cdf60b712ced79c67928d0df1addb0679d03fdf79fd09863dde2d",
+    "manuscript_md": "5ff53d9074a4651940a12b432a7194baee1e078470d88d0ec5f22a7fe29ef762",
+    "build_main_tex": "a5548f66d6fdc0928411f7cb34472d00c34d76ee21cbd7782ad9bbc1c018f973",
+    "build_main_txt": "f2d5015ca05a1f74e25bd5ec3affe4267069013c9aefdc0290d3c1430d1ae0cc",
+    "build_main_pdf": "a93b3f92e6762123bae5edae0cdec8696541ea9082139cc95a8fde169fa02d16"
+  },
+  "summary": {
+    "bibliography_records": 9,
+    "record_pass": 9,
+    "record_fail": 0,
+    "existence_pass": 9,
+    "doi_targets_pass": 3,
+    "url_targets_pass": 9,
+    "citation_occurrences": 14,
+    "citation_context_pass": 14,
+    "citation_context_fail": 0,
+    "citation_context_coverage_percent": 100,
+    "unique_cited_keys": 9,
+    "orphan_bibliography_keys": [],
+    "dangling_citation_keys": [],
+    "prior_blocking_defects_resolved": 5,
+    "build_layer_readback_pending": false,
+    "rendered_bibliography_records_checked": 9,
+    "rendered_bibliography_records_pass": 9,
+    "rendered_citation_contexts_checked": 14,
+    "rendered_citation_contexts_pass": 14,
+    "pdf_visual_pages_checked": [2, 3, 4, 8, 12, 13, 15, 17],
+    "pdf_dlmf_unique_permalink_annotations": 3,
+    "fresh_pdf_extraction_matches_build_main_txt": true,
+    "package_manifest_status": "FAIL_STALE"
+  },
+  "records": [
+    {
+      "key": "lps2019",
+      "exact_query": "\"10.1016/j.jpaa.2019.04.002\"",
+      "authoritative_url": "https://www.sciencedirect.com/science/article/pii/S0022404919300933",
+      "official_alternates": [
+        "https://doi.org/10.1016/j.jpaa.2019.04.002",
+        "https://arxiv.org/abs/1809.09681"
+      ],
+      "existence": "PASS",
+      "metadata": {
+        "authors": "PASS",
+        "year": "PASS",
+        "title": "PASS",
+        "venue": "PASS",
+        "volume": "PASS",
+        "issue": "PASS",
+        "pages": "PASS",
+        "doi": "PASS",
+        "url": "PASS"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0022404919300933",
+        "verdict": "PASS"
+      },
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "perry2016",
+      "exact_query": "\"Polydegree properties of polynomial automorphisms\" \"Kaitlyn Anne Perry\"",
+      "authoritative_url": "https://ir.ua.edu/items/f71aa1b3-0dbc-42a2-9f59-3f01eb1a5529",
+      "official_alternates": [
+        "https://ir-api.ua.edu/api/core/bitstreams/e9dc277b-9b56-47c9-8c00-bd4de9bab2fc/content"
+      ],
+      "existence": "PASS",
+      "metadata": {
+        "author": "PASS",
+        "year": "PASS",
+        "title": "PASS",
+        "type": "PASS",
+        "school": "PASS",
+        "volume": "N/A",
+        "pages": "OPTIONAL OMITTED: official extent 57 pages",
+        "doi": "N/A",
+        "url": "PASS"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://ir.ua.edu/items/f71aa1b3-0dbc-42a2-9f59-3f01eb1a5529",
+        "verdict": "PASS"
+      },
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "edo2014",
+      "exact_query": "\"10.1016/j.jalgebra.2013.09.011\"",
+      "authoritative_url": "https://www.sciencedirect.com/science/article/pii/S0021869313005000",
+      "official_alternates": [
+        "https://doi.org/10.1016/j.jalgebra.2013.09.011",
+        "https://arxiv.org/abs/1304.3956"
+      ],
+      "existence": "PASS",
+      "metadata": {
+        "authors": "PASS",
+        "year": "PASS",
+        "title": "PASS",
+        "venue": "PASS",
+        "volume": "PASS",
+        "issue": "PASS: none reported",
+        "pages": "PASS",
+        "doi": "PASS",
+        "url": "PASS"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0021869313005000",
+        "verdict": "PASS"
+      },
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "grochow2025",
+      "exact_query": "\"10.1080/00029890.2024.2440297\"",
+      "authoritative_url": "https://www.tandfonline.com/doi/abs/10.1080/00029890.2024.2440297",
+      "official_alternates": [
+        "https://doi.org/10.1080/00029890.2024.2440297",
+        "https://home.cs.colorado.edu/~jgrochow/hensel-notes.pdf"
+      ],
+      "existence": "PASS",
+      "metadata": {
+        "author": "PASS",
+        "year": "PASS",
+        "title": "PASS",
+        "venue": "PASS",
+        "volume": "PASS",
+        "issue": "PASS",
+        "pages": "PASS",
+        "doi": "PASS",
+        "url": "PASS"
+      },
+      "target_check": {
+        "automated_head_http": 403,
+        "final_url": "https://www.tandfonline.com/doi/full/10.1080/00029890.2024.2440297",
+        "identity_confirmed_by": ["publisher article page", "Crossref registry"],
+        "verdict": "PASS"
+      },
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "stacks00hp",
+      "exact_query": "site:stacks.math.columbia.edu/tag/00HP \"Lemma 10.39.15\"",
+      "authoritative_url": "https://stacks.math.columbia.edu/tag/00HP",
+      "official_citation_url": "https://stacks.math.columbia.edu/tag/00HP/cite",
+      "existence": "PASS",
+      "metadata": {
+        "author": "PASS: The Stacks project authors",
+        "year": "PASS: 2026",
+        "title": "PASS: The Stacks project",
+        "howpublished": "PASS: official Stacks root URL",
+        "tag_locator": "PASS: Tag 00HP, Lemma 10.39.15",
+        "volume": "N/A",
+        "pages": "N/A",
+        "doi": "N/A",
+        "url": "PASS: exact tag URL"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://stacks.math.columbia.edu/tag/00HP",
+        "verdict": "PASS"
+      },
+      "prior_defect_resolution": "RESOLVED: official 2026 generic entry replaces synthetic title; exact tag locator retained in note and URL",
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "stacks00fv",
+      "exact_query": "site:stacks.math.columbia.edu/tag/00FV \"Theorem 10.34.1\"",
+      "authoritative_url": "https://stacks.math.columbia.edu/tag/00FV",
+      "official_citation_url": "https://stacks.math.columbia.edu/tag/00FV/cite",
+      "existence": "PASS",
+      "metadata": {
+        "author": "PASS: The Stacks project authors",
+        "year": "PASS: 2026",
+        "title": "PASS: The Stacks project",
+        "howpublished": "PASS: official Stacks root URL",
+        "tag_locator": "PASS: Tag 00FV, Theorem 10.34.1",
+        "volume": "N/A",
+        "pages": "N/A",
+        "doi": "N/A",
+        "url": "PASS: exact tag URL"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://stacks.math.columbia.edu/tag/00FV",
+        "verdict": "PASS"
+      },
+      "prior_defect_resolution": "RESOLVED: official 2026 generic entry replaces synthetic stand-alone record; exact tag locator retained",
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "martinez2024zeros",
+      "exact_query": "site:arxiv.org/abs/2404.11479 \"Zeros of generalized hypergeometric polynomials\"",
+      "authoritative_url": "https://arxiv.org/abs/2404.11479v2",
+      "official_pdf": "https://arxiv.org/pdf/2404.11479v2",
+      "existence": "PASS",
+      "metadata": {
+        "authors": "PASS",
+        "year": "PASS: v2 is dated 2024",
+        "title": "PASS: official period before Applications restored",
+        "venue": "PASS: arXiv",
+        "volume": "N/A",
+        "pages": "OPTIONAL OMITTED: 53 pages",
+        "doi": "N/A",
+        "eprint": "PASS: 2404.11479",
+        "primary_class": "PASS: math.CA",
+        "version": "PASS: 2",
+        "url": "PASS: explicitly pinned to v2"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://arxiv.org/abs/2404.11479v2",
+        "verdict": "PASS"
+      },
+      "prior_defect_resolution": "RESOLVED: exact title punctuation and immutable version URL now match the official API and v2 PDF",
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "martinez2024real",
+      "exact_query": "site:arxiv.org/abs/2309.10970 \"Real roots of hypergeometric polynomials\"",
+      "authoritative_url": "https://arxiv.org/abs/2309.10970v3",
+      "official_pdf": "https://arxiv.org/pdf/2309.10970v3",
+      "existence": "PASS",
+      "metadata": {
+        "authors": "PASS",
+        "year": "PASS FOR PINNED v3: v1 is 2023; v3 and v3 PDF are dated May 2024",
+        "title": "PASS",
+        "venue": "PASS: arXiv",
+        "volume": "N/A",
+        "pages": "OPTIONAL OMITTED: 47 pages",
+        "doi": "N/A",
+        "eprint": "PASS: 2309.10970",
+        "primary_class": "PASS: math.CA",
+        "version": "PASS: 3",
+        "url": "PASS: explicitly pinned to v3"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://arxiv.org/abs/2309.10970v3",
+        "verdict": "PASS"
+      },
+      "prior_advisory_resolution": "RESOLVED: URL now binds the explicit v3 artifact",
+      "record_verdict": "PASS"
+    },
+    {
+      "key": "dlmf",
+      "exact_query": [
+        "site:dlmf.nist.gov/help/cite NIST Digital Library Release 1.2.7",
+        "site:dlmf.nist.gov/15.8 15.8.1",
+        "site:dlmf.nist.gov/18.5 18.5.7",
+        "site:dlmf.nist.gov/18.16 18.16.1"
+      ],
+      "authoritative_url": "https://dlmf.nist.gov/help/cite",
+      "claim_permalinks": [
+        "https://dlmf.nist.gov/15.8.E1",
+        "https://dlmf.nist.gov/18.5.E7",
+        "https://dlmf.nist.gov/18.16.E1"
+      ],
+      "existence": "PASS",
+      "metadata": {
+        "key": "PASS: DLMF",
+        "title": "PASS: NIST Digital Library of Mathematical Functions",
+        "release": "PASS: 1.2.7 of 2026-06-15",
+        "editors": "PASS: all ten official editors present in order",
+        "venue": "PASS: official root and release in howpublished",
+        "volume": "N/A",
+        "pages": "N/A",
+        "doi": "N/A",
+        "url": "PASS: official root",
+        "specific_locators": "PASS: all three exact permalinks appear in the manuscript"
+      },
+      "target_check": {
+        "http": 200,
+        "final_url": "https://dlmf.nist.gov/",
+        "permalink_checks": "PASS",
+        "verdict": "PASS"
+      },
+      "prior_defect_resolution": "RESOLVED: synthetic composite replaced by official Release 1.2.7 entry, editors restored, and exact equation permalinks added",
+      "record_verdict": "PASS"
+    }
+  ],
+  "citation_contexts": [
+    {
+      "id": "C01",
+      "line": 78,
+      "key": "lps2019",
+      "claim": "Computer-aided ranges for e=3,4,5",
+      "source_location": "LPS Theorem 13, arXiv p. 9 / journal p. 5354",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C02",
+      "line": 80,
+      "key": "perry2016",
+      "claim": "Earlier computational direction for LPS parameter e=3",
+      "source_location": "Perry Theorem 1.3.2 and Chapter 3 conclusion, PDF pp. 7 and 38",
+      "verdict": "PASS",
+      "note": "The corrected sentence explicitly says this is the case later indexed by LPS as e=3, removing the former notation ambiguity"
+    },
+    {
+      "id": "C03",
+      "line": 82,
+      "key": "edo2014",
+      "claim": "Rigidity and Strong Factorial framework",
+      "source_location": "Edo-van den Essen Sections 2.2-2.3 and 5.1-5.2, PDF pp. 4-7 and 14-15",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C04",
+      "line": 85,
+      "key": "lps2019",
+      "claim": "Determinant described as presently unmotivated",
+      "source_location": "LPS p. 3 after the a_d,e definition",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C05",
+      "line": 150,
+      "key": "lps2019",
+      "claim": "Theorem 13 ranges and Theorem 14 divisibility family",
+      "source_location": "LPS pp. 9-10 / journal pp. 5354-5355",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C06",
+      "line": 216,
+      "key": "lps2019",
+      "claim": "Definitions of g_d,e, alpha_i,j,e, and a_d,e",
+      "source_location": "LPS Section 1.1, pp. 2-3",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C07",
+      "line": 476,
+      "key": "grochow2025",
+      "claim": "Invertible-Jacobian square-system Hensel lift",
+      "source_location": "Grochow Theorem 1, author PDF p. 1",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C08",
+      "line": 492,
+      "key": "stacks00hp",
+      "claim": "Faithfully flat extension preserves nonzero tensor",
+      "source_location": "Stacks Tag 00HP, Lemma 10.39.15(2)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C09",
+      "line": 495,
+      "key": "stacks00fv",
+      "claim": "Weak Nullstellensatz gives a complex point",
+      "source_location": "Stacks Tag 00FV, Theorem 10.34.1(1) and finite-type sentence",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C10",
+      "line": 497,
+      "key": "lps2019",
+      "claim": "Theorem 4 yields the stated containment",
+      "source_location": "LPS Theorem 4, p. 3",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C11",
+      "line": 794,
+      "key": "martinez2024zeros",
+      "claim": "Hypergeometric concatenation under multiplicative finite free convolution",
+      "source_location": "Martinez-Finkelshtein-Morales-Perales v2, Theorem A, p. 7",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C12",
+      "line": 807,
+      "key": "dlmf",
+      "claim": "Pfaff transformation, Jacobi representation, and distinct Jacobi zeros",
+      "source_location": "DLMF 15.8.1, 18.5.7, and 18.16.1, each linked directly in lines 795-797",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C13",
+      "line": 820,
+      "key": "martinez2024real",
+      "claim": "Reflection identity and logarithmic-mesh preservation",
+      "source_location": "Martinez-Finkelshtein-Morales-Perales v3, Remark 2.12 and Proposition 2.17, pp. 14-15",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C14",
+      "line": 964,
+      "key": "lps2019",
+      "claim": "Lewis-Perry-Straub Theorem 4 gives a sufficient condition",
+      "source_location": "LPS Theorem 4, p. 3",
+      "prior_defect_resolution": "RESOLVED: unsupported negative literature-status clause removed",
+      "verdict": "PASS"
+    }
+  ],
+  "closure": {
+    "bibliography_keys": [
+      "lps2019",
+      "perry2016",
+      "edo2014",
+      "grochow2025",
+      "stacks00hp",
+      "stacks00fv",
+      "martinez2024zeros",
+      "martinez2024real",
+      "dlmf"
+    ],
+    "citation_key_frequencies": {
+      "lps2019": 6,
+      "perry2016": 1,
+      "edo2014": 1,
+      "grochow2025": 1,
+      "stacks00hp": 1,
+      "stacks00fv": 1,
+      "martinez2024zeros": 1,
+      "martinez2024real": 1,
+      "dlmf": 1
+    },
+    "orphan_bibliography_keys": [],
+    "dangling_citation_keys": [],
+    "verdict": "PASS"
+  },
+  "prior_defects": [
+    {
+      "id": "D01",
+      "scope": "stacks00hp",
+      "status": "RESOLVED",
+      "evidence": "Official title, author form, year 2026, Stacks root, and Tag 00HP locator are present"
+    },
+    {
+      "id": "D02",
+      "scope": "stacks00fv",
+      "status": "RESOLVED",
+      "evidence": "Official title, author form, year 2026, Stacks root, and Tag 00FV locator are present"
+    },
+    {
+      "id": "D03",
+      "scope": "martinez2024zeros",
+      "status": "RESOLVED",
+      "evidence": "Official period restored and URL pinned to 2404.11479v2"
+    },
+    {
+      "id": "D04",
+      "scope": "dlmf",
+      "status": "RESOLVED",
+      "evidence": "Official title, Release 1.2.7 date, all editors, root URL, and exact permalinks are present"
+    },
+    {
+      "id": "D05",
+      "scope": "MANUSCRIPT.md:964",
+      "status": "RESOLVED",
+      "evidence": "The claim now stops at the source-supported word 'sufficient'"
+    },
+    {
+      "id": "A01",
+      "scope": "martinez2024real",
+      "status": "RESOLVED",
+      "evidence": "URL pinned to 2309.10970v3; 2024 remains correct for the explicit v3 artifact"
+    }
+  ],
+  "build_layer_readback": {
+    "status": "PASS",
+    "readback_completed_at": "2026-08-09T20:16:20+01:00",
+    "coverage": {
+      "bibliography_records_checked": 9,
+      "bibliography_records_pass": 9,
+      "citation_contexts_checked": 14,
+      "citation_contexts_pass": 14,
+      "pdf_pages_visually_checked": [2, 3, 4, 8, 12, 13, 15, 17]
+    },
+    "evidence": [
+      "build/main.tex contains exactly nine corrected bibliography records and fourteen normalized citation occurrences",
+      "build/main.txt is byte-identical to a fresh pdftotext -layout extraction from build/main.pdf",
+      "the stale negative clause, Stacks n.d./synthetic records, old DLMF composite title, wrong Martinez punctuation, and stale version/release forms are absent",
+      "pdfinfo -url confirms all three exact DLMF equation permalinks plus the rendered bibliography targets",
+      "visual inspection covers every citation-context page and the complete bibliography page without clipping, overlap, missing glyphs, or broken record layout",
+      "qpdf --check reports no syntax or stream encoding errors"
+    ],
+    "stale_defect_phrase_check": "PASS_ZERO_MATCHES",
+    "detailed_report": "BUILD_LAYER_READBACK.md"
+  },
+  "package_manifest": {
+    "status": "FAIL_STALE",
+    "scope_effect": "Does not reverse citation-integrity PASS; blocks overall frozen-package/release-integrity PASS",
+    "verification_command": "python3 scripts/verify_manifest.py --root .",
+    "exit_code": 1,
+    "unmanifested_files": 23,
+    "digest_mismatches": 21,
+    "includes_stale_entries_for": [
+      "MANUSCRIPT.md",
+      "references.bib",
+      "build/main.tex",
+      "build/main.txt",
+      "build/main.pdf"
+    ]
+  }
+}

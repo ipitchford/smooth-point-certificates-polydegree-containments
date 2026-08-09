@@ -1,0 +1,34 @@
+{
+  "all_affine_lengths_match_floor_d_d1_over_6": true,
+  "all_affine_schemes_disjoint_from_g_d2": true,
+  "all_affine_schemes_reduced_by_jacobian_criterion": true,
+  "all_newton_mixed_volumes_match_floor_d_d1_over_6": true,
+  "all_weighted_projective_pairs_proper": true,
+  "arithmetic": "exact QQ polynomial arithmetic",
+  "construction_cross_check": "multinomial Lagrange formula equals formal inverse recursion",
+  "range": [
+    25,
+    25
+  ],
+  "rows": [
+    {
+      "affine_disjoint_from_g_d2": true,
+      "affine_gcd_total_degree": 0,
+      "affine_length_matches_formula": true,
+      "affine_reduced_by_jacobian_criterion": true,
+      "boundary_gcd": "X",
+      "boundary_gcd_total_degree": 1,
+      "d": 25,
+      "dim": 0,
+      "expected_affine_length_floor_d_d1_over_6": 108,
+      "homogeneous_gcd": "1",
+      "homogeneous_gcd_total_degree": 0,
+      "mixed_volume_matches_formula": true,
+      "newton_mixed_volume": 108,
+      "next_vdim": 0,
+      "sing_vdim": 0,
+      "vdim": 108
+    }
+  ],
+  "schema": "polydegree.e3.geometry-exploration.v1"
+}

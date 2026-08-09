@@ -1,0 +1,139 @@
+{
+  "schema": "irreducible-norms.stage2-5-assurance-audit.v1",
+  "audit_date": "2026-08-09",
+  "candidate": "outputs/smooth-point-certificates-polydegree-stage2-2026-08-09",
+  "candidate_version": "0.4.0-candidate",
+  "policy": "gray zone equals FAIL",
+  "overall_verdict": "FAIL",
+  "pipeline_action": "BLOCK",
+  "candidate_modified": false,
+  "fresh_replay_root": "/tmp/polydegree-stage25.DYOljv/candidate",
+  "coverage": {
+    "ledger_claims_total": 16,
+    "ledger_claims_audited": 16,
+    "ledger_coverage_percent": 100,
+    "citations_total": 9,
+    "citations_checked": 9,
+    "mutation_controls_total": 17,
+    "mutation_controls_passed_normal": 17,
+    "mutation_controls_passed_optimized": 17,
+    "manifest_entries": 85,
+    "manifest_passed_normal": true,
+    "manifest_passed_optimized": true
+  },
+  "runtime": {
+    "python": "3.14.6",
+    "sympy": "1.14.0",
+    "singular": "4.4.1",
+    "pandoc": "3.9"
+  },
+  "ledger_summary": {
+    "verified_or_status_correct": 14,
+    "minor_distortion_or_ambiguous": 2,
+    "major_distortion": 0,
+    "unverifiable": 0
+  },
+  "ledger_claims": [
+    {"id": "T1", "verdict": "VERIFIED", "boundary": "written proof plus exact finite checks"},
+    {"id": "T2", "verdict": "VERIFIED", "boundary": "written proof plus independent-code coefficient checks"},
+    {"id": "T3", "verdict": "VERIFIED", "boundary": "written proof plus exact determinant checks"},
+    {"id": "T4", "verdict": "VERIFIED", "boundary": "written proof plus exact Euler and mutation checks"},
+    {"id": "T5", "verdict": "VERIFIED", "boundary": "written proof with chart and characteristic restrictions retained"},
+    {"id": "T6", "verdict": "VERIFIED", "boundary": "written proof, inherited Hensel theorem, and positive bad-characteristic regression"},
+    {"id": "T7", "verdict": "VERIFIED", "boundary": "written scheme-theoretic proof"},
+    {"id": "T8", "verdict": "VERIFIED", "boundary": "written perfect-field descent proof"},
+    {"id": "T9", "verdict": "VERIFIED", "boundary": "written proof depending on checked external theorems; not formally verified"},
+    {"id": "C1", "verdict": "VERIFIED", "boundary": "exact finite computation d=50..100, 51 rows"},
+    {"id": "C2", "verdict": "VERIFIED", "boundary": "exact finite computation d=2..20"},
+    {"id": "C3", "verdict": "VERIFIED", "boundary": "exact finite computation d=2..200"},
+    {"id": "I1", "verdict": "VERIFIED", "boundary": "externally inherited from LPS Theorem 4"},
+    {"id": "O1", "verdict": "VERIFIED_AS_OPEN_NOT_CLAIMED", "boundary": "uniform affine theorem remains open"},
+    {"id": "N1", "verdict": "MINOR_DISTORTION", "boundary": "affirmative novelty text paired with priority_provisional status"},
+    {"id": "X1", "verdict": "MINOR_DISTORTION", "boundary": "affirmative assurance text paired with not_assessed status"}
+  ],
+  "core_mathematical_verdict": {
+    "status": "NO_DEFECT_FOUND_WITHIN_AUDIT_BOUNDARY",
+    "bad_characteristic_reasoning": "CONFIRMED",
+    "d8_p5_fixture": "POSITIVE_REGRESSION_PASS",
+    "mod_p_A_unit_still_requires_scalar_unit": true,
+    "uniform_affine_theorem": "OPEN",
+    "uniform_boundary_squarefreeness": "PROVED_IN_MANUSCRIPT_WITH_EXTERNAL_DEPENDENCIES"
+  },
+  "replays": [
+    {"name": "candidate_validator", "normal": "PASS", "optimized": "PASS", "byte_identical": true, "sha256": "25dc2bbff661f79221a081c498ffc8cc1745f4d885b0659edc7f235005ea6f98"},
+    {"name": "replacement_verifier", "normal": "10/10 and 51/51", "optimized": "10/10 and 51/51", "byte_identical": true, "sha256": "a6ace1972c6457be476ae808d7103d1fce40140617f9462de84ada80c7f03529"},
+    {"name": "mutations", "normal": "17/17", "optimized": "17/17", "byte_identical": false, "difference": "recorded optimization level only", "normal_sha256": "ba81de85bd824a93449bfae89f0da9e9121b3c08a14a32dd7a325e4d570179a5", "optimized_sha256": "fcd887897e79c779481543a836eb3fafdcb69d0d1a6cccc22e579b58933b46ce"},
+    {"name": "archive_assert_probe", "normal": "assertion triggered", "optimized": "silent floor division observed", "expected_mode_difference": true, "normal_sha256": "d0f6bc487155836efd930c78de9772e063ebd3f94ed7f5ef294acc8a1b18d6cc", "optimized_sha256": "cfac0278b4eb71997e22cbce668442ae97d9c256241d9c3c57b5ca71ef7f7b07"},
+    {"name": "affine_geometry", "range": [2, 20], "normal": "PASS", "optimized": "PASS", "byte_identical": true, "sha256": "f000424d80988ceeed66b3f33ce0ae5f58bbbba2d031508420b66a9a8065edee"},
+    {"name": "boundary_adjacent", "range": [2, 200], "normal": "PASS", "optimized": "PASS", "byte_identical": true, "sha256": "f9d8cc61ccd81105a5af41aea3631831dcf1f68f31029c625c84d3267f8cf2d4"},
+    {"name": "boundary_hypergeometric", "identity_squarefree_range": [2, 301], "adjacent_range": [2, 300], "interlace_range": [2, 120], "normal": "PASS", "optimized": "PASS", "byte_identical": true, "sha256": "8fbc4d290027577180e418160e94ebf288ec30367ff33f8f538383dfa3045e5b"},
+    {"name": "face_audit", "range": [2, 250], "normal": "PASS", "optimized": "PASS", "byte_identical": true, "sha256": "0e135e2e8bd241a325dcedf9774d9f6c81802e501b45aca333a6924aefd2e75a"},
+    {"name": "affine_receipt_validation", "range": [21, 30], "normal": "PASS", "optimized": "PASS", "byte_identical": true, "independence_limit": "schema and hash validation; Groebner bases not recomputed", "sha256": "26d2db480e8b76f38ac1bd8d6d6236af889afed490619503e5ab82f52d390287"},
+    {"name": "triple_structural", "identity_range": [0, 24], "exact_range": [2, 15], "normal": "PASS", "optimized": "PASS", "byte_identical": true, "sha256": "260e6d66150dab817f74e5e94b3fb8b57f8908c6c4ee1d7c64969c062d8046e8"},
+    {"name": "publication_ready_negative_control", "normal_exit": 1, "optimized_exit": 1, "outcome": "EXPECTED_FAIL", "byte_identical": true, "sha256": "736c20178a5aca9f1a0d78d905d50eebc85c96d518cfa8ea48bbc8921dec86ac"}
+  ],
+  "payload_hashes": {
+    "upstream_archive": "e51af558a067c28847219a788f8dd4d28de4a6e9bc3b8d00c5ecab2c3b123334",
+    "witness_json": "b659a8bccea30df4f800df526319bcbe01f429c3bee2ee8146983933da9cb38b",
+    "pdf": "fd65f6e0e988066a32263b083fa97f3996c42a5d037deeffd4783032530ee2ce",
+    "manuscript": "a9f06d035fe2ce1c4b4e1d9d7044f2dfd8006c9f2cab605e1cc34e4de8bf9bd8",
+    "evidence_press_body": "8f4af40a44f755022ffaf93fdd135b747575ca8c6797143dfb190a8af9ff5887",
+    "claim_status": "f67d6d66dcd81e959979276e17b0d9850f0b0577ff2176e706a4ebae864d5786"
+  },
+  "archive_assert_risk": {
+    "status": "LATENT_FAIL_OPEN_RISK",
+    "current_false_witness_evidence": false,
+    "normal_injected_control": "REJECTED",
+    "optimized_injected_control": "SILENTLY_ACCEPTED_BY_FLOOR_DIVISION",
+    "load_bearing_for_current_claims": false,
+    "required_fix": "replace proof-critical assert with unconditional exception"
+  },
+  "independence_boundary": {
+    "separate_code_path": true,
+    "imports_archive_verifier_functions": false,
+    "separate_sparse_polynomial_and_determinant_implementation": true,
+    "shares_mathematical_definitions": true,
+    "shares_witness_json": true,
+    "unaffiliated_reproduction": false,
+    "formal_verification": false,
+    "external_specialist_review": false
+  },
+  "blocking_findings": [
+    {"id": "F1", "severity": "BLOCKING", "verdict": "UNVERIFIABLE", "finding": "Funding, competing-interest and CRediT declarations lack a supplied author attestation."},
+    {"id": "F2", "severity": "BLOCKING", "verdict": "UNVERIFIABLE", "finding": "aiGenerated:false is not defined in a way that can be reconciled audibly with disclosed AI-assisted drafting."},
+    {"id": "F3", "severity": "BLOCKING", "verdict": "MINOR_DISTORTION", "finding": "The one-line phrase uniform e=3 theorem remains open is ambiguous because the uniform boundary theorem is proved; only the affine theorem remains open."},
+    {"id": "F4", "severity": "BLOCKING", "verdict": "MINOR_DISTORTION", "finding": "N1 and X1 have affirmative claim text paired with non-affirmative statuses."},
+    {"id": "F5", "severity": "BLOCKING", "verdict": "UNVERIFIABLE", "finding": "The package does not include v0.2.0 witness bytes needed to independently redo the asserted byte-identity comparison."}
+  ],
+  "nonblocking_findings": [
+    {"id": "F6", "severity": "ROBUSTNESS", "finding": "The retained upstream verifier has a disclosed proof-critical assert-only guard."},
+    {"id": "F7", "severity": "EXPECTED", "finding": "Publication identifiers and license are intentionally null; publication-ready validation correctly fails."}
+  ],
+  "ai_research_failure_modes": [
+    {"mode": 1, "name": "Implementation bug passing AI self-review", "status": "CLEAR", "note": "Fresh exact replays and mutations found no scientifically wrong claimed result; the disclosed upstream assert defect is not load-bearing for current rows."},
+    {"mode": 2, "name": "Hallucinated citation", "status": "CLEAR", "note": "All nine records and their load-bearing uses were checked against primary or authoritative sources."},
+    {"mode": 3, "name": "Hallucinated experimental result", "status": "CLEAR", "note": "Theoretical-paper analogue is exact computational results; all material counts, ranges and hashes map to retained artifacts and were replayed or directly counted."},
+    {"mode": 4, "name": "Shortcut reliance", "status": "CLEAR", "note": "Finite evidence is not promoted to the all-d theorem; dual constructions and negative controls address implementation shortcuts."},
+    {"mode": 5, "name": "Implementation bug reframed as novel insight", "status": "CLEAR", "note": "Bad-characteristic rescue follows an exact identity and positive regression; the prior strict-interlacing shortcut was rejected and repaired."},
+    {"mode": 6, "name": "Methodology fabrication", "status": "SUSPECTED", "note": "Computational procedures match receipts, but the undefined aiGenerated:false field conflicts ambiguously with disclosed AI-assisted drafting."},
+    {"mode": 7, "name": "Frame-lock at early pipeline stage", "status": "CLEAR", "note": "The framing changed, a referee repair was incorporated, and open/finite/proved boundaries are separated."}
+  ],
+  "required_remediation": [
+    "Freeze a dated human author attestation for funding, conflicts, CRediT, responsibility and AI/tool disclosure.",
+    "Define or revise aiGenerated and aiAssisted so disclosed AI-assisted drafting is represented unambiguously.",
+    "Change the one-line text to say the uniform e=3 affine theorem remains open.",
+    "Rewrite N1 and X1 as bounded or negative findings.",
+    "Include v0.2.0 witness bytes or an immutable content-addressed reference.",
+    "Replace the upstream verifier's proof-critical assert with an unconditional exception before future reuse.",
+    "Rerun the integrity gate under normal and optimized Python after revision."
+  ],
+  "assurance_limits": [
+    "No proof-assistant formalization",
+    "No unaffiliated independent reproduction",
+    "No external specialist or editorial peer review",
+    "No novelty or priority determination",
+    "No REF grade",
+    "Uniform affine theorem remains open",
+    "Uniform adjacent boundary coprimality remains open"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Smooth-Point Certificates for Polydegree Containments: A Jacobian Interpretation of the Lewis-Perry-Straub Determinant",
+  "description": "Anonymous, unrefereed candidate manuscript and exact evidence package. The paper identifies the Lewis-Perry-Straub auxiliary determinant as a Jacobian, derives an integral Euler syzygy and a sharper Hensel certificate, proves a curve bridge and uniform individual boundary squarefreeness, and records bounded exact affine and adjacent-coprimality evidence. The uniform all-d affine theorem remains open. Producer-side replay passes; independent reproduction, formal verification, external specialist review, editorial peer review and absolute priority are not claimed.",
+  "creators": [
+    {"name": "Anonymous"}
+  ],
+  "license": "cc-zero",
+  "keywords": [
+    "plane polynomial automorphisms",
+    "Polydegree Conjecture",
+    "Jacobian criterion",
+    "multivariate Hensel lifting",
+    "weighted homogeneous polynomials",
+    "complete intersections",
+    "computer-assisted mathematics",
+    "unrefereed candidate"
+  ],
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/smooth-point-certificates-polydegree-containments",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "all_g_d2_quotients_are_unit_ideal": true,
+  "all_jacobian_quotients_are_unit_ideal": true,
+  "all_lengths_equal_floor_d_d1_over_6": true,
+  "assertions_used_for_acceptance": false,
+  "combined_receipt": {
+    "file": "affine_21_30.json",
+    "sha256": "5de222adb95abff801cb41004600a0da564b5a6b1b72a337f3f31e3e522f9060",
+    "validated": true
+  },
+  "independence_limit": "schema/hash validation only; Groebner bases were produced by the existing geometry exploration program and are not recomputed here",
+  "interpretation": {
+    "next_vdim_zero": "(G_d,G_(d+1),G_(d+2)) is the unit ideal",
+    "sing_vdim_zero": "(G_d,G_(d+1),J_d) is the unit ideal",
+    "vdim": "length of QQ[X,Y]/(G_d,G_(d+1))"
+  },
+  "range": [
+    21,
+    30
+  ],
+  "rows": [
+    {
+      "d": 21,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 77
+    },
+    {
+      "d": 22,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 84
+    },
+    {
+      "d": 23,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 92
+    },
+    {
+      "d": 24,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 100
+    },
+    {
+      "d": 25,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 108
+    },
+    {
+      "d": 26,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 117
+    },
+    {
+      "d": 27,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 126
+    },
+    {
+      "d": 28,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 135
+    },
+    {
+      "d": 29,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 145
+    },
+    {
+      "d": 30,
+      "g_d2_quotient_vdim": 0,
+      "jacobian_quotient_vdim": 0,
+      "length": 155
+    }
+  ],
+  "schema": "irreducible-norms.affine-receipt-validation.v1",
+  "source_receipts": [
+    {
+      "file": "affine_d21.json",
+      "sha256": "596518a43410b9d45459d7d1e0a7615e20c96e962987dee9d64c61be5ef8664c"
+    },
+    {
+      "file": "affine_d22.json",
+      "sha256": "d2e5f7b10bee22b29be397beccfc5f48b0050bb95a2165dfc8fa7f09f4dacd5d"
+    },
+    {
+      "file": "affine_d23.json",
+      "sha256": "88d3312082fed742a872f24116d6aacd5125df79a5f61ab36d2652df3b02806f"
+    },
+    {
+      "file": "affine_d24.json",
+      "sha256": "aa9153aff6843d3b350f87608e554f62ab0cb1b4b0bfd0b0da6b73c948a3ab37"
+    },
+    {
+      "file": "affine_d25.json",
+      "sha256": "8a275f1f2c5d7e98caf906171ed6bb8f081d32db4fec2ccdd2868de043b8f98c"
+    },
+    {
+      "file": "affine_d26.json",
+      "sha256": "326a365ec943a1cc0ed60c7794658687d9f2140e80c90c64d059ea55f64aa992"
+    },
+    {
+      "file": "affine_d27.json",
+      "sha256": "64bfad1fa808b7ca061c4978f1cbc03a95eba3096d4ddfd132fb79078816ba2b"
+    },
+    {
+      "file": "affine_d28.json",
+      "sha256": "7648c8c03a77ca3d8b2222f065cf2e69ece51367ee8271cb41c4731bce0f9188"
+    },
+    {
+      "file": "affine_d29.json",
+      "sha256": "6e7534a0969289d8fc462dafdd3fd5ebca8a580542b10bb7763f8be7fe13c148"
+    },
+    {
+      "file": "affine_d30.json",
+      "sha256": "ac327ddde77a6ac83e9822baabb6f74c0d325d18c21cf86bc1d6735af5dbba11"
+    }
+  ],
+  "status": "PASS"
+}

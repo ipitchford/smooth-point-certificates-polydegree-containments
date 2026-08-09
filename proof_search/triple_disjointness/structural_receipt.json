@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "all_d_proof_receipt": {
+    "raising_identity_checked_range": [
+      0,
+      24
+    ],
+    "stationary_evaluations_checked_range": [
+      0,
+      24
+    ],
+    "warning": "finite symbolic replay supports, but does not prove, the all-d derivation"
+  },
+  "finite_exact_evidence": {
+    "range": [
+      2,
+      15
+    ],
+    "records": [
+      {
+        "d": 2,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 3,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 4,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 5,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 6,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 7,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 8,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 9,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 10,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 11,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 12,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 13,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 14,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      },
+      {
+        "d": 15,
+        "triple_ideal_unit": true,
+        "consecutive_pair_transverse": true,
+        "jacobian_syzygies": true
+      }
+    ],
+    "warning": "finite Groebner evidence only"
+  }
+}

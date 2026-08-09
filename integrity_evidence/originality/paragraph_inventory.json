@@ -1,0 +1,1328 @@
+{
+  "schema": "evidence-press.originality.paragraph-inventory.v1",
+  "source": "/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/outputs/smooth-point-certificates-polydegree-stage2-2026-08-09/MANUSCRIPT.md",
+  "body_scope": "Abstract through Conclusion; Declarations and References excluded",
+  "total_body_paragraphs": 132,
+  "paragraphs": [
+    {
+      "id": "P001",
+      "line_start": 26,
+      "line_end": 31,
+      "major_section": "Abstract",
+      "section_path": "Abstract",
+      "text": "Lewis, Perry and Straub introduced integral coefficient polynomials $g_{n,e}$ and an auxiliary determinant $a_{d,e}$ whose simultaneous specialisation yields containments between strata of plane polynomial automorphisms. We make explicit a differential structure hidden in their definitions. The entries of the determinant are precisely negative partial derivatives,",
+      "word_count": 49,
+      "risk_score": 20
+    },
+    {
+      "id": "P002",
+      "line_start": 37,
+      "line_end": 42,
+      "major_section": "Abstract",
+      "section_path": "Abstract",
+      "text": "so $a_{d,e}$ is, up to the sign $(-1)^e$, the Jacobian determinant of $g_{d,e},\\ldots,g_{d+e-1,e}$. Weighted Euler identities then give an exact integral syzygy. In the chart $x_1=1$, this converts the original non-vanishing condition into a smooth-point condition for $g_{d,e}=\\cdots=g_{d+e-2,e}=0$ together with avoidance of the next coefficient hypersurface.",
+      "word_count": 66,
+      "risk_score": 20
+    },
+    {
+      "id": "P003",
+      "line_start": 44,
+      "line_end": 54,
+      "major_section": "Abstract",
+      "section_path": "Abstract",
+      "text": "This reformulation yields a smaller finite-field certificate. A simple common zero modulo a prime with non-zero next coefficient lifts to characteristic zero; no condition excluding primes dividing $d+e-1$ is needed. We also prove a curve-theoretic bridge in which a reduced affine zero divisor supplies the required Jacobian point. Exact computations for $e=3$ show that, for $2\\le d\\le20$, the entire affine complete intersection is reduced and avoids the next coefficient. We also prove that every one-variable boundary factor has only simple positive roots, while adjacent boundary coprimality is checked through $d=200$. These results motivate, but do not prove, a uniform all-$d$ affine conjecture. The paper separates proved identities, inherited theorems, exact finite evidence and open claims throughout.",
+      "word_count": 122,
+      "risk_score": 55
+    },
+    {
+      "id": "P004",
+      "line_start": 56,
+      "line_end": 58,
+      "major_section": "Abstract",
+      "section_path": "Abstract",
+      "text": "**Keywords:** plane polynomial automorphisms; Polydegree Conjecture; Jacobian criterion; multivariate Hensel lifting; weighted homogeneous polynomials; complete intersections; computer-assisted mathematics",
+      "word_count": 18,
+      "risk_score": 10
+    },
+    {
+      "id": "P005",
+      "line_start": 62,
+      "line_end": 69,
+      "major_section": "Introduction",
+      "section_path": "Introduction",
+      "text": "The group of polynomial automorphisms of the complex affine plane carries two structures whose interaction is subtle. The Jung--van der Kulk decomposition assigns a polydegree sequence to each automorphism, while the group is also an ind-variety in which one can ask when one polydegree stratum lies in the Zariski closure of another. Lewis, Perry and Straub recast a family of these containment questions in terms of explicit coefficient polynomials and proved a specialisation theorem: suitable complex values of $x_1,\\ldots,x_e$ imply",
+      "word_count": 85,
+      "risk_score": 130
+    },
+    {
+      "id": "P006",
+      "line_start": 77,
+      "line_end": 81,
+      "major_section": "Introduction",
+      "section_path": "Introduction",
+      "text": "Their formulation makes the problem algorithmically decidable for fixed $(d,e)$ and produced computer-aided ranges for $e=3,4,5$ [@lps2019]. Perry's earlier thesis developed the same computational direction for $e=3$ [@perry2016]. The coefficient polynomials also sit within the rigidity and Strong Factorial framework of Edo and van den Essen [@edo2014].",
+      "word_count": 52,
+      "risk_score": 140
+    },
+    {
+      "id": "P007",
+      "line_start": 83,
+      "line_end": 88,
+      "major_section": "Introduction",
+      "section_path": "Introduction",
+      "text": "The determinant appearing in the Lewis--Perry--Straub criterion was described there as presently unmotivated [@lps2019]. The starting point of this paper is that it is not an additional object: it is the Jacobian determinant of the coefficient map already under study. Once this observation is combined with weighted homogeneity, the original specialisation criterion becomes a local geometric question:",
+      "word_count": 59,
+      "risk_score": 140
+    },
+    {
+      "id": "P008",
+      "line_start": 90,
+      "line_end": 91,
+      "major_section": "Introduction",
+      "section_path": "Introduction",
+      "text": "Find one smooth point of the partial coefficient complete intersection that > does not lie on the next coefficient hypersurface.",
+      "word_count": 19,
+      "risk_score": 85
+    },
+    {
+      "id": "P009",
+      "line_start": 93,
+      "line_end": 97,
+      "major_section": "Introduction",
+      "section_path": "Introduction",
+      "text": "That change of language has concrete consequences. It removes the full $e\\times e$ determinant from a finite-field search, permits useful primes previously rejected by a residue-level determinant test, and joins two seemingly different proof routes: Hensel lifting from a finite field and divisor separation on a curve.",
+      "word_count": 48,
+      "risk_score": 95
+    },
+    {
+      "id": "P010",
+      "line_start": 101,
+      "line_end": 101,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Contributions",
+      "text": "The proved contributions are as follows.",
+      "word_count": 6,
+      "risk_score": 85
+    },
+    {
+      "id": "P011",
+      "line_start": 103,
+      "line_end": 105,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Contributions",
+      "text": "We give a formal-inverse proof that every displayed rational multinomial formula for $g_{n,e}$ is an element of $\\mathbf Z[x_1,\\ldots,x_e]$.",
+      "word_count": 26,
+      "risk_score": 85
+    },
+    {
+      "id": "P012",
+      "line_start": 107,
+      "line_end": 107,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Contributions",
+      "text": "We prove the derivative and determinant identities",
+      "word_count": 7,
+      "risk_score": 85
+    },
+    {
+      "id": "P013",
+      "line_start": 115,
+      "line_end": 118,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Contributions",
+      "text": "We derive an exact weighted-Euler syzygy, not merely an equality after evaluation on a zero locus. It identifies the Lewis--Perry--Straub non-vanishing condition with the non-vanishing of an affine Jacobian minor and the next coefficient.",
+      "word_count": 36,
+      "risk_score": 85
+    },
+    {
+      "id": "P014",
+      "line_start": 120,
+      "line_end": 124,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Contributions",
+      "text": "We prove a reduced finite-field certificate theorem. A modular common zero at which the affine minor and the next coefficient are non-zero suffices. The prime may divide $d+e-1$: the original determinant then vanishes in the residue field but remains non-zero at the characteristic zero lift.",
+      "word_count": 46,
+      "risk_score": 130
+    },
+    {
+      "id": "P015",
+      "line_start": 126,
+      "line_end": 128,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Contributions",
+      "text": "We prove a prime--gap--Jacobian bridge on a smooth complete-intersection curve, including the affine-support and perfect-ground-field hypotheses needed for coefficient-one prime-divisor applications.",
+      "word_count": 23,
+      "risk_score": 85
+    },
+    {
+      "id": "P016",
+      "line_start": 130,
+      "line_end": 136,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Contributions",
+      "text": "For $e=3$ we prove uniform squarefreeness of the one-variable boundary factors by a terminating hypergeometric factorisation and finite free convolution. We also report exact finite computations that test a stronger scheme-theoretic conjecture. For $2\\le d\\le20$, every affine common point is smooth and avoids the next coefficient, and adjacent boundary coprimality is checked through $d=200$. Neither bounded sweep is promoted to an all-$d$ theorem.",
+      "word_count": 68,
+      "risk_score": 130
+    },
+    {
+      "id": "P017",
+      "line_start": 140,
+      "line_end": 140,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Relation to prior results and novelty boundary",
+      "text": "Lewis--Perry--Straub Theorem 13 records the ranges",
+      "word_count": 8,
+      "risk_score": 220
+    },
+    {
+      "id": "P018",
+      "line_start": 148,
+      "line_end": 151,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Relation to prior results and novelty boundary",
+      "text": "while their Theorem 14, attributed to Edo, proves (1.1) whenever $d-1$ is divisible by $e$ [@lps2019]. In particular, for $e=3$ the class $d\\equiv1\\pmod3$ is already an infinite family. The present paper therefore does not claim the first infinite family, nor does it claim an all-$d$ result.",
+      "word_count": 51,
+      "risk_score": 275
+    },
+    {
+      "id": "P019",
+      "line_start": 153,
+      "line_end": 159,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Relation to prior results and novelty boundary",
+      "text": "A bounded search of the primary paper, Perry's thesis, the Strong Factorial paper and indexed citing literature did not locate the derivative--Jacobian packaging developed here. That is provisional negative evidence, not proof of priority. The safe claim is that we **make explicit and exploit** a Jacobian structure that was not found in the sources inspected through 9 August 2026. Authenticated specialist-database searches, original-author contact, expert review and journal peer review remain outstanding.",
+      "word_count": 73,
+      "risk_score": 195
+    },
+    {
+      "id": "P020",
+      "line_start": 163,
+      "line_end": 163,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Evidence classes",
+      "text": "Four evidence classes are used below.",
+      "word_count": 6,
+      "risk_score": 85
+    },
+    {
+      "id": "P021",
+      "line_start": 172,
+      "line_end": 174,
+      "major_section": "Introduction",
+      "section_path": "Introduction > Evidence classes",
+      "text": "Internal replay, code-path diversity and mutation controls improve confidence in the exact computations. They are not independent reproduction, formal verification, expert acceptance or peer review.",
+      "word_count": 25,
+      "risk_score": 85
+    },
+    {
+      "id": "P022",
+      "line_start": 178,
+      "line_end": 179,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion",
+      "text": "Fix $e\\ge1$. For $\\mathbf a=(a_1,\\ldots,a_e)\\in\\mathbf Z_{\\ge0}^e$, write",
+      "word_count": 17,
+      "risk_score": 10
+    },
+    {
+      "id": "P023",
+      "line_start": 187,
+      "line_end": 187,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion",
+      "text": "For $n\\ge0$, define",
+      "word_count": 4,
+      "risk_score": 10
+    },
+    {
+      "id": "P024",
+      "line_start": 197,
+      "line_end": 197,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion",
+      "text": "For $0\\le i\\le e-1$ and $j\\ge-1$, define",
+      "word_count": 10,
+      "risk_score": 10
+    },
+    {
+      "id": "P025",
+      "line_start": 207,
+      "line_end": 207,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion",
+      "text": "with an empty sum when $j-i<0$, and put",
+      "word_count": 9,
+      "risk_score": 10
+    },
+    {
+      "id": "P026",
+      "line_start": 215,
+      "line_end": 217,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion",
+      "text": "These are the definitions used by Lewis, Perry and Straub [@lps2019]. The factor $1/(n+1)$ in (2.1) makes integrality worth stating before reduction modulo a prime.",
+      "word_count": 28,
+      "risk_score": 55
+    },
+    {
+      "id": "P027",
+      "line_start": 221,
+      "line_end": 221,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion > Lemma 2.1 (integrality and inverse coefficients) [Proved]",
+      "text": "Let $I(w)$ be the unique compositional inverse of",
+      "word_count": 9,
+      "risk_score": 45
+    },
+    {
+      "id": "P028",
+      "line_start": 238,
+      "line_end": 238,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion > Lemma 2.1 (integrality and inverse coefficients) [Proved] > Proof",
+      "text": "Write $I(w)=w+\\sum_{m\\ge2}c_mw^m$. In the identity",
+      "word_count": 13,
+      "risk_score": 110
+    },
+    {
+      "id": "P029",
+      "line_start": 244,
+      "line_end": 246,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion > Lemma 2.1 (integrality and inverse coefficients) [Proved] > Proof",
+      "text": "the coefficient of $w^m$ is $c_m$ plus an integer polynomial in $x_1,\\ldots,x_e,c_2,\\ldots,c_{m-1}$. Induction therefore gives $c_m\\in\\mathbf Z[x_1,\\ldots,x_e]$.",
+      "word_count": 36,
+      "risk_score": 110
+    },
+    {
+      "id": "P030",
+      "line_start": 248,
+      "line_end": 248,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion > Lemma 2.1 (integrality and inverse coefficients) [Proved] > Proof",
+      "text": "Formal Lagrange inversion gives",
+      "word_count": 4,
+      "risk_score": 110
+    },
+    {
+      "id": "P031",
+      "line_start": 255,
+      "line_end": 256,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion > Lemma 2.1 (integrality and inverse coefficients) [Proved] > Proof",
+      "text": "Expanding the negative power multinomially yields exactly (2.1). Hence the apparently rational expression is an integral polynomial. $\\square$",
+      "word_count": 19,
+      "risk_score": 110
+    },
+    {
+      "id": "P032",
+      "line_start": 258,
+      "line_end": 260,
+      "major_section": "Coefficient polynomials and formal inversion",
+      "section_path": "Coefficient polynomials and formal inversion > Lemma 2.1 (integrality and inverse coefficients) [Proved] > Proof",
+      "text": "The recursion in the first paragraph and the multinomial expression in the second are algebraically different constructions of the same coefficients. They are used as separate internal replay paths in the evidence package.",
+      "word_count": 33,
+      "risk_score": 110
+    },
+    {
+      "id": "P033",
+      "line_start": 266,
+      "line_end": 266,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Proposition 3.1 (derivative identity) [Proved]",
+      "text": "For $0\\le i\\le e-1$ and $j\\ge-1$,",
+      "word_count": 9,
+      "risk_score": 45
+    },
+    {
+      "id": "P034",
+      "line_start": 275,
+      "line_end": 277,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Proposition 3.1 (derivative identity) [Proved] > Proof",
+      "text": "Only terms of $g_{j+1,e}$ whose $x_{i+1}$ exponent is positive survive differentiation. Put $\\mathbf b=\\mathbf a+\\mathbf e_{i+1}$. Then",
+      "word_count": 26,
+      "risk_score": 110
+    },
+    {
+      "id": "P035",
+      "line_start": 285,
+      "line_end": 286,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Proposition 3.1 (derivative identity) [Proved] > Proof",
+      "text": "After multiplication by $b_{i+1}=a_{i+1}+1$, the coefficient of $\\mathbf x^{\\mathbf a}$ in the derivative is",
+      "word_count": 21,
+      "risk_score": 110
+    },
+    {
+      "id": "P036",
+      "line_start": 299,
+      "line_end": 300,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Proposition 3.1 (derivative identity) [Proved] > Proof",
+      "text": "This is the negative of the coefficient in (2.2). Summing over the common index set proves (3.1). $\\square$",
+      "word_count": 20,
+      "risk_score": 110
+    },
+    {
+      "id": "P037",
+      "line_start": 302,
+      "line_end": 302,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Proposition 3.1 (derivative identity) [Proved] > Proof",
+      "text": "For $d\\ge2$ and $e\\ge2$, let",
+      "word_count": 7,
+      "risk_score": 110
+    },
+    {
+      "id": "P038",
+      "line_start": 319,
+      "line_end": 320,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Corollary 3.2 (full determinant identity) [Proved] > Proof",
+      "text": "The matrix in (2.3) is $-D_{d,e}^{\\mathsf T}$ by Proposition 3.1. Its determinant is therefore $(-1)^e\\det D_{d,e}$. $\\square$",
+      "word_count": 26,
+      "risk_score": 110
+    },
+    {
+      "id": "P039",
+      "line_start": 322,
+      "line_end": 322,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Corollary 3.2 (full determinant identity) [Proved] > Proof",
+      "text": "Thus $a_{d,e}$ tests whether the full coefficient map",
+      "word_count": 10,
+      "risk_score": 110
+    },
+    {
+      "id": "P040",
+      "line_start": 329,
+      "line_end": 331,
+      "major_section": "The auxiliary determinant is a Jacobian",
+      "section_path": "The auxiliary determinant is a Jacobian > Corollary 3.2 (full determinant identity) [Proved] > Proof",
+      "text": "is locally invertible. The specialisation theorem does not, however, require all $e$ coefficients to vanish. The next section extracts the relevant minor on the partial zero locus.",
+      "word_count": 27,
+      "risk_score": 110
+    },
+    {
+      "id": "P041",
+      "line_start": 335,
+      "line_end": 336,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion",
+      "text": "Give $x_s$ weight $s$. Each $g_{n,e}$ is weighted homogeneous of weight $n$, so",
+      "word_count": 16,
+      "risk_score": 10
+    },
+    {
+      "id": "P042",
+      "line_start": 343,
+      "line_end": 343,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion",
+      "text": "Define the affine minor",
+      "word_count": 4,
+      "risk_score": 10
+    },
+    {
+      "id": "P043",
+      "line_start": 352,
+      "line_end": 354,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion",
+      "text": "For $0\\le r\\le e-1$, let $M_r$ be the determinant of the $(e-1)\\times(e-1)$ submatrix of $D_{d,e}$ obtained by deleting row $r$ and the $x_1$ column. In particular, $M_{e-1}=J_{d,e}$.",
+      "word_count": 39,
+      "risk_score": 10
+    },
+    {
+      "id": "P044",
+      "line_start": 358,
+      "line_end": 358,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Proposition 4.1 (exact weighted-Euler syzygy) [Proved]",
+      "text": "In $\\mathbf Z[x_1,\\ldots,x_e]$,",
+      "word_count": 8,
+      "risk_score": 45
+    },
+    {
+      "id": "P045",
+      "line_start": 378,
+      "line_end": 378,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Proposition 4.1 (exact weighted-Euler syzygy) [Proved] > Proof",
+      "text": "In $D_{d,e}$ replace the first column by",
+      "word_count": 9,
+      "risk_score": 110
+    },
+    {
+      "id": "P046",
+      "line_start": 384,
+      "line_end": 387,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Proposition 4.1 (exact weighted-Euler syzygy) [Proved] > Proof",
+      "text": "By multilinearity, the resulting determinant is $x_1\\det D_{d,e}$: every summand with $s\\ge2$ repeats an existing column. Equation (4.1) makes entry $r$ of $C$ equal to $(d+r)g_{d+r,e}$. Expanding down the first column and using (3.2) gives",
+      "word_count": 47,
+      "risk_score": 120
+    },
+    {
+      "id": "P047",
+      "line_start": 394,
+      "line_end": 396,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Proposition 4.1 (exact weighted-Euler syzygy) [Proved] > Proof",
+      "text": "The last summand is $-(d+e-1)g_{d+e-1,e}J_{d,e}$. Moving it to the left proves (4.3), and (4.4) follows. $\\square$",
+      "word_count": 26,
+      "risk_score": 110
+    },
+    {
+      "id": "P048",
+      "line_start": 400,
+      "line_end": 400,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved]",
+      "text": "Let $K$ be a field and let $P\\in K^e$ satisfy",
+      "word_count": 12,
+      "risk_score": 45
+    },
+    {
+      "id": "P049",
+      "line_start": 406,
+      "line_end": 407,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved]",
+      "text": "Assume $x_1(P)\\ne0$ and $\\operatorname{char}K\\nmid d+e-1$. Then the following are equivalent:",
+      "word_count": 17,
+      "risk_score": 45
+    },
+    {
+      "id": "P050",
+      "line_start": 409,
+      "line_end": 409,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved]",
+      "text": "$g_{d+e-1,e}(P)\\ne0$ and $a_{d,e}(P)\\ne0$;",
+      "word_count": 12,
+      "risk_score": 45
+    },
+    {
+      "id": "P051",
+      "line_start": 410,
+      "line_end": 410,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved]",
+      "text": "$g_{d+e-1,e}(P)\\ne0$ and $J_{d,e}(P)\\ne0$;",
+      "word_count": 12,
+      "risk_score": 45
+    },
+    {
+      "id": "P052",
+      "line_start": 411,
+      "line_end": 411,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved]",
+      "text": "$P$ lies outside $V(g_{d+e-1,e})$, and the closed subscheme",
+      "word_count": 12,
+      "risk_score": 45
+    },
+    {
+      "id": "P053",
+      "line_start": 418,
+      "line_end": 418,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved]",
+      "text": "is smooth of codimension $e-1$ at $P$.",
+      "word_count": 7,
+      "risk_score": 45
+    },
+    {
+      "id": "P054",
+      "line_start": 422,
+      "line_end": 428,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved] > Proof",
+      "text": "On the common zero locus, (4.4) makes (1) and (2) equivalent under the stated unit hypotheses. For each of the first $e-1$ coefficient polynomials, (4.1) expresses its $x_1$ derivative as a linear combination of its $x_2,\\ldots,x_e$ derivatives because $x_1(P)\\ne0$. Hence the partial Jacobian has rank $e-1$ exactly when the square minor (4.2) is non-zero. The Jacobian criterion for a subscheme cut out by $e-1$ equations in affine $e$-space gives the equivalence with (3). $\\square$",
+      "word_count": 86,
+      "risk_score": 120
+    },
+    {
+      "id": "P055",
+      "line_start": 430,
+      "line_end": 431,
+      "major_section": "Weighted Euler syzygy and the smooth-point criterion",
+      "section_path": "Weighted Euler syzygy and the smooth-point criterion > Corollary 4.2 (scheme-theoretic smooth-point reformulation) [Proved] > Proof",
+      "text": "The characteristic restriction belongs to this residue-field equivalence. It will disappear from the finite-field-to-characteristic-zero theorem.",
+      "word_count": 15,
+      "risk_score": 110
+    },
+    {
+      "id": "P056",
+      "line_start": 435,
+      "line_end": 435,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate",
+      "text": "Work in the chart $x_1=1$ and put",
+      "word_count": 9,
+      "risk_score": 10
+    },
+    {
+      "id": "P057",
+      "line_start": 442,
+      "line_end": 443,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate",
+      "text": "The system $F_0=\\cdots=F_{e-2}=0$ has $e-1$ equations in $e-1$ variables, and its Jacobian determinant is $J_{d,e}(1,x_2,\\ldots,x_e)$.",
+      "word_count": 28,
+      "risk_score": 10
+    },
+    {
+      "id": "P058",
+      "line_start": 447,
+      "line_end": 448,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Theorem 5.1 (smooth finite-field certificate) [Proved]",
+      "text": "Let $d\\ge2$ and $e\\ge2$. Suppose that a prime $p$ and a point $Q\\in\\mathbf F_p^{e-1}$ satisfy",
+      "word_count": 21,
+      "risk_score": 45
+    },
+    {
+      "id": "P059",
+      "line_start": 457,
+      "line_end": 458,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Theorem 5.1 (smooth finite-field certificate) [Proved]",
+      "text": "Then there is a complex specialisation satisfying the hypotheses of Lewis--Perry--Straub Theorem 4. Consequently,",
+      "word_count": 16,
+      "risk_score": 45
+    },
+    {
+      "id": "P060",
+      "line_start": 468,
+      "line_end": 475,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Theorem 5.1 (smooth finite-field certificate) [Proved] > Proof",
+      "text": "The non-zero Jacobian determinant makes $Q$ a simple zero of the square system $F_0=\\cdots=F_{e-2}=0$. Lemma 2.1 shows that all these polynomials have integral coefficients. Multivariate Hensel lifting therefore produces an exact lift $\\widetilde Q\\in\\mathbf Z_p^{e-1}$ in the same residue class. The values $F_{e-1}(\\widetilde Q)$ and $J_{d,e}(1,\\widetilde Q)$ remain $p$-adic units. This is precisely the simple-root setting of multivariate Hensel lifting [@grochow2025].",
+      "word_count": 78,
+      "risk_score": 165
+    },
+    {
+      "id": "P061",
+      "line_start": 487,
+      "line_end": 496,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Theorem 5.1 (smooth finite-field certificate) [Proved] > Proof",
+      "text": "where $J_{d,e}$ is evaluated at $x_1=1$. Evaluation at $\\widetilde Q$ defines a unital $\\mathbf Q$-algebra homomorphism $R\\to\\mathbf Q_p$, so $R\\ne0$. The extension $\\mathbf Q\\subset\\mathbf C$ is faithfully flat; hence $R\\otimes_{\\mathbf Q}\\mathbf C\\ne0$ [@stacks00hp]. This is a non-zero finite-type $\\mathbf C$-algebra. A maximal ideal and the weak Nullstellensatz give a complex point at which the first $e-1$ equations vanish and $F_{e-1}J_{d,e}$ does not [@stacks00fv]. Corollary 4.2, now in characteristic zero, shows that $a_{d,e}$ is non-zero there. The inherited Lewis--Perry--Straub Theorem 4 yields (5.3) [@lps2019]. $\\square$",
+      "word_count": 110,
+      "risk_score": 165
+    },
+    {
+      "id": "P062",
+      "line_start": 498,
+      "line_end": 500,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Theorem 5.1 (smooth finite-field certificate) [Proved] > Proof",
+      "text": "The proof does **not** assert an embedding $\\mathbf Q_p\\hookrightarrow \\mathbf C$. The bridge is the non-zero localised $\\mathbf Q$-algebra and faithful scalar extension.",
+      "word_count": 26,
+      "risk_score": 110
+    },
+    {
+      "id": "P063",
+      "line_start": 504,
+      "line_end": 506,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Remark 5.2 (bad-characteristic rescue)",
+      "text": "No assumption $p\\nmid d+e-1$ is needed in Theorem 5.1. If $p\\mid d+e-1$, equation (4.4) forces the residue of $a_{d,e}$ to vanish at a finite-field common zero. At the exact $p$-adic lift, however,",
+      "word_count": 41,
+      "risk_score": 45
+    },
+    {
+      "id": "P064",
+      "line_start": 516,
+      "line_end": 519,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Remark 5.2 (bad-characteristic rescue)",
+      "text": "The integer $d+e-1$ may be a nonunit in $\\mathbf Z_p$, but it is not zero in the characteristic-zero field $\\mathbf Q_p$. Thus the old modular $a_{d,e}$-unit test is strictly stronger than the certificate actually needed for complex existence.",
+      "word_count": 44,
+      "risk_score": 10
+    },
+    {
+      "id": "P065",
+      "line_start": 523,
+      "line_end": 524,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Example 5.3 (exact positive regression) [Exactly checked]",
+      "text": "For $e=3$, $d=8$, $p=5$ and $(x_1,x_2,x_3)=(1,3,0)$, exact finite-field evaluation gives",
+      "word_count": 21,
+      "risk_score": 10
+    },
+    {
+      "id": "P066",
+      "line_start": 532,
+      "line_end": 535,
+      "major_section": "A smaller Hensel certificate",
+      "section_path": "A smaller Hensel certificate > Example 5.3 (exact positive regression) [Exactly checked]",
+      "text": "The legacy determinant-unit certificate rejects this point. Theorem 5.1 accepts it, and (5.5) proves that the determinant at the exact $5$-adic lift is non-zero. The fixture is retained as a positive regression test; it is not merely an illustrative calculation.",
+      "word_count": 43,
+      "risk_score": 45
+    },
+    {
+      "id": "P067",
+      "line_start": 539,
+      "line_end": 541,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point",
+      "text": "The smooth-point criterion also clarifies what a divisor argument must prove. The statement below deliberately distinguishes an algebraically closed geometric theorem from descent over a perfect ground field.",
+      "word_count": 28,
+      "risk_score": 45
+    },
+    {
+      "id": "P068",
+      "line_start": 545,
+      "line_end": 546,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved]",
+      "text": "Work over $\\mathbf C$ in the chart $x_1=1$. Suppose the first $e-2$ polynomials",
+      "word_count": 15,
+      "risk_score": 45
+    },
+    {
+      "id": "P069",
+      "line_start": 552,
+      "line_end": 555,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved]",
+      "text": "cut out a smooth, geometrically integral complete-intersection curve $C\\subset\\mathbf A^{e-1}$ **scheme-theoretically**. Let $\\overline C$ be its smooth projective completion, and regard the $F_r$ as rational functions on $\\overline C$. Assume:",
+      "word_count": 34,
+      "risk_score": 45
+    },
+    {
+      "id": "P070",
+      "line_start": 557,
+      "line_end": 558,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved]",
+      "text": "$F_{e-2}|_{\\overline C}$ is non-zero, and its zero divisor is non-empty, reduced and supported inside the affine open $C$;",
+      "word_count": 20,
+      "risk_score": 45
+    },
+    {
+      "id": "P071",
+      "line_start": 559,
+      "line_end": 560,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved]",
+      "text": "$F_{e-1}(Q)\\ne0$ at every point $Q\\in\\operatorname{Supp}(F_{e-2}|_{\\overline C})_0$.",
+      "word_count": 16,
+      "risk_score": 45
+    },
+    {
+      "id": "P072",
+      "line_start": 562,
+      "line_end": 562,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved]",
+      "text": "Then every point $Q$ of that zero divisor satisfies",
+      "word_count": 9,
+      "risk_score": 45
+    },
+    {
+      "id": "P073",
+      "line_start": 571,
+      "line_end": 572,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved]",
+      "text": "Consequently, each such point supplies a Lewis--Perry--Straub specialisation.",
+      "word_count": 10,
+      "risk_score": 45
+    },
+    {
+      "id": "P074",
+      "line_start": 576,
+      "line_end": 585,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved] > Proof",
+      "text": "The support condition makes $Q$ an affine point at which all displayed functions are regular. Smooth complete-intersection status says that $dF_0,\\ldots,dF_{e-3}$ are independent and cut the tangent space down to the one-dimensional space $T_QC$. Reducedness of the zero divisor means that $F_{e-2}|_C$ has a simple zero, equivalently $dF_{e-2}|_{T_QC}\\ne0$. Hence $dF_0,\\ldots,dF_{e-2}$ are independent. Their square Jacobian determinant is $J_{d,e}(1,Q)$, so it is non-zero. The second hypothesis supplies the other factor in (6.1), and Corollary 4.2 gives the original determinant condition. $\\square$",
+      "word_count": 101,
+      "risk_score": 120
+    },
+    {
+      "id": "P075",
+      "line_start": 587,
+      "line_end": 591,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Theorem 6.1 (prime--gap--Jacobian bridge) [Proved] > Proof",
+      "text": "The requirement that $C$ be the scheme-theoretic complete intersection is load-bearing. Smoothness of a selected component would not exclude another component or embedded structure from changing the Jacobian statement. The affine-support condition is equally necessary: a zero at the projective boundary does not define a point in the chart used by Theorem 5.1.",
+      "word_count": 54,
+      "risk_score": 120
+    },
+    {
+      "id": "P076",
+      "line_start": 595,
+      "line_end": 602,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Corollary 6.2 (perfect-ground-field descent) [Proved]",
+      "text": "Let $k\\subset\\mathbf C$ be a perfect field of characteristic zero, and choose its algebraic closure $\\overline k$ inside $\\mathbf C$. Suppose the scheme-theoretic complete intersection $C$, its smooth projective completion and the $F_r$ are defined over $k$. Assume the zero divisor of $F_{e-2}$ is one closed point with coefficient one, is supported in the affine open $C$, and is disjoint from the zero and pole support of $F_{e-1}$. Then, after base change to $\\overline k$, every geometric point above that closed point satisfies Theorem 6.1.",
+      "word_count": 91,
+      "risk_score": 55
+    },
+    {
+      "id": "P077",
+      "line_start": 606,
+      "line_end": 610,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Corollary 6.2 (perfect-ground-field descent) [Proved] > Proof",
+      "text": "Over a perfect field, the residue extension of a closed point is separable. A coefficient-one closed point therefore becomes a disjoint reduced collection of geometric points after base change. Affine support and disjointness from the zero and pole support of $F_{e-1}$ are preserved by base change, so Theorem 6.1 applies. $\\square$",
+      "word_count": 53,
+      "risk_score": 120
+    },
+    {
+      "id": "P078",
+      "line_start": 612,
+      "line_end": 615,
+      "major_section": "A curve-theoretic route to the same point",
+      "section_path": "A curve-theoretic route to the same point > Corollary 6.2 (perfect-ground-field descent) [Proved] > Proof",
+      "text": "Over an algebraically closed field, an individual closed point has degree one. A degree-$h$ coefficient-one prime certificate must therefore be formulated over its ground field and then base-changed; phrasing it only over $\\mathbf C$ loses the arithmetic degree information.",
+      "word_count": 40,
+      "risk_score": 110
+    },
+    {
+      "id": "P079",
+      "line_start": 632,
+      "line_end": 633,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture",
+      "text": "The following section reports exact finite calculations. It is not used to prove the general identities above.",
+      "word_count": 17,
+      "risk_score": 10
+    },
+    {
+      "id": "P080",
+      "line_start": 637,
+      "line_end": 638,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.1 (verified affine range) [Exactly checked]",
+      "text": "For every $2\\le d\\le20$, exact Gr\\\"obner-basis computation over $\\mathbf Q$ establishes:",
+      "word_count": 14,
+      "risk_score": 45
+    },
+    {
+      "id": "P081",
+      "line_start": 640,
+      "line_end": 640,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.1 (verified affine range) [Exactly checked]",
+      "text": "$g_{d,3}$ and $g_{d+1,3}$ have homogeneous greatest common divisor $1$;",
+      "word_count": 14,
+      "risk_score": 45
+    },
+    {
+      "id": "P082",
+      "line_start": 641,
+      "line_end": 641,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.1 (verified affine range) [Exactly checked]",
+      "text": "$I_d$ is zero-dimensional and",
+      "word_count": 5,
+      "risk_score": 45
+    },
+    {
+      "id": "P083",
+      "line_start": 649,
+      "line_end": 649,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.1 (verified affine range) [Exactly checked]",
+      "text": "$I_d+(J_d)=(1)$;",
+      "word_count": 5,
+      "risk_score": 45
+    },
+    {
+      "id": "P084",
+      "line_start": 650,
+      "line_end": 650,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.1 (verified affine range) [Exactly checked]",
+      "text": "$I_d+(G_{d+2})=(1)$.",
+      "word_count": 6,
+      "risk_score": 45
+    },
+    {
+      "id": "P085",
+      "line_start": 652,
+      "line_end": 652,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.1 (verified affine range) [Exactly checked]",
+      "text": "The quotient lengths for $d=2,\\ldots,20$ are",
+      "word_count": 9,
+      "risk_score": 45
+    },
+    {
+      "id": "P086",
+      "line_start": 658,
+      "line_end": 663,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.1 (verified affine range) [Exactly checked]",
+      "text": "Because $I_d$ is a height-two complete intersection in the smooth surface $\\mathbf A^2$, the third identity says that every geometric point has full Jacobian rank. The entire affine scheme is therefore reduced, indeed finite \\'{e}tale over $\\mathbf Q$. The fourth identity says scheme-theoretically that no affine common point lies on $G_{d+2}=0$. Thus every affine point in the verified range is a valid smooth specialisation.",
+      "word_count": 70,
+      "risk_score": 55
+    },
+    {
+      "id": "P087",
+      "line_start": 667,
+      "line_end": 667,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Newton polygons and the observed length",
+      "text": "The Newton polygon of $G_n$ is",
+      "word_count": 7,
+      "risk_score": 10
+    },
+    {
+      "id": "P088",
+      "line_start": 673,
+      "line_end": 673,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Newton polygons and the observed length",
+      "text": "An exact six-residue-class calculation gives",
+      "word_count": 5,
+      "risk_score": 10
+    },
+    {
+      "id": "P089",
+      "line_start": 681,
+      "line_end": 684,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Newton polygons and the observed length",
+      "text": "The observed quotient length therefore reaches the Newton mixed-area count. This suggests a toric non-degeneracy proof, but the specific coefficients of $G_d,G_{d+1}$ must be controlled; generic support geometry alone is not a proof for this pair.",
+      "word_count": 40,
+      "risk_score": 10
+    },
+    {
+      "id": "P090",
+      "line_start": 694,
+      "line_end": 695,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Boundary reduction",
+      "text": "Let $\\epsilon=n\\bmod2$, $A=(n-3\\epsilon)/2$, and $z=Y^2/X^3$. On the boundary torus $XY\\ne0$,",
+      "word_count": 20,
+      "risk_score": 10
+    },
+    {
+      "id": "P091",
+      "line_start": 712,
+      "line_end": 712,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Boundary reduction",
+      "text": "The adjacent coefficient ratio is",
+      "word_count": 5,
+      "risk_score": 10
+    },
+    {
+      "id": "P092",
+      "line_start": 722,
+      "line_end": 723,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Boundary reduction",
+      "text": "The minimum exponents give a uniform elementary statement: the common monomial factor of $B_d$ and $B_{d+1}$ is",
+      "word_count": 20,
+      "risk_score": 10
+    },
+    {
+      "id": "P093",
+      "line_start": 731,
+      "line_end": 732,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Boundary reduction",
+      "text": "No power $X^2$ and no $Y$ divides both. Ruling out a further torus factor is separate.",
+      "word_count": 17,
+      "risk_score": 10
+    },
+    {
+      "id": "P094",
+      "line_start": 736,
+      "line_end": 737,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved]",
+      "text": "For every $n\\ge2$, every zero of $P_n$ is real, positive and simple. In particular, $P_n$ is squarefree over every characteristic-zero field.",
+      "word_count": 24,
+      "risk_score": 45
+    },
+    {
+      "id": "P095",
+      "line_start": 741,
+      "line_end": 743,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "Put $M=\\lfloor A/3\\rfloor$, write $A=3M+\\delta$ with $\\delta\\in\\{0,1,2\\}$, and let $c_{n,M}$ be the non-zero leading coefficient of $P_n$. Set",
+      "word_count": 30,
+      "risk_score": 110
+    },
+    {
+      "id": "P096",
+      "line_start": 763,
+      "line_end": 764,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "Exact division of consecutive coefficients in (7.3) gives the reciprocal identity",
+      "word_count": 12,
+      "risk_score": 110
+    },
+    {
+      "id": "P097",
+      "line_start": 781,
+      "line_end": 782,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "The hypergeometric concatenation theorem for degree-$M$ multiplicative finite free convolution gives, up to a non-zero scalar,",
+      "word_count": 17,
+      "risk_score": 110
+    },
+    {
+      "id": "P098",
+      "line_start": 793,
+      "line_end": 795,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "[@martinez2024zeros]. Pfaff transformation and the Jacobi representation show that $p_n$ has $M$ simple negative roots and $q_n$ has $M$ simple roots in $(0,1)$. The relevant Jacobi parameter pairs are",
+      "word_count": 32,
+      "risk_score": 155
+    },
+    {
+      "id": "P099",
+      "line_start": 803,
+      "line_end": 804,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "and every entry exceeds $-1$ [@dlmf]. Sign preservation for finite free convolution therefore makes $F_n$ negative-rooted.",
+      "word_count": 17,
+      "risk_score": 155
+    },
+    {
+      "id": "P100",
+      "line_start": 806,
+      "line_end": 809,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "It remains to exclude repeated roots. Reflect $\\widehat p_n(x)=p_n(-x)$. For $M\\ge2$ its positive roots are simple, so its logarithmic mesh is greater than one. Proposition 2.17 of Martínez-Finkelshtein, Morales and Perales gives",
+      "word_count": 40,
+      "risk_score": 110
+    },
+    {
+      "id": "P101",
+      "line_start": 816,
+      "line_end": 820,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "[@martinez2024real]. Hence the reflected convolution has simple positive roots; the reflection identity makes $F_n$ simple and negative-rooted. The cases $M=0,1$ are respectively constant and linear. Finally, the scale in (7.6) and reciprocation turn the roots into simple positive roots of $P_n$. $\\square$",
+      "word_count": 47,
+      "risk_score": 165
+    },
+    {
+      "id": "P102",
+      "line_start": 822,
+      "line_end": 824,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Theorem 7.2 (uniform boundary squarefreeness) [Proved] > Proof",
+      "text": "The logarithmic-mesh step is load-bearing. A broader strict-interlacing wording for a merely non-negative-rooted convolution factor admits a degenerate counterexample; that formulation is not used here.",
+      "word_count": 25,
+      "risk_score": 110
+    },
+    {
+      "id": "P103",
+      "line_start": 828,
+      "line_end": 828,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.3 (verified adjacent boundary range) [Exactly checked]",
+      "text": "For every $2\\le d\\le200$,",
+      "word_count": 6,
+      "risk_score": 45
+    },
+    {
+      "id": "P104",
+      "line_start": 834,
+      "line_end": 834,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.3 (verified adjacent boundary range) [Exactly checked]",
+      "text": "so through this range the full boundary gcd is exactly the factor in (7.5).",
+      "word_count": 15,
+      "risk_score": 45
+    },
+    {
+      "id": "P105",
+      "line_start": 836,
+      "line_end": 842,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Proposition 7.3 (verified adjacent boundary range) [Exactly checked]",
+      "text": "When $d\\equiv1\\pmod3$, the boundary support is the coarse point $[0:0:1]$. On the $\\mu_3$ uniformising cover of the weighted stack $\\mathcal P(1,2,3)$, the lowest terms of the two equations are independent linear coordinates. The intersection is transverse on that cover and contributes $1/3$ to the stack intersection number. This explains the floor in (7.1); $1/3$ is an orbifold intersection contribution, not a fractional coarse-scheme length.",
+      "word_count": 75,
+      "risk_score": 55
+    },
+    {
+      "id": "P106",
+      "line_start": 846,
+      "line_end": 846,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Conjecture 7.4 (uniform affine smoothness) [Open]",
+      "text": "For every $d\\ge2$, the ideal $(G_d,G_{d+1})$ is radical of length",
+      "word_count": 15,
+      "risk_score": 10
+    },
+    {
+      "id": "P107",
+      "line_start": 852,
+      "line_end": 852,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Conjecture 7.4 (uniform affine smoothness) [Open]",
+      "text": "and both $J_d$ and $G_{d+2}$ are units in its coordinate algebra.",
+      "word_count": 14,
+      "risk_score": 10
+    },
+    {
+      "id": "P108",
+      "line_start": 854,
+      "line_end": 859,
+      "major_section": "Exact $e=3$ geometry and the uniform conjecture",
+      "section_path": "Exact $e=3$ geometry and the uniform conjecture > Conjecture 7.4 (uniform affine smoothness) [Open]",
+      "text": "This would prove more than existence: every affine common point would be a valid smooth specialisation. The exact ranges above strongly constrain a future proof, but extending those ranges alone would add little mathematics. The open structural tasks are uniform adjacent boundary coprimality, toric non-degeneracy or radicality, Jacobian non-vanishing, and exclusion of a triple common zero.",
+      "word_count": 56,
+      "risk_score": 20
+    },
+    {
+      "id": "P109",
+      "line_start": 865,
+      "line_end": 868,
+      "major_section": "Computational assurance and reproducibility",
+      "section_path": "Computational assurance and reproducibility > Frozen finite-field corpus",
+      "text": "The upstream v0.3.0 archive contains one finite-field witness for each $50\\le d\\le100$. Its witness JSON is byte-identical to the earlier v0.2.0 corpus audited in this project. A fresh reconciliation on 9 August 2026 established:",
+      "word_count": 40,
+      "risk_score": 10
+    },
+    {
+      "id": "P110",
+      "line_start": 879,
+      "line_end": 882,
+      "major_section": "Computational assurance and reproducibility",
+      "section_path": "Computational assurance and reproducibility > Frozen finite-field corpus",
+      "text": "The independent verifier does not import the archive code. It uses sparse integer dictionaries, a generic permutation determinant and separate weighted-composition enumeration. This is internal code-path diversity, not reproduction by an unaffiliated group.",
+      "word_count": 33,
+      "risk_score": 10
+    },
+    {
+      "id": "P111",
+      "line_start": 886,
+      "line_end": 892,
+      "major_section": "Computational assurance and reproducibility",
+      "section_path": "Computational assurance and reproducibility > Negative controls",
+      "text": "Sixteen mutation or negative controls and the positive bad-characteristic fixture of Example 5.3 were exercised under ordinary and optimised Python. They cover wrong derivative and determinant signs, shifted indices, ordinary in place of weighted Euler coefficients, corrupt residues and points, composite moduli, missing rows, singular points, malformed types and an injected non-integral coefficient. All expected outcomes were observed in both modes.",
+      "word_count": 62,
+      "risk_score": 20
+    },
+    {
+      "id": "P112",
+      "line_start": 896,
+      "line_end": 903,
+      "major_section": "Computational assurance and reproducibility",
+      "section_path": "Computational assurance and reproducibility > A retained fail-open defect",
+      "text": "The upstream verifier still contains a proof-critical Python `assert` guarding coefficient divisibility before floor division. Optimised Python removes that guard. An injected non-integral numerator is rejected in ordinary mode but silently floor-divided under `python -O`. The unmodified witness corpus passes in both modes, and the independent verifier uses explicit exceptions; there is no evidence that a current row is false. The defect is nevertheless retained in the record because it is a real failure-detection weakness in the upstream release.",
+      "word_count": 79,
+      "risk_score": 20
+    },
+    {
+      "id": "P113",
+      "line_start": 907,
+      "line_end": 911,
+      "major_section": "Computational assurance and reproducibility",
+      "section_path": "Computational assurance and reproducibility > Geometry receipts",
+      "text": "The affine sweep uses exact arithmetic over $\\mathbf Q$ with two independent constructions of each $G_n$ and Singular for ideal computations. The boundary sweep uses exact univariate arithmetic. Ordinary and optimised Python runs produced byte-identical JSON receipts. The evidence archive records software versions, commands and SHA-256 hashes.",
+      "word_count": 48,
+      "risk_score": 20
+    },
+    {
+      "id": "P114",
+      "line_start": 915,
+      "line_end": 919,
+      "major_section": "Computational assurance and reproducibility",
+      "section_path": "Computational assurance and reproducibility > Assurance boundary",
+      "text": "The package establishes that the stated scripts replay the stated finite relations and that the written identities survived adversarial sign and index checks. It does not establish novelty, priority, independent reproduction, proof-assistant verification, specialist acceptance, journal acceptance or the open all-$d$ conjecture.",
+      "word_count": 43,
+      "risk_score": 110
+    },
+    {
+      "id": "P115",
+      "line_start": 925,
+      "line_end": 926,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What the Jacobian reformulation changes",
+      "text": "The determinant identity is elementary once the two definitions are aligned, but its value is organisational. It compresses three layers:",
+      "word_count": 20,
+      "risk_score": 85
+    },
+    {
+      "id": "P116",
+      "line_start": 936,
+      "line_end": 940,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What the Jacobian reformulation changes",
+      "text": "For computation, the full determinant and its alpha-matrix implementation can be removed from the search criterion. For geometry, one may use any method that produces a reduced point away from the next coefficient. For arithmetic, a simple residue-class point can be lifted even when the original determinant vanishes modulo the chosen prime.",
+      "word_count": 52,
+      "risk_score": 95
+    },
+    {
+      "id": "P117",
+      "line_start": 942,
+      "line_end": 944,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What the Jacobian reformulation changes",
+      "text": "The three residues $g_{d+e-1,e}$, $J_{d,e}$ and $a_{d,e}$ may still be evaluated redundantly to catch software errors. They are not algebraically independent on the common-zero locus: equation (4.4) couples them exactly.",
+      "word_count": 38,
+      "risk_score": 85
+    },
+    {
+      "id": "P118",
+      "line_start": 948,
+      "line_end": 951,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What remains difficult",
+      "text": "Internal reproducibility is no longer the main bottleneck. The decisive open problem is structural: prove that at least one good affine point exists for all $d$ in an unresolved column, or prove the stronger Conjecture 7.4. Three routes are now sharply separated:",
+      "word_count": 43,
+      "risk_score": 85
+    },
+    {
+      "id": "P119",
+      "line_start": 953,
+      "line_end": 953,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What remains difficult",
+      "text": "prove uniform boundary coprimality and toric non-degeneracy;",
+      "word_count": 7,
+      "risk_score": 85
+    },
+    {
+      "id": "P120",
+      "line_start": 954,
+      "line_end": 955,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What remains difficult",
+      "text": "exclude triple common zeros and singular intersections by recurrence or resultant identities;",
+      "word_count": 12,
+      "risk_score": 85
+    },
+    {
+      "id": "P121",
+      "line_start": 956,
+      "line_end": 956,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What remains difficult",
+      "text": "construct a simple point asymptotically and certify a finite complement.",
+      "word_count": 10,
+      "risk_score": 85
+    },
+    {
+      "id": "P122",
+      "line_start": 958,
+      "line_end": 960,
+      "major_section": "Discussion",
+      "section_path": "Discussion > What remains difficult",
+      "text": "Failure of this particular smooth-point route at one $d$ would not disprove the Polydegree Conjecture. Lewis--Perry--Straub Theorem 4 gives a sufficient, not known necessary, condition [@lps2019].",
+      "word_count": 28,
+      "risk_score": 165
+    },
+    {
+      "id": "P123",
+      "line_start": 964,
+      "line_end": 968,
+      "major_section": "Discussion",
+      "section_path": "Discussion > Significance and priority",
+      "text": "The paper's current contribution is a reusable theorem package: a transparent Jacobian interpretation, an exact syzygy, a sharper Hensel criterion and a curve-theoretic bridge. The finite $e=3$ geometry identifies a precise frontier rather than another arbitrary cutoff. A uniform theorem would materially increase significance; a larger finite table would not.",
+      "word_count": 51,
+      "risk_score": 230
+    },
+    {
+      "id": "P124",
+      "line_start": 970,
+      "line_end": 975,
+      "major_section": "Discussion",
+      "section_path": "Discussion > Significance and priority",
+      "text": "Priority remains provisional. No inspected source states the present derivative--determinant--Euler chain, but the first identity is close to the multinomial reindexing already used in Lewis--Perry--Straub, and elementary observations are particularly vulnerable to unpublished or implicit prior use. Original-author contact and specialist review are therefore substantive next steps, not administrative decoration.",
+      "word_count": 54,
+      "risk_score": 195
+    },
+    {
+      "id": "P125",
+      "line_start": 979,
+      "line_end": 981,
+      "major_section": "Limitations",
+      "section_path": "Limitations",
+      "text": "The Jacobian identities and bridge theorems have written proofs and internal adversarial review, but no proof-assistant formalisation or external specialist validation.",
+      "word_count": 21,
+      "risk_score": 120
+    },
+    {
+      "id": "P126",
+      "line_start": 982,
+      "line_end": 983,
+      "major_section": "Limitations",
+      "section_path": "Limitations",
+      "text": "The prior-art search is bounded. Authenticated MathSciNet, zbMATH and Scopus searches and author contact were not completed.",
+      "word_count": 17,
+      "risk_score": 85
+    },
+    {
+      "id": "P127",
+      "line_start": 984,
+      "line_end": 987,
+      "major_section": "Limitations",
+      "section_path": "Limitations",
+      "text": "The full affine statement is checked only for $2\\le d\\le20$, and adjacent boundary coprimality only through $d=200$. Uniform squarefreeness of each individual boundary factor does not imply adjacent coprimality. The finite bounds are evidence boundaries, not mathematical thresholds.",
+      "word_count": 41,
+      "risk_score": 85
+    },
+    {
+      "id": "P128",
+      "line_start": 988,
+      "line_end": 990,
+      "major_section": "Limitations",
+      "section_path": "Limitations",
+      "text": "The 51 modular witnesses and their reimplementations originate within one research workflow. Different code paths do not constitute unaffiliated reproduction.",
+      "word_count": 20,
+      "risk_score": 85
+    },
+    {
+      "id": "P129",
+      "line_start": 991,
+      "line_end": 993,
+      "major_section": "Limitations",
+      "section_path": "Limitations",
+      "text": "The manuscript inherits the correctness and interpretation of Lewis--Perry--Straub Theorem 4. It reproduces the hypotheses used but does not reprove their polynomial-automorphism construction.",
+      "word_count": 25,
+      "risk_score": 120
+    },
+    {
+      "id": "P130",
+      "line_start": 994,
+      "line_end": 996,
+      "major_section": "Limitations",
+      "section_path": "Limitations",
+      "text": "No claim is made that the work currently meets a particular REF grade. Originality, significance and rigour require separate assessment, and publication infrastructure does not determine any of them.",
+      "word_count": 29,
+      "risk_score": 85
+    },
+    {
+      "id": "P131",
+      "line_start": 1000,
+      "line_end": 1006,
+      "major_section": "Conclusion",
+      "section_path": "Conclusion",
+      "text": "The Lewis--Perry--Straub determinant is the Jacobian of their coefficient map. Weighted homogeneity turns that identity into an exact syzygy and a smooth-point reformulation of the specialisation criterion. The resulting finite-field certificate is smaller and strictly more permissive: it needs a simple common zero and a non-zero next coefficient, even when the prime divides $d+e-1$. The same formulation permits a divisor on a smooth curve to produce the required point.",
+      "word_count": 72,
+      "risk_score": 20
+    },
+    {
+      "id": "P132",
+      "line_start": 1008,
+      "line_end": 1014,
+      "major_section": "Conclusion",
+      "section_path": "Conclusion",
+      "text": "For $e=3$, exact calculations show a notably strong finite pattern—the entire affine intersection is good through $d=20$—while the boundary factors are uniformly squarefree. These results isolate a clean uniform conjecture. The responsible next advance is a structural proof or counterexample, not a longer table. Until then, the general Jacobian and Hensel theorems stand as the paper's proved contribution, while the all-$d$ statement remains open.",
+      "word_count": 69,
+      "risk_score": 55
+    }
+  ]
+}

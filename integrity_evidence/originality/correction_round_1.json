@@ -1,0 +1,191 @@
+{
+  "schema": "evidence-press.originality.correction-round.v1",
+  "round": 1,
+  "executed_at": "2026-08-09T20:15:39+0100",
+  "mode": "focused correction-round read-only verification",
+  "verdict": "PASS",
+  "severity": "NONE",
+  "candidate": {
+    "path": "work/irreducible-norms-ref-upgrade/stage2_5/candidate/MANUSCRIPT.md",
+    "version": "0.4.1-candidate",
+    "sha256": "5ff53d9074a4651940a12b432a7194baee1e078470d88d0ec5f22a7fe29ef762"
+  },
+  "frozen_stage2_baseline": {
+    "path": "outputs/smooth-point-certificates-polydegree-stage2-2026-08-09/MANUSCRIPT.md",
+    "version": "0.4.0-candidate",
+    "sha256": "a9f06d035fe2ce1c4b4e1d9d7044f2dfd8006c9f2cab605e1cc34e4de8bf9bd8",
+    "originality_report": "work/irreducible-norms-ref-upgrade/stage2_5/originality_agent/REPORT.md",
+    "originality_report_sha256": "841f0b7927f2ea0cea67eb8988f2bb1ddc806d6e33e3bf4672e67e5597dc0efd",
+    "originality_audit": "work/irreducible-norms-ref-upgrade/stage2_5/originality_agent/originality_audit.json",
+    "originality_audit_sha256": "db7f4a4661ecd46f3831f07d51c795a1db725d5f1bcc9c4401bfaba2f24eb0bc"
+  },
+  "scope": {
+    "body_changes_checked": 3,
+    "body_changes": [
+      "P006: Perry indexing clarification",
+      "P098: exact DLMF permalink sentence in Theorem 7.2",
+      "P122: removal of the phrase 'not known necessary'"
+    ],
+    "excluded_from_phase_d": "Declaration edits after the Conclusion are outside the established Abstract-through-Conclusion body scope."
+  },
+  "current_phase_d_coverage": {
+    "total_body_paragraphs": 132,
+    "sampled_paragraphs": 40,
+    "sampling_rate": 0.30303030303030304,
+    "minimum_rate": 0.3,
+    "major_sections_total": 12,
+    "major_sections_covered": 12,
+    "changed_paragraphs_all_in_sample": true,
+    "sample_ids_unchanged_from_frozen_audit": true,
+    "normal_and_python_O_inventory_byte_identical": true,
+    "recomputed_inventory_sha256": "a9859bad0503116eb7b9c21e8278a43ec9e425fa154c0e40eb01e05f356d0483",
+    "recomputed_sample_plan_sha256": "cf06a5ad218c19fa69a90b74c8065d34bd1f7629de5e9a450f8a30911cf10876",
+    "sample_ids": [
+      "P003",
+      "P005",
+      "P006",
+      "P007",
+      "P009",
+      "P014",
+      "P015",
+      "P016",
+      "P018",
+      "P019",
+      "P029",
+      "P032",
+      "P034",
+      "P035",
+      "P036",
+      "P038",
+      "P040",
+      "P046",
+      "P047",
+      "P054",
+      "P060",
+      "P061",
+      "P062",
+      "P074",
+      "P075",
+      "P077",
+      "P078",
+      "P095",
+      "P098",
+      "P100",
+      "P101",
+      "P102",
+      "P114",
+      "P116",
+      "P122",
+      "P123",
+      "P124",
+      "P125",
+      "P129",
+      "P132"
+    ]
+  },
+  "changed_paragraph_checks": [
+    {
+      "id": "P006",
+      "lines": "77-82",
+      "section": "Introduction",
+      "change": "Clarifies that the thesis's polydegree-(d,4) computational case is the case indexed by Lewis--Perry--Straub's coefficient-polynomial parameter as e=3.",
+      "quoted_fragment": "earlier thesis developed the same computational direction for the case later",
+      "quoted_fragment_word_count": 11,
+      "quoted_query": "\"earlier thesis developed the same computational direction for the case later\"",
+      "quoted_result": "No exact or close match. Returned pages were unrelated to this formulation.",
+      "unquoted_query": "Perry thesis computational polydegree case e=3 Lewis Perry Straub indexing",
+      "unquoted_result": "Returned the primary Perry dissertation and Lewis--Perry--Straub paper, but no matching prose. Perry's dissertation states its e=4 / G_(d,4) computer-assisted case at PDF pp. 12 and 43; Lewis--Perry--Straub call the corresponding coefficient-polynomial case e=3 at PDF p. 2.",
+      "grade": "PARAPHRASE",
+      "close_match": false,
+      "verbatim": false,
+      "source_support": "PASS",
+      "source_evidence": [
+        {
+          "source": "Kaitlyn Anne Perry, Polydegree Properties of Polynomial Automorphisms (2016)",
+          "url": "https://ir-api.ua.edu/api/core/bitstreams/e9dc277b-9b56-47c9-8c00-bd4de9bab2fc/content",
+          "location": "PDF pp. 12, 43",
+          "detail": "The thesis treats G_(d+3) intersect G_(d,4) for 2 <= d <= 45 and records the Groebner-basis Mathematica check."
+        },
+        {
+          "source": "Lewis--Perry--Straub, arXiv:1809.09681v1",
+          "url": "https://arxiv.org/pdf/1809.09681",
+          "location": "PDF pp. 2-3",
+          "detail": "The paper uses e variables and concludes G_(d+e) subset closure G_(d,e+1); it calls the computer-aided d < 50 instance the e=3 case."
+        }
+      ],
+      "rationale": "The sentence is an attributed synthesis across two notation conventions, not copied source prose. The new indexing qualifier is technically accurate."
+    },
+    {
+      "id": "P098",
+      "lines": "794-799",
+      "section": "Exact e=3 geometry and the uniform conjecture",
+      "change": "Names and directly links DLMF equations 15.8.1, 18.5.7 and 18.16.1.",
+      "quoted_fragment": "Pfaff transformation DLMF 15.8.1 the Jacobi representation DLMF 18.5.7",
+      "quoted_fragment_word_count": 9,
+      "quoted_query": "\"Pfaff transformation DLMF 15.8.1 the Jacobi representation DLMF 18.5.7\"",
+      "quoted_result": "Empty search result; no exact or close match.",
+      "unquoted_query": "Pfaff transformation DLMF 15.8.1 Jacobi representation DLMF 18.5.7 strict ordering zeros DLMF 18.16.1",
+      "unquoted_result": "Returned the relevant DLMF material and secondary mathematical uses of those equation numbers; no matching manuscript sentence.",
+      "grade": "PARAPHRASE",
+      "close_match": false,
+      "verbatim": false,
+      "source_support": "PASS",
+      "source_evidence": [
+        {
+          "source": "DLMF 15.8.1",
+          "url": "https://dlmf.nist.gov/15.8.E1",
+          "detail": "The permalink resolves to the linear hypergeometric transformation used as the Pfaff transformation."
+        },
+        {
+          "source": "DLMF 18.5.7",
+          "url": "https://dlmf.nist.gov/18.5.E7",
+          "detail": "The permalink gives the Jacobi polynomial hypergeometric representation."
+        },
+        {
+          "source": "DLMF 18.16.1",
+          "url": "https://dlmf.nist.gov/18.16.E1",
+          "detail": "The permalink gives strict ordering of the Jacobi zeros between 0 and pi."
+        }
+      ],
+      "rationale": "Formula names and immutable equation identifiers are properly attributed source metadata. The surrounding deduction remains independently worded."
+    },
+    {
+      "id": "P122",
+      "lines": "962-964",
+      "section": "Discussion",
+      "change": "Removes the unsupported literature-status modifier 'not known necessary', leaving only the theorem's supported sufficient-condition direction.",
+      "quoted_fragment": "Lewis Perry Straub Theorem 4 gives a sufficient condition",
+      "quoted_fragment_word_count": 9,
+      "quoted_query": "\"Lewis--Perry--Straub Theorem 4 gives a sufficient condition\"",
+      "quoted_result": "Empty search result; no exact or close match.",
+      "unquoted_query": "Lewis Perry Straub Theorem 4 sufficient condition Polydegree Conjecture smooth point",
+      "unquoted_result": "Returned the primary Lewis--Perry--Straub paper and unrelated generic sufficient-condition results; no matching sentence.",
+      "grade": "PARAPHRASE",
+      "close_match": false,
+      "verbatim": false,
+      "source_support": "PASS",
+      "source_evidence": [
+        {
+          "source": "Lewis--Perry--Straub, arXiv:1809.09681v1",
+          "url": "https://arxiv.org/pdf/1809.09681",
+          "location": "Theorem 4, PDF p. 3",
+          "detail": "Theorem 4 states explicit specialization hypotheses and concludes G_(d+e) subset closure G_(d,e+1), exactly a sufficient condition."
+        }
+      ],
+      "rationale": "The remaining sentence is a short, cited characterization of a theorem's implication. Removing the necessity-status claim improves calibration and does not affect any proof."
+    }
+  ],
+  "boundary_proof_check": {
+    "verdict": "PROVED",
+    "formulas_changed": false,
+    "parameter_inequalities_changed": false,
+    "finite_free_convolution_step_changed": false,
+    "reflected_log_mesh_step_changed": false,
+    "low_degree_cases_changed": false,
+    "detail": "The only correction inside Theorem 7.2 replaces a broad DLMF prose citation with exact equation permalinks. DLMF 15.8.1, 18.5.7 and 18.16.1 support the same Pfaff/Jacobi/simple-zero inference already checked. The arXiv:2404.11479v2 concatenation and sign-preservation steps, arXiv:2309.10970v3 reflection and Proposition 2.17 log-mesh step, M=0,1 handling, scale and reciprocation are textually unchanged.",
+    "gray_zone": false
+  },
+  "issues": [],
+  "blocking_defects": [],
+  "conclusion": "The current 0.4.1 candidate passes the focused correction-round originality and technical-source check."
+}

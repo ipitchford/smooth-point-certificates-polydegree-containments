@@ -1,0 +1,95 @@
+{
+  "package": "smooth-point-certificates-polydegree-containments",
+  "version": "0.4.1-candidate",
+  "date": "2026-08-09",
+  "claims": [
+    {
+      "id": "T1",
+      "claim": "Every g_(n,e) is an integral polynomial and equals the indicated coefficient of the formal inverse.",
+      "status": ["proved_in_manuscript", "exact_finite_computation"]
+    },
+    {
+      "id": "T2",
+      "claim": "alpha_(i,j,e) = -partial_(x_(i+1)) g_(j+1,e).",
+      "status": ["proved_in_manuscript", "exact_finite_computation"]
+    },
+    {
+      "id": "T3",
+      "claim": "a_(d,e) = (-1)^e det D(g_(d,e),...,g_(d+e-1,e)).",
+      "status": ["proved_in_manuscript", "exact_finite_computation"]
+    },
+    {
+      "id": "T4",
+      "claim": "The exact weighted-Euler syzygy (4.3) holds in Z[x_1,...,x_e].",
+      "status": ["proved_in_manuscript", "exact_finite_computation"]
+    },
+    {
+      "id": "T5",
+      "claim": "In the x_1 non-zero chart and appropriate residue characteristic, the LPS determinant condition is equivalent to a smooth-point plus next-coefficient condition.",
+      "status": ["proved_in_manuscript"]
+    },
+    {
+      "id": "T6",
+      "claim": "A simple finite-field common zero with non-zero next coefficient gives a complex LPS specialisation; p need not avoid d+e-1.",
+      "status": ["proved_in_manuscript", "externally_inherited", "exact_finite_computation"]
+    },
+    {
+      "id": "T7",
+      "claim": "The scheme-theoretic smooth-curve, reduced-affine-zero-divisor hypotheses imply the required Jacobian point.",
+      "status": ["proved_in_manuscript"]
+    },
+    {
+      "id": "T8",
+      "claim": "A coefficient-one closed point over a perfect ground field becomes a reduced geometric collection after base change and satisfies the curve bridge under the stated support conditions.",
+      "status": ["proved_in_manuscript"]
+    },
+    {
+      "id": "T9",
+      "claim": "For every n >= 2, every zero of the e=3 one-variable boundary factor P_n is real, positive and simple.",
+      "status": ["proved_in_manuscript", "externally_inherited", "exact_finite_computation"]
+    },
+    {
+      "id": "C1",
+      "claim": "All 51 frozen witnesses for 50 <= d <= 100 satisfy the legacy and refactored relations.",
+      "status": ["exact_finite_computation"]
+    },
+    {
+      "id": "C2",
+      "claim": "For 2 <= d <= 20, (G_d,G_(d+1)) is reduced of length floor(d(d+1)/6), and J_d and G_(d+2) are units in its coordinate algebra.",
+      "status": ["exact_finite_computation"]
+    },
+    {
+      "id": "C3",
+      "claim": "For 2 <= d <= 200 the adjacent boundary torus factors are coprime.",
+      "status": ["exact_finite_computation"]
+    },
+    {
+      "id": "I1",
+      "claim": "Lewis-Perry-Straub Theorem 4 converts the complex specialisation into the stated Polydegree containment.",
+      "status": ["externally_inherited"]
+    },
+    {
+      "id": "O1",
+      "claim": "The uniform all-d e=3 radicality, Jacobian-unit and next-coefficient-unit statement holds.",
+      "status": ["open_not_claimed"]
+    },
+    {
+      "id": "N1",
+      "claim": "A bounded collision search found no prior derivative-Jacobian packaging; novelty and priority are not established.",
+      "status": ["priority_provisional"]
+    },
+    {
+      "id": "X1",
+      "claim": "No independent reproduction, formal verification, external specialist review or peer review has been established.",
+      "status": ["not_assessed"]
+    }
+  ],
+  "status_scale": {
+    "proved_in_manuscript": "A general written proof is included.",
+    "exact_finite_computation": "A bounded exact computation and retained receipt support the claim.",
+    "externally_inherited": "The claim depends on a cited external theorem or reported range.",
+    "open_not_claimed": "The statement is explicitly open and is not asserted as a result.",
+    "priority_provisional": "Only a bounded collision search has been completed.",
+    "not_assessed": "No positive assurance claim is made."
+  }
+}

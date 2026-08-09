@@ -1,0 +1,170 @@
+{
+  "schema": "irreducible-norms.stage2.5.final-readback.v1",
+  "candidate": "smooth-point-certificates-polydegree-containments",
+  "version": "0.4.1-candidate",
+  "candidate_root": "/Users/admin/Documents/Codex/2026-08-09/the-0processed-folder-on-the-mac/work/irreducible-norms-ref-upgrade/stage2_5/candidate",
+  "readback_time": "2026-08-09T20:28:17+0100",
+  "candidate_read_only": true,
+  "verdict": "PASS_WITH_NOTES",
+  "stage2_5_blockers": [],
+  "frozen_identity": {
+    "total_files_including_manifest": 130,
+    "manifest_entries": 129,
+    "manifest_sha256": "f67537d600d1f1a431f2cd27ddd69dff5024d9c1c0b64ada216f89b77e7720c8",
+    "pdf_path": "build/main.pdf",
+    "pdf_pages": 17,
+    "pdf_bytes": 381537,
+    "pdf_sha256": "a93b3f92e6762123bae5edae0cdec8696541ea9082139cc95a8fde169fa02d16",
+    "upstream_v0_3_archive_sha256": "e51af558a067c28847219a788f8dd4d28de4a6e9bc3b8d00c5ecab2c3b123334",
+    "v0_2_v0_3_witness_byte_identical": true,
+    "witness_sha256": "b659a8bccea30df4f800df526319bcbe01f429c3bee2ee8146983933da9cb38b"
+  },
+  "fresh_gates": {
+    "manifest": {
+      "normal": {"exit_code": 0, "passed": 129, "total": 129},
+      "optimized": {"exit_code": 0, "passed": 129, "total": 129}
+    },
+    "template_validator": {
+      "normal": {"exit_code": 0, "overall_status": "PASS"},
+      "optimized": {"exit_code": 0, "overall_status": "PASS"},
+      "fresh_normal_optimized_byte_identical": true,
+      "fresh_matches_frozen": true,
+      "sha256": "541448139b51b55f296b74aaf748e70a68dfe2ac968919f677a8b34e00ee8e5b"
+    },
+    "publication_ready_negative_control": {
+      "normal": {"exit_code": 1, "overall_status": "FAIL"},
+      "optimized": {"exit_code": 1, "overall_status": "FAIL"},
+      "expected_failure_only": true,
+      "absent_fields": [
+        "datePublished",
+        "doi",
+        "pdfUrl",
+        "repoUrl",
+        "releaseUrl",
+        "license"
+      ],
+      "fresh_normal_optimized_byte_identical": true,
+      "fresh_matches_frozen": true,
+      "sha256": "9f5d3ea3e5421dcb100cba4fdb7d0f750c7f97842aa947ba93b043619ad71227"
+    },
+    "v0_2_v0_3_cmp_exit_code": 0,
+    "abstract_count": {
+      "raw_markdown_whitespace_tokens": 210,
+      "pandoc_plain_words": 207,
+      "pandoc_version": "3.9"
+    }
+  },
+  "principal_receipts": [
+    {
+      "id": "jacobian_refactor",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "symbolic_checks": "10/10",
+      "witness_relations": "51/51",
+      "normal_sha256": "a6ace1972c6457be476ae808d7103d1fce40140617f9462de84ada80c7f03529",
+      "optimized_sha256": "a6ace1972c6457be476ae808d7103d1fce40140617f9462de84ada80c7f03529",
+      "fresh_matches_frozen": true
+    },
+    {
+      "id": "mutation_controls",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "controls": "17/17",
+      "bad_characteristic_rescue_positive_regression": true,
+      "normal_sha256": "ba81de85bd824a93449bfae89f0da9e9121b3c08a14a32dd7a325e4d570179a5",
+      "optimized_sha256": "fcd887897e79c779481543a836eb3fafdcb69d0d1a6cccc22e579b58933b46ce",
+      "expected_mode_metadata_difference": true,
+      "fresh_matches_frozen": true
+    },
+    {
+      "id": "affine_geometry",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "range": [2, 20],
+      "all_flags_true": true,
+      "normal_sha256": "f000424d80988ceeed66b3f33ce0ae5f58bbbba2d031508420b66a9a8065edee",
+      "optimized_sha256": "f000424d80988ceeed66b3f33ce0ae5f58bbbba2d031508420b66a9a8065edee",
+      "fresh_matches_frozen": true
+    },
+    {
+      "id": "boundary_sweep",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "range": [2, 200],
+      "failures": 0,
+      "normal_sha256": "f9d8cc61ccd81105a5af41aea3631831dcf1f68f31029c625c84d3267f8cf2d4",
+      "optimized_sha256": "f9d8cc61ccd81105a5af41aea3631831dcf1f68f31029c625c84d3267f8cf2d4",
+      "fresh_matches_frozen": true
+    },
+    {
+      "id": "hypergeometric_boundary",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identity_and_squarefree_n": [2, 301],
+      "adjacent_gcd_d": [2, 300],
+      "strict_interlacing_d": [2, 120],
+      "failures": 0,
+      "normal_sha256": "8fbc4d290027577180e418160e94ebf288ec30367ff33f8f538383dfa3045e5b",
+      "optimized_sha256": "8fbc4d290027577180e418160e94ebf288ec30367ff33f8f538383dfa3045e5b",
+      "fresh_matches_frozen": true
+    },
+    {
+      "id": "archive_assert_fragility_probe",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "normal_assertion_triggered": true,
+      "optimized_silent_floor_division_observed": true,
+      "latent_upstream_fail_open_risk": true,
+      "normal_sha256": "d0f6bc487155836efd930c78de9772e063ebd3f94ed7f5ef294acc8a1b18d6cc",
+      "optimized_sha256": "cfac0278b4eb71997e22cbce668442ae97d9c256241d9c3c57b5ca71ef7f7b07",
+      "fresh_matches_frozen": true
+    }
+  ],
+  "semantic_gates": {
+    "author_declarations_pending_and_nonasserted": true,
+    "ai_generated_true": true,
+    "ai_assisted_true": true,
+    "language_model_drafting_disclosed": true,
+    "mode_6": "CLEAR_AFTER_CORRECTION",
+    "one_line_names_open_uniform_e3_affine_theorem": true,
+    "ambiguous_old_one_line_absent_from_active_candidate": true,
+    "n1_is_bounded_negative_priority_claim": true,
+    "x1_is_negative_assurance_claim": true,
+    "active_stale_version_or_defect_phrases": false,
+    "historical_defect_evidence_retained_and_labelled": true
+  },
+  "discovered_defects": [
+    {
+      "id": "UPSTREAM_ASSERT_FAIL_OPEN",
+      "status": "DISCLOSED_AND_BOUNDED",
+      "severity_for_stage2_5_candidate": "NOTE",
+      "description": "The embedded upstream verifier removes a proof-critical assert under python -O and can silently floor-divide injected non-integral data.",
+      "mitigation": "A no-import explicit-guard verifier passes normal and optimized modes and 17/17 mutation/regression controls."
+    }
+  ],
+  "independence_boundary": {
+    "archive_verifier_functions_imported_by_replacement": false,
+    "separate_code_path": true,
+    "same_mathematical_formula": true,
+    "external_independent_reproduction": false,
+    "formal_verification": false,
+    "external_specialist_or_peer_review": false
+  },
+  "publication_only_pending": [
+    "accountable-author funding attestation",
+    "accountable-author competing-interest attestation",
+    "accountable-author CRediT allocation and approval",
+    "datePublished",
+    "DOI",
+    "PDF URL",
+    "repository URL",
+    "release URL",
+    "approved package-wide licence",
+    "public archive parity and live Evidence Press readback"
+  ],
+  "stage_transition": {
+    "stage_3_entered": false,
+    "explicit_user_confirmation_required": true
+  },
+  "assurance_limit": "Producer-side exact replay and adversarial checks do not establish independent reproduction, formal verification, external specialist review, peer review, novelty, priority, acceptance, truth beyond the proved and replayed scope, or a REF grade."
+}
