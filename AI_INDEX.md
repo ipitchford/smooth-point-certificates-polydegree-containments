@@ -2,7 +2,7 @@
 
 ## Identity and version
 
-Documentation addendum: 2026-09-24. Indexes [source commit bba54b9a1667](https://github.com/ipitchford/smooth-point-certificates-polydegree-containments/tree/bba54b9a1667bfc9a9e88657aa495816812182bc) and candidate tag `v0.4.1-candidate`. This index was added after that release: it is **not** part of the original tag, DOI archive or frozen manifest. Existing release files and checksums remain unchanged. For historical manifest/allow-list checks, use a clean checkout of that tag, not this documentation-enriched branch. The addendum is authenticated by Git history.
+Documentation addendum: 2026-09-24. Indexes [source commit bba54b9a1667](https://github.com/ipitchford/smooth-point-certificates-polydegree-containments/tree/bba54b9a1667bfc9a9e88657aa495816812182bc) and candidate tag `v0.4.1-candidate`. This index was added after that release: it is **not** part of the original tag, DOI archive or frozen manifest. The current-branch manifest adds the index hash; every pre-existing file hash remains unchanged. For historical archive checks use a clean checkout of the original tag. Git history and the extended current-branch manifest authenticate this documentation addendum, not a new scientific release.
 
 [Release identity and DOI](README.md) · [Evidence Press context](https://evidencepress.org/releases/smooth-point-certificates-polydegree-containments/)
 
@@ -43,4 +43,3 @@ No new mathematical validation, formalisation, independent reproduction or novel
 ## Licence and provenance
 
 Use the rights/provenance sources linked above and [README](README.md); cited and third-party material retains its own terms. This new index is dedicated under CC0-1.0, without changing any existing licence or attribution.
-
